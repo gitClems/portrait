@@ -3,6 +3,7 @@
 :root {
     --background-dark: rgb(15, 0, 34);
     --background-light: rgb(56, 3, 124);
+    --background-light-50: rgb(109, 46, 234);
 
     --white-color-1: white;
     --white-color-2: rgb(198, 198, 198);
@@ -19,6 +20,6 @@
 
     --logo-size : 20px;
 
-    --appbar-height: 50px;
+    --appbar-height: 40px;
     --page-padding-top: 100px;
 }

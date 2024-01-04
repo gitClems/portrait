@@ -1,4 +1,4 @@
-import "./home.scss"
+import "./index.scss"
 
 
 function Home() {

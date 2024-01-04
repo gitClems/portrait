@@ -1,9 +1,6 @@
 import React from 'react';
 import { Link, NavLink } from "react-router-dom";
 import "./appBar.scss"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faLaptopFile, faUser } from '@fortawesome/free-solid-svg-icons';
-
 
 function AppBar() {
 
@@ -19,17 +16,17 @@ function AppBar() {
         <div className='app-bar'>
             <Link className='app-name' to={"/"} >BAMOGO Clément</Link>
             <nav className='nav-bar' id='navBar'>
-                <NavLink className='nav-btn' to={"/"} exact="true" activeClass="active" onClick={toogleMenu}>
+                <NavLink className="btn" id='nav-btn-home' to={"/"} exact="true" activeClass="active" onClick={toogleMenu}>
                     Accueil
-                    <FontAwesomeIcon icon={faHome}></FontAwesomeIcon>
+                    {/* <FontAwesomeIcon icon={faHome}></FontAwesomeIcon> */}
                 </NavLink>
-                <NavLink className='nav-btn' to={"/works"} onClick={toogleMenu}>
+                <NavLink className="btn" id='nav-btn-work' to={"/work"} onClick={toogleMenu}>
                     Réalisations
-                    <FontAwesomeIcon icon={faLaptopFile} />
+                    {/* <FontAwesomeIcon icon={faLaptopFile} /> */}
                 </NavLink>
-                <NavLink className='nav-btn' to={"/about"} onClick={toogleMenu}>
+                <NavLink className="btn" id='nav-btn-about' to={"/about"} onClick={toogleMenu}>
                     A propos de moi
-                    <FontAwesomeIcon icon={faUser} />
+                    {/* <FontAwesomeIcon icon={faUser} /> */}
                 </NavLink>
             </nav>
             <div className='contact'>
