@@ -1,9 +1,8 @@
-import { renderIntoDocument } from "react-dom/test-utils"
 import "./index.scss"
 
 
 function Works() {
-    renderIntoDocument (
+    return (
         <div className="work">
             
         </div>
