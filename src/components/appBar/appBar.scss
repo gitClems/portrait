@@ -1,0 +1,190 @@
+@import "../../css/global.css";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.app-bar {
+    // background-color: blue;
+    position: absolute;
+    width: 100%;
+    top: 30px;
+    display: flex;
+    justify-content: space-between;
+    // padding-left: 20px;
+    // padding-right: 20px;
+    // color: white;
+    // width: 100%;
+    height: var(--appbar-height);
+
+    a {
+        text-decoration: none;
+        // color: white;
+        font-family: var(--font-family);
+    }
+
+    .app-name {
+        // background-color: red;
+        // font-size: 1.5rem;
+        font-size: 3vmax;
+        // font-size: 2vmin;
+        // width: min-content;
+        margin-left: 20px;
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        color: white;
+        flex: 1;
+    }
+
+    .nav-bar {
+        flex: 3;
+        background-color: white;
+        border-radius: 50px;
+
+        // display: flex;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        // width: 50vmax;
+        max-width: 550px;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+
+        list-style: none;
+        margin-left: 10px;
+
+        a {
+            background-color: var(--background-dark);
+            height: 80%;
+            border-radius: 50px;
+            margin-left: 5px;
+            margin-right: 5px;
+            color: white;
+            font-size: 15px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            &:hover {
+                background-color: var(--background-light);
+            }
+        }
+    }
+
+    .contact {
+        flex: 1;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 20px;
+        // background-color: green;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        svg {
+            color: white;
+            // margin-left: 25px;
+            width: 2vw;
+
+            &:hover {
+                color: var(--background-light);
+            }
+        }
+    }
+
+    .menuToggle.active {
+        transition: 0.2s;
+        background-image: url('../../assets/icons/close.png');
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-origin: center;
+    }
+}
+
+
+
+@media only screen and (max-width: 800px) {
+
+    .app-bar {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        height: max-content;
+        width: 100%;
+
+        a {
+            text-decoration: none;
+            // color: white;
+            font-family: var(--font-family);
+        }
+
+
+        .nav-bar {
+            display: none;
+            min-width: 200px;
+            position: absolute;
+            right: 20px;
+            top: 50px;
+            //height: 100px;
+            //width: 100px;
+            //height: max-content;
+            border: 2px solid white;
+            background-color: var(--background-dark);
+            border-radius: 10px;
+
+            // border-radius: 0;
+            a {
+                background-color: transparent;
+                //    border: 1px solid red;
+                //    border-radius: 3px;
+                width: 100%;
+
+                svg {
+                    display: none;
+                }
+            }
+        }
+
+        .contact {
+            display: block;
+            margin-top: 10px;
+
+            svg {
+                // background-color: red;
+                color: white;
+                margin-right: 10px;
+                width: 20px;
+            }
+        }
+
+        .menuToggle {
+            position: absolute;
+            right: 20px;
+            transition: 0.2s;
+            width: 40px;
+            height: 25px;
+            background: url('../../assets/icons/menu.png');
+            // background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            cursor: pointer;
+        }
+
+        .nav-bar.active {
+            // transition: 0.5s;
+            // padding-top: 15px;
+            display: flex;
+            flex-direction: column;
+            // align-items: start;
+            // justify-content: start;
+            height: 200px;
+
+            a {
+                border-radius: 10px;
+            }
+        }
+    }
+}
