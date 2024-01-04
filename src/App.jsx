@@ -9,11 +9,9 @@ function App() {
     <>
       <AppBar></AppBar>
       <Routes>
-        <Route>
           <Route path='/' index element={<Home />} />
           <Route path='/work' index element={<Works />} />
           <Route path='/about' index element={<About />} />
-        </Route>
       </Routes>
     </>
   );
