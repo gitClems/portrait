@@ -14,15 +14,15 @@ function AppBar() {
 
     return (
         <div className='app-bar'>
-            <Link className='app-name' to={"portrait"} >BAMOGO Clément</Link>
+            <Link className='app-name' to={"/"} >BAMOGO Clément</Link>
             <nav className='nav-bar' id='navBar'>
-                <NavLink className="btn" id='nav-btn-home' to="portrait" exact="true" activeClass="active" onClick={toogleMenu}>
+                <NavLink className="btn" id='nav-btn-home' to="/" exact="true" activeClass="active" onClick={toogleMenu}>
                     Accueil
                 </NavLink>
-                <NavLink className="btn" id='nav-btn-work' to="portrait/work" onClick={toogleMenu}>
+                <NavLink className="btn" id='nav-btn-work' to="/work" onClick={toogleMenu}>
                     Réalisations
                 </NavLink>
-                <NavLink className="btn" id='nav-btn-about' to="portrait/about" onClick={toogleMenu}>
+                <NavLink className="btn" id='nav-btn-about' to="/about" onClick={toogleMenu}>
                     A propos de moi
                 </NavLink>
             </nav>
