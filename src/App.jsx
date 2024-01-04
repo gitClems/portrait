@@ -11,10 +11,10 @@ function App() {
       <AppBar></AppBar>
       <Routes>
         {/* <Route path='/' index element={<Layout />} /> */}
-        <Route path='/portrait' index element={<Home />} />
-        <Route path='/portrait/work' element={<Works />} />
-        <Route path='/portrait/about' element={<About />} />
-        <Route path='/portrait/error' element={<Error />} />
+        <Route path='portrait' index element={<Home />} />
+        <Route path='portrait/work' element={<Works />} />
+        <Route path='portrait/about' element={<About />} />
+        <Route path='portrait/error' element={<Error />} />
       </Routes>
     </>
   );
