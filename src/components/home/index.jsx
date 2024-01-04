@@ -1,8 +1,9 @@
 import "./index.scss"
+import { renderIntoDocument } from "react-dom/test-utils"
 
 
 function Home() {
-    return (
+    renderIntoDocument (
         <div className="home">
             
         </div>

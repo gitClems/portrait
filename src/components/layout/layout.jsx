@@ -3,7 +3,8 @@ import AppBar from "../appBar/appBar"
 const Layout = () => {
     return (
         <div>
-            <AppBar></AppBar>
+            <AppBar/>
+            <div className="pages"></div>
         </div>
     )
 }
