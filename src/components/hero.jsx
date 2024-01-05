@@ -2,15 +2,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "./css/hero.scss"
 import { faChartSimple, faCode, faWarehouse } from "@fortawesome/free-solid-svg-icons"
 import { useEffect, useState } from "react";
+import Loading from "./loading";
 
 export const PreloadImages = ({ imageUrls, children }) => {
     const [imagesLoaded, setImagesLoaded] = useState(false);
 
     useEffect(() => {
-        const imagePromises = (() => {
+        const imagePromises = imageUrls.map((url) => {
             return new Promise((resolve) => {
                 const img = new Image();
-                img.src = imageUrls;
+                img.src = url;
                 img.onload = resolve;
             });
         });
@@ -24,13 +25,13 @@ export const PreloadImages = ({ imageUrls, children }) => {
                 setImagesLoaded(true); // Set to true to avoid infinite loading if an error occurs
             });
     }, [imageUrls]);
-    return <div>{imagesLoaded ? children : <p style={{ height: 50, width: 100, backgroundColor: 'red' }}>Loading images...</p>}</div>;
+    return <div>{imagesLoaded ? children : <Loading></Loading>}</div>;
 }
 
 const Hero = (props) => {
 
     return (
-        <PreloadImages imageUrls={props.profile}>
+        // <PreloadImages imageUrls={props.profile}>
             <>
                 <div className="hero" >
                     <div className="accroche">
@@ -50,7 +51,7 @@ const Hero = (props) => {
                     </div>
                 </div>
             </>
-        </PreloadImages>
+        // </PreloadImages>
     )
 }
 

@@ -23,29 +23,38 @@ export const projects = [
         id: 1,
         title: "Système d'information pour cliniques vétérinaires",
         image: require("../assets/works/VueAdmin.PNG"),
-        description :"Les systèmes d'information font aujourd'hui parti des support indispensables pour les entreprises. Un bon système d'information permet de mieux communiquer, de suivre les les activités et de suivre en temps réel la traçabilité des activités. Ce projet a été l'occasion pour moi et mon équipe lors d'un projet accadémique de développer un SI centralisé pour un réseau de cliniques."
+        description: "Les systèmes d'information font aujourd'hui parti des support indispensables pour les entreprises. Un bon système d'information permet de mieux communiquer, de suivre les les activités et de suivre en temps réel la traçabilité des activités. Ce projet a été l'occasion pour moi et mon équipe lors d'un projet accadémique de développer un SI centralisé pour un réseau de cliniques."
     },
     {
         id: 2,
         title: "Tableau de bord de suivi d'activité logistique",
         image: require("../assets/works/ExpGlobale.png"),
-        description : "De la conception à la réalisation, nous avons fait avancé ce travail au cours d'un stage de deux mois au sein d'une entreprise à Casablanca."
+        description: "De la conception à la réalisation, nous avons fait avancé ce travail au cours d'un stage de deux mois au sein d'une entreprise à Casablanca."
     },
     {
         id: 3,
         title: "Application mobile pour activités commerciales",
         image: require("../assets/works/App1.jpg"),
-        description : "Au cours de mon premier stage, j'ai réaliser cette application mobile pour une entreprise qui oeuvre dans le consulting. Elle permettrait à l'entreprise de proposer ses servives à des sociétés via l'applications mobile ci contre."
+        description: "Au cours de mon premier stage, j'ai réaliser cette application mobile pour une entreprise qui oeuvre dans le consulting. Elle permettrait à l'entreprise de proposer ses servives à des sociétés via l'applications mobile ci contre."
     }
 ]
 
 export const person = {
-    year : "2023",
-    name : "BAMOGO Clément",
-    describe : "Elève ingénieur en Supply Chain Management basé au Maroc, à Rabat",
-    profile : [require("../assets/profiles/profile-1.png"), require("../assets/profiles/profile-2.jpg")],
-    tel : "+212 6 82 41 90 21",
-    adress : "Madina Al Irfane Rabat, Maroc",
-    linkedIn : "https://www.linkedin.com/in/cl%C3%A9ment-bamogo-11ab71228/",
-    gitHub : "https://github.com/gitClems",
+    year: "2023",
+    name: "BAMOGO Clément",
+    describe: "Elève ingénieur en Supply Chain Management basé au Maroc, à Rabat",
+    profile: [require("../assets/profiles/profile-1.png"), require("../assets/profiles/profile-2.jpg")],
+    tel: "+212 6 82 41 90 21",
+    adress: "Madina Al Irfane Rabat, Maroc",
+    linkedIn: "https://www.linkedin.com/in/cl%C3%A9ment-bamogo-11ab71228/",
+    gitHub: "https://github.com/gitClems",
 }
+
+
+export const imgUrl = [
+    require("../assets/works/VueAdmin.PNG"),
+    require("../assets/works/App1.jpg"),
+    require("../assets/works/ExpGlobale.png"),
+    require("../assets/profiles/profile-1.png"), 
+    require("../assets/profiles/profile-2.jpg")
+]

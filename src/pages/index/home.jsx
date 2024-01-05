@@ -1,11 +1,12 @@
-import Hero from "../../components/hero"
+import Hero, { PreloadImages } from "../../components/hero"
 import "../css/home.scss"
-import { person, projects, skills } from "../../data/dataSet"
+import { person, projects, skills, imgUrl } from "../../data/dataSet"
 import Skill from "../../components/skill"
 import HomeProject from "../../components/homeProject"
 
 function Home() {
     return (
+        <PreloadImages imageUrls={imgUrl}>
             <div className="home">
                 <section>
                     <Hero name={person.name} description={person.describe} profile={person.profile[0]}></Hero>
@@ -22,6 +23,7 @@ function Home() {
                     </div>
                 </section>
             </div>
+        </PreloadImages>
     )
 
 }
