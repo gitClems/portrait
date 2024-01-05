@@ -66,6 +66,7 @@
                 color: var(--subtitle-color);
                 text-align: justify;
                 width: 70%;
+                transition: 0.2s;
             }
         }
 
@@ -87,6 +88,7 @@
                 font-family: 'Nunito Sans', sans-serif;
                 color: var(--subtitle-color);
                 font-size: 17px;
+                transition: 0.2s;
             }
         }
     }
@@ -185,6 +187,52 @@
 
             ul {
                 max-width: 100%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 500px) {
+    .about {
+        .accroche {
+
+            .message {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+        .background, .skills {
+            transition: 0.2s;
+            padding-left: 10px;
+            padding-right: 10px;
+            flex-direction: column;
+
+            div {
+                justify-content: space-evenly;
+                max-width: none;
+                margin-bottom: 20px;
+
+                .title {
+                    font-size: var(--title-font-size-small);
+                    margin-top: 0px;
+                }
+
+                p {
+                    width: none;
+                    margin: 0px;
+                    width: 100%;
+                    font-size: 13px;
+                    transition: 0.2s;
+                }
+            }
+
+            ul {
+                max-width: 100%;
+                p {
+                    
+                    font-size: 13px;
+                    transition: 0.2s;
+                }
             }
         }
     }
