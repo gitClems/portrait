@@ -27,7 +27,7 @@ export const PreloadImages = ({ imageUrls, children }) => {
     return <div>{imagesLoaded ? children : <Loading></Loading>}</div>;
 }
 
-function Loading(props) {
+function Loading() {
     return (
         <>
             <div className="loading">
