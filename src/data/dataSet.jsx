@@ -43,7 +43,7 @@ export const person = {
     year : "2023",
     name : "BAMOGO Clément",
     describe : "Elève ingénieur en Supply Chain Management basé au Maroc, à Rabat",
-    profile : require("../assets/profiles/profile-1.png"),
+    profile : [require("../assets/profiles/profile-1.png"), require("../assets/profiles/profile-2.jpg")],
     tel : "+212 6 82 41 90 21",
     adress : "Madina Al Irfane Rabat, Maroc",
     linkedIn : "https://www.linkedin.com/in/cl%C3%A9ment-bamogo-11ab71228/",
