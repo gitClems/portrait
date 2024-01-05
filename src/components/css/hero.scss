@@ -1,0 +1,119 @@
+.hero {
+    margin-top: var(--page-padding-top);
+    font-family: var(--font-family);
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    .accroche {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-right: 20px;
+
+        .me {
+
+            .cl-hi,
+            .cl-what {
+                font-size: 25px;
+                color: var(--subtitle-color);
+                text-align: center;
+            }
+
+            .cl-name {
+                font-size: var(--title-font-size-large);
+                color: white;
+            }
+        }
+
+
+        .tools {
+            height: 40px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: space-around;
+
+            div {
+                background-color: var(--background-light);
+                color: white;
+                display: flex;
+                margin-left: 10px;
+                margin-right: 10px;
+                height: 100%;
+                align-items: center;
+                justify-content: space-evenly;
+                border-radius: 50px;
+            }
+        }
+    }
+
+    .profile {
+        box-shadow: -2px 2px 5px white;
+        border: 1px solid white;
+        border-radius: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .hero {
+        margin-top: var(--page-padding-top);
+        font-family: var(--font-family);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .accroche {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .me {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .cl-hi,
+                .cl-what {
+                    font-size: 17px;
+                    color: var(--subtitle-color);
+                }
+
+                .cl-name {
+                    font-size: var(--title-font-size-small);
+                    color: white;
+                }
+            }
+
+
+            .tools {
+                margin-top: 20px;
+                height: 40px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                justify-content: space-around;
+
+                div {
+                    background-color: var(--background-light);
+                    color: white;
+                    display: flex;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    height: 100%;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    border-radius: 50px;
+                }
+            }
+        }
+
+        .profile {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+    }
+
+}

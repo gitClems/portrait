@@ -1,10 +1,10 @@
-import "./index.scss"
+import "../css/about.scss"
 
 
 function About() {
     return (
         <div className="about">
-            
+            <h1>About me</h1>
         </div>
     )
 

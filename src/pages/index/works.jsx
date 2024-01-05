@@ -1,10 +1,10 @@
-import "./index.scss"
+import "../css/works.scss"
 
 
 function Works() {
     return (
         <div className="work">
-            
+            <h1>My works</h1>
         </div>
     )
 
