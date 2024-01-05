@@ -57,5 +57,12 @@ export const imgUrl = [
     require("../assets/works/ExpGlobale.png"),
     require("../assets/profiles/profile-1.png"), 
     require("../assets/profiles/profile-2.jpg"),
-    require("../assets/backgrounds/bg-main-dark-1440w.jpg")
+    require("../assets/backgrounds/bg-footer-dark-800w.jpg"),
+    require("../assets/backgrounds/bg-footer-dark-1440w.jpg"),
+    require("../assets/backgrounds/bg-main-dark-800w.jpg"),
+    require("../assets/backgrounds/bg-main-dark-1440w.jpg"),
+    require("../assets/backgrounds/bg-subtle-1-dark-800w.jpg"),
+    require("../assets/backgrounds/bg-subtle-1-dark-1440w.jpg"),
+    require("../assets/backgrounds/bg-subtle-2-dark-800w.jpg"),
+    require("../assets/backgrounds/bg-subtle-2-dark-1440w.jpg"),
 ]
