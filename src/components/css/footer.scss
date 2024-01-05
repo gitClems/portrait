@@ -10,6 +10,17 @@
         flex: 1;
         display: flex;
         justify-content: space-around;
+
+        span {
+            display: flex;
+            align-items: center;
+            color: var(--subtitle-color);
+            text-decoration: none;
+
+            svg {
+                margin-right: 5px;
+            }
+        }
     }
 
     .contact {
@@ -19,6 +30,7 @@
 
         .items {
             display: flex;
+            align-items: center;
             color: var(--subtitle-color);
             text-decoration: none;
 
@@ -48,6 +60,11 @@
 
             span {
                 margin: 10px;
+                font-size: 13px;
+
+                svg {
+                    width: 13px;
+                }
             }
         }
 
@@ -56,14 +73,10 @@
             display: flex;
             justify-content: space-between;
             width: 100%;
-            // background-color: red;
 
             .items {
                 margin: 10px;
-
-                .foot {
-                    font-size: 13px;
-                }
+                font-size: 13px;
 
                 svg {
                     width: 13px;

@@ -1,5 +1,4 @@
 .hero {
-    margin-top: var(--page-padding-top);
     font-family: var(--font-family);
     display: flex;
     padding-left: 50px;
@@ -59,7 +58,6 @@
 
 @media only screen and (max-width: 800px) {
     .hero {
-        margin-top: var(--page-padding-top);
         font-family: var(--font-family);
         height: 100%;
         display: flex;
@@ -105,7 +103,7 @@
                     height: 100%;
                     align-items: center;
                     justify-content: space-evenly;
-                    border-radius: 50px;
+                    border-radius: 10px;
                 }
             }
         }
