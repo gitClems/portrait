@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&family=Roboto+Condensed:wght@700&display=swap');
+
+.about-page {
+    padding-top: var(--page-padding-top);
+    padding-bottom: 50px;
+    background-image: url("../../assets/backgrounds/bg-main-dark-1440w.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: var(--font-family);
+    color: var(--white-color-1);
+
+    .accroche {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .title {
+            transition: 0.2s;
+            font-size: var(--title-font-size-large);
+        }
+
+        .message {
+            transition: 0.2s;
+            font-size: 25px;
+            text-align: center;
+            color: var(--subtitle-color);
+        }
+    }
+
+    .profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+
+        img {
+            height: 400px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px white;
+        }
+    }
+
+    .background {
+        transition: 0.2s;
+        display: flex;
+        margin-top: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+
+        div {
+            max-width: 350px;
+            flex: 3;
+
+            .title {
+                color: var(--white-color-1);
+                font-size: var(--title-font-size-large);
+            }
+
+            p {
+                margin-top: 20px;
+                margin-left: 20px;
+                font-family: 'Nunito Sans', sans-serif;
+                color: var(--subtitle-color);
+                text-align: justify;
+                width: 70%;
+                transition: 0.2s;
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column-reverse;
+            font-size: 20px;
+            width: 100%;
+            text-align: justify;
+            flex: 6;
+            max-width: 60vmax;
+
+            li {
+                margin-bottom: 10px;
+            }
+
+            p {
+                margin-left: 10px;
+                font-family: 'Nunito Sans', sans-serif;
+                color: var(--subtitle-color);
+                font-size: 17px;
+                transition: 0.2s;
+            }
+        }
+    }
+
+    .skills {
+        transition: 0.2s;
+        display: flex;
+        margin-top: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        
+        div {
+            max-width: 350px;
+            flex: 3;
+            .title {
+                color: var(--white-color-1);
+                font-size: var(--title-font-size-large);
+            }
+        }
+        ul {
+            display: flex;
+            flex-direction: column-reverse;
+            font-size: 20px;
+            width: 100%;
+            text-align: justify;
+            flex: 6;
+            max-width: 60vmax;
+            color: var(--subtitle-color);
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+    .about-page {
+        .accroche {
+            .title {
+                transition: 0.2s;
+                font-size: var(--title-font-size-small);
+            }
+
+            .message {
+                transition: 0.2s;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-size: 20px;
+            }
+        }
+
+        .background, .skills {
+            transition: 0.2s;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    .about-page {
+        .accroche {
+
+            .message {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+        .background, .skills {
+            transition: 0.2s;
+            padding-left: 10px;
+            padding-right: 10px;
+            flex-direction: column;
+
+            div {
+                justify-content: space-evenly;
+                max-width: none;
+                margin-bottom: 20px;
+
+                .title {
+                    font-size: var(--title-font-size-small);
+                    margin-top: 0px;
+                }
+
+                p {
+                    width: none;
+                    margin: 0px;
+                    width: 100%;
+                }
+            }
+
+            ul {
+                max-width: 100%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 500px) {
+    .about-page {
+        .accroche {
+
+            .message {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+        .background, .skills {
+            transition: 0.2s;
+            padding-left: 10px;
+            padding-right: 10px;
+            flex-direction: column;
+
+            div {
+                justify-content: space-evenly;
+                max-width: none;
+                margin-bottom: 20px;
+
+                .title {
+                    font-size: var(--title-font-size-small);
+                    margin-top: 0px;
+                }
+
+                p {
+                    width: none;
+                    margin: 0px;
+                    width: 100%;
+                    font-size: 13px;
+                    transition: 0.2s;
+                }
+            }
+
+            ul {
+                max-width: 100%;
+                p {
+                    
+                    font-size: 13px;
+                    transition: 0.2s;
+                }
+            }
+        }
+    }
+}

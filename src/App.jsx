@@ -7,6 +7,7 @@ import About from "./pages/index/about";
 import Error from "./pages/index/error";
 import Footer from "./components/footer";
 import { person } from "./data/dataSet";
+import Detail from "./pages/index/detail";
 function App() {
   return (
     <>
@@ -16,6 +17,7 @@ function App() {
         <Route path='/work' element={<Works />} />
         <Route path='/about' element={<About profile = {person.profile[1]}/>} />
         <Route path='/error' element={<Error />} />
+        <Route path='/work/detail' element={<Detail profile = {person.profile[1]}/>} />
       </Routes>
       <Footer
         name={person.name}

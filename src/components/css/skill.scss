@@ -1,10 +1,11 @@
-.skill {
+.skill-container {
     margin: 10px;
 
     .skill-title {
         font-family: var(--font-family);
         color: white;
-        font-size: var(--title-font-size-large);
+        // font-size: var(--title-font-size-large);
+        font-size: 2.5vmax;
     }
 
     .skill-descript {
@@ -18,7 +19,7 @@
 
 
 @media only screen and (max-width: 800px) {
-    .skill {
+    .skill-container {
         .skill-title {
             font-size: var(--title-font-size-small);
         }

@@ -1,17 +1,23 @@
 import { PreloadImages } from "../../components/loading"
-import { imgUrl } from "../../data/dataSet"
+import { imgUrl, projects } from "../../data/dataSet"
 import "../css/works.scss"
+import Project from "../../components/project"
 
 
-function Works() {
+function Works(props) {
     return (
         <PreloadImages imageUrls={imgUrl}>
-            <div className="work">
-                <h1>My works</h1>
+            <div className="works-page">
+                <section className="accroche">
+                    <p className="title">Mes réalisations</p>
+                    <p className="message">Consultez mes projets les plus récents ci-dessous pour avoir une idée de mon expérience.</p>
+                </section>
+                <section className="works">
+                    {projects.map((project) => { return (<Project title={project.title} image={project.image}> </Project>) })}
+                </section>
             </div>
         </PreloadImages>
     )
-
 }
 
 export default Works

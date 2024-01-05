@@ -7,5 +7,9 @@
     .spinner {
         color: white;
         height: 100%;
+        .spinner-border {
+            height: 70px;
+            width: 70px;
+        }
     }
 }

@@ -1,4 +1,4 @@
-.home {
+.home-page {
     padding-top: var(--page-padding-top);
     background-image: url("../../assets/backgrounds/bg-main-dark-1440w.jpg");
     background-size: cover;
@@ -17,7 +17,7 @@
         justify-content: center;
     }
 
-    .home-work {
+    .home-project {
         transition: 0.2s;
         padding: 20px;
 
@@ -25,17 +25,27 @@
             color: var(--white-color-1);
             font-size: var(--title-font-size-large);
             font-family: var(--font-family);
+            display: flex;
+            margin-bottom: 20px;
+            align-items: baseline;
+            justify-content: space-between;
+
         }
 
-        .home-work-display {
+        .see-more-bottom {
+            display: none;
+        }
+
+        .home-project-display {
             transition: 0.2s;
             display: flex;
             justify-content: center;
+
+            .project-container {
+                margin: 2px;
+            }
         }
-
     }
-
-
 }
 
 
@@ -47,14 +57,9 @@
             flex-direction: column;
         }
 
-        .home-work {
+        .home-project {
             .title {
                 font-size: var(--title-font-size-small);
-            }
-
-            .home-work-display {
-                display: flex;
-                // flex-direction: column;
             }
         }
     }
@@ -62,9 +67,9 @@
 
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
 
-    .home {
+    .home-page {
         .skills {
             display: flex;
             flex-direction: column;
@@ -73,14 +78,31 @@
             margin-right: 10px;
         }
 
-        .home-work {
+        .home-project {
             .title {
                 font-size: var(--title-font-size-small);
+
+                .see-more-top {
+                    display: none;
+                }
             }
 
-            .home-work-display {
-                transition: 0.2s;
+            .see-more-bottom {
+                display: block;
+                width: 100%;
                 display: flex;
+                justify-content: center;
+                margin-top: 20px;
+
+
+                .myButton {
+                    width: 70%;
+                    font-size: 20px;
+                }
+            }
+
+            .home-project-display {
+                transition: 0.2s;
                 flex-direction: column;
             }
         }

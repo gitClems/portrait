@@ -6,7 +6,6 @@ import { faChartSimple, faCode, faWarehouse } from "@fortawesome/free-solid-svg-
 const Hero = (props) => {
 
     return (
-        // <PreloadImages imageUrls={props.profile}>
             <>
                 <div className="hero" >
                     <div className="accroche">
@@ -26,7 +25,6 @@ const Hero = (props) => {
                     </div>
                 </div>
             </>
-        // </PreloadImages>
     )
 }
 

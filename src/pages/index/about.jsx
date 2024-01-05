@@ -6,7 +6,7 @@ function About(propos) {
 
     return (
         <PreloadImages imageUrls={imgUrl}>
-            <div className="about">
+            <div className="about-page">
                 <section className="accroche">
                     <p className="title">A propos de moi</p>
                     <p className="message">Merci pour votre interêt. Lisez ci-dessous pour en savoir plus sur moi-même et mon parcours.</p>
