@@ -1,6 +1,7 @@
 .foot {
     font-family: var(--font-family);
     background-color: rgba(0, 0, 0, 0.923);
+    border-top: 1px solid var(--subtitle-color);
     color: var(--subtitle-color);
     display: flex;
     height: 100px;
@@ -49,7 +50,7 @@
         color: var(--subtitle-color);
         display: flex;
         flex-direction: column;
-        align-items: start;
+        align-items: flex-start;
         height: max-content;
 
         .name-adress {
