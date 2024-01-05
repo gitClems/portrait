@@ -56,5 +56,6 @@ export const imgUrl = [
     require("../assets/works/App1.jpg"),
     require("../assets/works/ExpGlobale.png"),
     require("../assets/profiles/profile-1.png"), 
-    require("../assets/profiles/profile-2.jpg")
+    require("../assets/profiles/profile-2.jpg"),
+    require("../assets/backgrounds/bg-footer-dark-1440w.jpg")
 ]
