@@ -1,7 +1,6 @@
 import "./css/skill.scss"
 
-function Skills(props) {
-
+function Skill(props) {
     return (
         <>
             <div className="skill">
@@ -10,7 +9,6 @@ function Skills(props) {
             </div>
         </>
     )
-
 }
 
-export default Skills
+export default Skill

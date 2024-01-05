@@ -1,25 +1,25 @@
 .skill {
     margin: 10px;
-    width: 500px;
 
     .skill-title {
         font-family: var(--font-family);
-        font-size: var(--title-font-size-large);
         color: white;
+        font-size: var(--title-font-size-large);
     }
 
     .skill-descript {
         font-family: var(--font-family);
         color: var(--subtitle-color);
         margin-top: 5px;
-        text-align: justify;
     }
 
 }
 
 
 @media only screen and (max-width: 800px) {
-    .skill-title {
-        font-size: var(--title-font-size-small);
+    .skill {
+        .skill-title {
+            font-size: var(--title-font-size-small);
+        }
     }
 }
