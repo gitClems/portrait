@@ -1,11 +1,15 @@
+import { PreloadImages } from "../../components/loading"
+import { imgUrl } from "../../data/dataSet"
 import "../css/error.scss"
 
 
 function Error() {
     return (
-        <div className="error">
-            <h1>Error !!!!!!!</h1>
-        </div>
+        <PreloadImages imageUrls={imgUrl}>
+            <div className="error">
+                <h1>Error !!!!!!!</h1>
+            </div>
+        </PreloadImages>
     )
 
 }
