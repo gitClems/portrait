@@ -1,32 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "./css/hero.scss"
 import { faChartSimple, faCode, faWarehouse } from "@fortawesome/free-solid-svg-icons"
-import { useEffect, useState } from "react";
-import Loading from "./loading";
 
-export const PreloadImages = ({ imageUrls, children }) => {
-    const [imagesLoaded, setImagesLoaded] = useState(false);
-
-    useEffect(() => {
-        const imagePromises = imageUrls.map((url) => {
-            return new Promise((resolve) => {
-                const img = new Image();
-                img.src = url;
-                img.onload = resolve;
-            });
-        });
-
-        Promise.all(imagePromises)
-            .then(() => {
-                setImagesLoaded(true);
-            })
-            .catch((error) => {
-                console.error('Error preloading images:', error);
-                setImagesLoaded(true); // Set to true to avoid infinite loading if an error occurs
-            });
-    }, [imageUrls]);
-    return <div>{imagesLoaded ? children : <Loading></Loading>}</div>;
-}
 
 const Hero = (props) => {
 

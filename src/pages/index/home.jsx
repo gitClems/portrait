@@ -1,4 +1,4 @@
-import Hero, { PreloadImages } from "../../components/hero"
+import Hero, { PreloadImages } from "../../components/loading"
 import "../css/home.scss"
 import { person, projects, skills, imgUrl } from "../../data/dataSet"
 import Skill from "../../components/skill"

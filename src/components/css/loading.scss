@@ -3,5 +3,9 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    background-color: brown;
+    background-color: var(--background-dark);
+    .spinner {
+        color: white;
+        height: 100%;
+    }
 }
