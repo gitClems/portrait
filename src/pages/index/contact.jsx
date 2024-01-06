@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import "../css/contact.scss"
 import emailjs from '@emailjs/browser';
-import Button from '../../components/button';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
