@@ -27,7 +27,9 @@ function App() {
         tel={person.tel}
         linkedIn={person.linkedIn}
         gitHub={person.gitHub}
-        adress={person.adress} />
+        adress={person.adress}
+        email = {person.email}
+        />
     </>
   );
 }
