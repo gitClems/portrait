@@ -1,6 +1,9 @@
 import React, { useRef } from 'react';
 import "../css/contact.scss"
 import emailjs from '@emailjs/browser';
+import Button from '../../components/button';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Contact = () => {
     const form = useRef();
@@ -23,20 +26,20 @@ const Contact = () => {
                 <div class="form-style-6">
                     <h1>Envoyez moi un méssage</h1>
                     <form ref={form} onSubmit={sendEmail}>
-                        <label htmlFor="user_name">Nom et prénom</label>
+                        <label for="user_name">Nom et prénom</label>
                         <input type="text" name="user_name" placeholder="Nom et prénom" />
 
-                        <label htmlFor="user_email">Adress e-mail</label>
+                        <label for="user_email">Adress e-mail</label>
                         <input type="email" name="user_email" placeholder="exemple@gmail.com" />
 
-                        <label htmlFor="topic">Objet</label>
+                        <label for="topic">Objet</label>
                         <input type="text" name="topic" placeholder="Le sujet de votre méssage" />
 
-                        <label htmlFor="message">Message</label>
+                        <label for="message">Message</label>
                         <textarea name="message" placeholder="Insérez votre méssage"></textarea>
 
                         <div>
-                            <input className="myButton" type="submit" value="Send" />
+                            <button type='button' className='myButton'>Envoyez <FontAwesomeIcon icon={faPaperPlane}></FontAwesomeIcon></button>
                         </div>
                     </form>
                 </div>

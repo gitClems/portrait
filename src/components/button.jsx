@@ -1,4 +1,3 @@
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Link } from "react-router-dom"
 import './css/button.scss'
@@ -8,7 +7,7 @@ const Button = (props) => {
         // <div >
             <Link className="myButton" to={props.to}>
                 {props.title}
-                <FontAwesomeIcon icon={faArrowRight} />
+                <FontAwesomeIcon icon={props.icon} />
             </Link>
         // </div>
     )

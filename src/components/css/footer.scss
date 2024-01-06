@@ -1,88 +1,38 @@
-.foot {
+.footer {
     font-family: var(--font-family);
     background-color: rgba(0, 0, 0, 0.923);
     border-top: 1px solid var(--subtitle-color);
     color: var(--subtitle-color);
-    display: flex;
-    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: max-content;
+    align-items: center;
+    justify-content: space-around;
     align-items: center;
 
-    .name-adress {
-        flex: 1;
+    .items {
         display: flex;
-        justify-content: space-around;
-
-        span {
-            display: flex;
-            align-items: center;
-            color: var(--subtitle-color);
-            text-decoration: none;
-
-            svg {
-                margin-right: 5px;
-            }
-        }
-    }
-
-    .contact {
-        flex: 1;
-        display: flex;
-        justify-content: space-around;
-
-        .items {
-            display: flex;
-            align-items: center;
-            color: var(--subtitle-color);
-            text-decoration: none;
-
-            svg {
-                margin-right: 5px;
-            }
+        align-items: center;
+        color: var(--subtitle-color);
+        text-decoration: none;
+        margin: 5px 0px 0px 20px;
+        transition: 0.2s;
+        svg {
+            margin-right: 5px;
         }
     }
 }
 
-
 @media only screen and (max-width: 800px) {
-    .foot {
-        font-family: var(--font-family);
-        background-color: rgba(0, 0, 0, 0.923);
-        color: var(--subtitle-color);
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        height: max-content;
+    .footer {
 
-        .name-adress {
-            flex: 1;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-
-            span {
-                margin: 10px;
-                font-size: 13px;
-
-                svg {
-                    width: 13px;
-                }
-            }
-        }
-
-        .contact {
-            flex: 1;
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-
-            .items {
-                margin: 10px;
-                font-size: 13px;
-
-                svg {
-                    width: 13px;
-                }
+        .items {
+            font-size: 13px;
+            transition: 0.2s;
+            svg {
+                width: 13px;
             }
         }
     }
+
 }
