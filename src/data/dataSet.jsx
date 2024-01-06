@@ -23,7 +23,29 @@ export const projects = [
         id: 1,
         title: "Tableau de bord de suivi d'activité logistique",
         image: require("../assets/works/ExpGlobale.png"),
-        description: "De la conception à la réalisation, nous avons fait avancé ce travail au cours d'un stage de deux mois au sein d'une entreprise à Casablanca."
+        description: "De la conception à la réalisation, nous avons fait avancé ce travail au cours d'un stage de deux mois au sein d'une entreprise à Casablanca.",
+        etapes: [
+            {
+                id : 1,
+                etape: "Définition du problème",
+                description: "Comprendre et prendre en main les processus logistiques qui interviennent dans les activités de l’entreprise."
+            },
+            {
+                id : 2,
+                etape: "Définition des indicateurs de performance (KPIs)",
+                description: "Définir les métriques à mesurer et à mesuer car c’est sur base de ces informations que nous allons annalyser la performance des processus."
+            },
+            {
+                id : 3,
+                etape: "Acquisition et modélisation des processus de notre application",
+                description: "Définir l’architecture de développment de l’applications (ici notre application de tableau de bord), définir la modélisation multidimensionelle pour les Faits et Dimensions, prendre en compte la gestion des rôles et des intervenant(e)s."
+            },
+            {
+                id : 4,
+                etape: "Implémentation d’interfaces interactives",
+                description: "Après la mise en place de l’architecture et de la feuille de routes, place a été donné à l’implémentation des graphes et des paramètres régulateurs comme la période des activités, les types de services, les localités…"
+            },
+        ]
     },
     {
         id: 2,
@@ -45,7 +67,7 @@ export const person = {
     describe: "Elève ingénieur en Supply Chain Management basé au Maroc, à Rabat",
     profile: [require("../assets/profiles/profile-1.png"), require("../assets/profiles/profile-2.jpg")],
     tel: "+212 6 82 41 90 21",
-    email:"clement2bamogo@gmail.com",
+    email: "clement2bamogo@gmail.com",
     adress: "Madina Al Irfane Rabat, Maroc",
     linkedIn: "https://www.linkedin.com/in/cl%C3%A9ment-bamogo-11ab71228/",
     gitHub: "https://github.com/gitClems",
@@ -56,7 +78,7 @@ export const imgUrl = [
     require("../assets/works/VueAdmin.PNG"),
     require("../assets/works/App1.jpg"),
     require("../assets/works/ExpGlobale.png"),
-    require("../assets/profiles/profile-1.png"), 
+    require("../assets/profiles/profile-1.png"),
     require("../assets/profiles/profile-2.jpg"),
     require("../assets/backgrounds/bg-footer-dark-800w.jpg"),
     require("../assets/backgrounds/bg-footer-dark-1440w.jpg"),
