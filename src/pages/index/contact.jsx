@@ -26,7 +26,7 @@ const Contact = () => {
             <PreloadImages imageUrls={imgUrl}>
             <div className="contact-container">
                 <div class="form-style-6">
-                    <h1>Envoyez moi un méssage</h1>
+                    <h1>Envoyez-moi un méssage</h1>
                     <form ref={form} onSubmit={sendEmail}>
                         <label for="user_name">Nom et prénom</label>
                         <input type="text" name="user_name" placeholder="Nom et prénom" />

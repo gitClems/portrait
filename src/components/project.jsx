@@ -10,9 +10,8 @@ function Project(props) {
             {
                 array.map((project) => {
                     return (
-                        <Link key={project.id} className="project-container"
+                        <Link onClick={() => window.location.reload()} key={project.id} className="project-container"
                             to={`/work/${project.id}`}
-                            params={"project"}
                         >
                             <span>{project.title}</span>
                             <img src={project.image} alt="Project 1" />
