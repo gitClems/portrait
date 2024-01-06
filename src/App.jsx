@@ -6,7 +6,7 @@ import Works from "./pages/index/works";
 import About from "./pages/index/about";
 import Error from "./pages/index/error";
 import Footer from "./components/footer";
-import { person, projects } from "./data/dataSet";
+import { person } from "./data/dataSet";
 import Detail from "./pages/index/detail";
 import Contact from "./pages/index/contact";
 function App() {
@@ -19,7 +19,7 @@ function App() {
         <Route path='/about' element={<About profile={person.profile[1]} />} />
         <Route path="/contact" element={<Contact></Contact>}></Route>
         <Route path='/error' element={<Error />} />
-        <Route path='/work/:id' element={<Detail id={projects[0].id} title={projects[0].title} image={projects[0].image} />} />
+        <Route path='/work/:id' element={<Detail />} />
       </Routes>
       <Footer
         name={person.name}
@@ -28,8 +28,8 @@ function App() {
         linkedIn={person.linkedIn}
         gitHub={person.gitHub}
         adress={person.adress}
-        email = {person.email}
-        />
+        email={person.email}
+      />
     </>
   );
 }

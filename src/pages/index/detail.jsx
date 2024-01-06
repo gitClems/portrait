@@ -1,18 +1,20 @@
+import { useParams } from "react-router-dom";
 import { PreloadImages } from "../../components/loading"
-import { imgUrl } from "../../data/dataSet"
+import { imgUrl, projects } from "../../data/dataSet"
 import "../css/detail.scss"
 
 function Detail(props) {
-
+    let params = useParams()
+    console.log(projects[params.id - 1]);
     return (
         <PreloadImages imageUrls={imgUrl}>
             <div className="detail-page">
                 <section className="accroche">
-                    <p className="title">{props.title} {props.id}</p>
-                    <p className="message">De la conception à la réalisation, nous avons fait avancé ce travail au cours d'un stage de deux mois au sein d'une entreprise à Casablanca.</p>
+                    <p className="title">{params ? projects[params.id - 1].title : "-"}</p>
+                    <p className="message">{params ? projects[params.id - 1].description : "-"}</p>
                 </section>
                 <section className="profile">
-                    <img src={props.image} alt="Profile" />
+                    <img src={projects[params.id-1].image} alt="Profile" />
                 </section>
                 <section className="background">
                     <div>

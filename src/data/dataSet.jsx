@@ -37,12 +37,6 @@ export const projects = [
         image: require("../assets/works/App1.jpg"),
         description: "Au cours de mon premier stage, j'ai réaliser cette application mobile pour une entreprise qui oeuvre dans le consulting. Elle permettrait à l'entreprise de proposer ses servives à des sociétés via l'applications mobile ci contre."
     },
-    // {
-    //     id: 3,
-    //     title: "Application mobile pour activités commerciales",
-    //     image: require("../assets/works/App1.jpg"),
-    //     description: "Au cours de mon premier stage, j'ai réaliser cette application mobile pour une entreprise qui oeuvre dans le consulting. Elle permettrait à l'entreprise de proposer ses servives à des sociétés via l'applications mobile ci contre."
-    // }
 ]
 
 export const person = {
