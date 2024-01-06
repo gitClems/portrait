@@ -17,11 +17,14 @@ function Home() {
                     {skills.map((skill) => { return (<Skill title={skill.title} description={skill.description} ></Skill>) })}
                 </section>
                 <section className="home-project">
-                    <span className="title">Mes réalisation<div className="see-more-top"><Button title={"Voir plus"}></Button></div></span>
+                    <span className="title">Mes réalisation<div className="see-more-top"><Button title={"Voir plus"} to={"./work"}></Button></div></span>
                     <div className="home-project-display">
-                        {<Project projects = {projects} lenght = {2}></Project>}
+                        {<Project projects={projects} lenght={2}></Project>}
                     </div>
-                    <div className="see-more-bottom"><Button title={"Voir plus"}></Button></div>
+                    <div className="see-more-bottom"><Button title={"Voir plus"} to={"./work"}></Button></div>
+                </section>
+                <section>
+                    <Button title = {"M'envoyer un message"} to = {"./contact"}></Button>
                 </section>
             </div>
         </PreloadImages>

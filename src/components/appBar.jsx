@@ -25,6 +25,9 @@ function AppBar() {
                 <NavLink className="btn" id='nav-btn-about' to="/about" onClick={toogleMenu}>
                     A propos de moi
                 </NavLink>
+                <NavLink className="btn" id='nav-btn-contact' to="/contact" onClick={toogleMenu}>
+                    Contact
+                </NavLink>
             </nav>
             <div className='contact'>
                 <Link to={"https://www.linkedin.com/in/cl%C3%A9ment-bamogo-11ab71228/"} target="_blank">

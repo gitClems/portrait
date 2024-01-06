@@ -36,9 +36,10 @@
         justify-content: center;
         flex-wrap: wrap;
 
-        .project-container {
-            margin: 20px;
-        }
+            .project-container {
+                margin: 20px;
+            }
+        // }
     }
 
 }
@@ -88,7 +89,6 @@
                 padding-right: 10px;
             }
         }
-
         .works {
             transition: 0.2s;
             flex-direction: column;

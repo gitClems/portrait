@@ -6,7 +6,7 @@ import './css/button.scss'
 const Button = (props) => {
     return (
         // <div >
-            <Link className="myButton" to={"./work"}>
+            <Link className="myButton" to={props.to}>
                 {props.title}
                 <FontAwesomeIcon icon={faArrowRight} />
             </Link>

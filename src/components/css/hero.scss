@@ -22,7 +22,7 @@
             }
 
             .cl-name {
-                font-size: var(--title-font-size-large);
+                font-size:  calc(var(--font-size-vmax) + 1vmax);
                 color: white;
             }
         }
