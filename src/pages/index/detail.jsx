@@ -2,17 +2,17 @@ import { PreloadImages } from "../../components/loading"
 import { imgUrl } from "../../data/dataSet"
 import "../css/detail.scss"
 
-function Detail(propos) {
+function Detail(props) {
 
     return (
         <PreloadImages imageUrls={imgUrl}>
-            <div className="about-page">
+            <div className="detail-page">
                 <section className="accroche">
-                    <p className="title">A propos de moi</p>
-                    <p className="message">Merci pour votre interêt. Lisez ci-dessous pour en savoir plus sur moi-même et mon parcours.</p>
+                    <p className="title">{props.title} {props.id}</p>
+                    <p className="message">De la conception à la réalisation, nous avons fait avancé ce travail au cours d'un stage de deux mois au sein d'une entreprise à Casablanca.</p>
                 </section>
                 <section className="profile">
-                    <img src={propos.profile} alt="Profile" />
+                    <img src={props.image} alt="Profile" />
                 </section>
                 <section className="background">
                     <div>

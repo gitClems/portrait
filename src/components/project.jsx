@@ -1,12 +1,22 @@
 import { Link } from "react-router-dom"
 import "./css/project.scss"
 function Project(props) {
+    var array = []
+    for (let index = 0; index < props.lenght; index++) {
+        array.push(props.projects[index]);
+    }
     return (
         <>
-            <Link className="project-container" to={'/work/detail'}>
-                <span>{props.title}</span>
-                <img src={props.image} alt="Project 1" />
-            </Link>
+            {
+                array.map((project) => {
+                    return (
+                        <Link key={project.id} className="project-container" to={`/work/${project.id}`}>
+                            <span>{project.title}</span>
+                            <img src={project.image} alt="Project 1" />
+                        </Link>
+                    )
+                })
+            }
         </>
     )
 }

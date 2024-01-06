@@ -6,8 +6,9 @@ import Works from "./pages/index/works";
 import About from "./pages/index/about";
 import Error from "./pages/index/error";
 import Footer from "./components/footer";
-import { person } from "./data/dataSet";
+import { person, projects } from "./data/dataSet";
 import Detail from "./pages/index/detail";
+import Contact from "./components/contact";
 function App() {
   return (
     <>
@@ -17,8 +18,9 @@ function App() {
         <Route path='/work' element={<Works />} />
         <Route path='/about' element={<About profile = {person.profile[1]}/>} />
         <Route path='/error' element={<Error />} />
-        <Route path='/work/detail' element={<Detail profile = {person.profile[1]}/>} />
+        <Route path='/work/:id' element={<Detail id={projects[0].id} title = {projects[0].title} image = {projects[0].image}/>} />
       </Routes>
+      <Contact></Contact>
       <Footer
         name={person.name}
         year={person.year}

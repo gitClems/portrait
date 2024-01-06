@@ -13,7 +13,7 @@ function Works(props) {
                     <p className="message">Consultez mes projets les plus récents ci-dessous pour avoir une idée de mon expérience.</p>
                 </section>
                 <section className="works">
-                    {projects.map((project) => { return (<Project title={project.title} image={project.image}> </Project>) })}
+                    <Project projects = {projects} lenght = {projects.length}></Project>
                 </section>
             </div>
         </PreloadImages>

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&family=Roboto+Condensed:wght@700&display=swap');
 
-.about-page {
+.detail-page {
     padding-top: var(--page-padding-top);
     padding-bottom: 50px;
     background-image: url("../../assets/backgrounds/bg-main-dark-1440w.jpg");
@@ -123,7 +123,7 @@
 
 @media only screen and (max-width: 1000px) {
 
-    .about-page {
+    .detail-page {
         .accroche {
             .title {
                 transition: 0.2s;
@@ -148,7 +148,7 @@
 }
 
 @media only screen and (max-width: 800px) {
-    .about-page {
+    .detail-page {
         .accroche {
 
             .message {
@@ -187,7 +187,7 @@
     }
 }
 @media only screen and (max-width: 500px) {
-    .about-page {
+    .detail-page {
         .accroche {
 
             .message {
