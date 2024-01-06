@@ -10,7 +10,7 @@ function Project(props) {
             {
                 array.map((project) => {
                     return (
-                        <Link onClick={() => window.reload()} key={project.id} className="project-container"
+                        <Link onClick={this.forceUpdate}  key={project.id} className="project-container"
                             to={`/work/${project.id}`}
                         >
                             <span>{project.title}</span>

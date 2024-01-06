@@ -5,7 +5,7 @@ import './css/button.scss'
 const Button = (props) => {
     return (
         // <div >
-            <Link className="myButton" onClick={() => window.reload()} to={props.to}>
+            <Link className="myButton" onClick={this.forceUpdate}  to={props.to}>
                 {props.title}
                 <FontAwesomeIcon icon={props.icon} />
             </Link>
