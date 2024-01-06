@@ -3,6 +3,8 @@ import "../css/contact.scss"
 import emailjs from '@emailjs/browser';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { PreloadImages } from '../../components/loading';
+import { imgUrl } from '../../data/dataSet';
 
 const Contact = () => {
     const form = useRef();
@@ -21,6 +23,7 @@ const Contact = () => {
     };
     return (
         <>
+            <PreloadImages imageUrls={imgUrl}>
             <div className="contact-container">
                 <div class="form-style-6">
                     <h1>Envoyez moi un méssage</h1>
@@ -43,6 +46,7 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
+            </PreloadImages>
         </>
     )
 }
