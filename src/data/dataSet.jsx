@@ -171,7 +171,7 @@ export const person = {
     profile: [require("../assets/profiles/profile-1.png"), require("../assets/profiles/profile-2.jpg")],
     tel: "+212 6 82 41 90 21",
     email: "clement2bamogo@gmail.com",
-    adress: "Madina Al Irfane Rabat, Maroc",
+    adress: "Rabat, Maroc",
     linkedIn: "https://www.linkedin.com/in/cl%C3%A9ment-bamogo-11ab71228/",
     gitHub: "https://github.com/gitClems",
 }
