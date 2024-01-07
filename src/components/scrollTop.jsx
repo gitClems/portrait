@@ -1,19 +1,19 @@
 import './css/scrollTop.scss'
 
 
-function ScrollToTop() {
+function ScrollToTop(props) {
 
     window.onscroll = function () {
         scrollFunction()
     };
 
     function scrollFunction() {
-        let mybutton = document.getElementById('scrollBtn');
+        let mybutton = document.querySelector(`#scrollBtn`)
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "flex";
+            mybutton.style.display = 'flex'
             mybutton.style.transition = '0.2s'
         } else {
-            mybutton.style.display = "none";
+            mybutton.style.display = 'none'
             mybutton.style.transition = '0.2s'
         }
     }
@@ -25,7 +25,7 @@ function ScrollToTop() {
 
     return (
         <>
-            <button id="scrollBtn" onClick={() => topFunction()} title="Go to top"></button>
+            <button id={`scrollBtn`} onClick={() => topFunction()} title="Go to top"></button>
         </>
     )
 }

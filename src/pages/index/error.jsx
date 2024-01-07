@@ -6,7 +6,7 @@ import "../css/error.scss"
 function Error() {
     return (
         <PreloadImages imageUrls={imgUrl}>
-            <div className="error">
+            <div id="error">
                 <h1>Error !!!!!!!</h1>
             </div>
         </PreloadImages>

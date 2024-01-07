@@ -4,7 +4,6 @@ import { imgUrl, projects } from "../../data/dataSet"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faListCheck } from "@fortawesome/free-solid-svg-icons";
 import "../css/detail.scss"
-import ScrollToTop from "../../components/scrollTop";
 
 function Detail(props) {
     let params = useParams()
@@ -25,7 +24,7 @@ function Detail(props) {
 
     return (
         <PreloadImages imageUrls={imgUrl}>
-            <div className="detail-page">
+            <div id="detail-page">
                 <section className="sec-1">
                     <div className="title-image cl">
                         <p className="title">{params ? projects[params.id - 1].title : "-"}</p>
@@ -38,7 +37,6 @@ function Detail(props) {
                     <div className="description-tools cl">
                         <p style={{ fontSize: 20, color: "white" }}>Description</p>
                         <p>{params ? projects[params.id - 1].description : "-"}</p>
-                        {/* <div> */}
                         <p style={{ fontSize: 20, color: "white" }}>Outils / Méthodes / Mots clés</p>
                         <div className="tools-list">
 
@@ -50,7 +48,6 @@ function Detail(props) {
                                 })
                             }
                         </div>
-                        {/* </div> */}
                     </div>
                 </section>
                 <section className="sec-2">
@@ -77,7 +74,6 @@ function Detail(props) {
                             </div> : ""
                     }
                 </section>
-                <ScrollToTop></ScrollToTop>
             </div>
         </PreloadImages>
     )

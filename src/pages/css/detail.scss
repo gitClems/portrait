@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&family=Roboto+Condensed:wght@700&display=swap');
 
 
-.detail-page {
+#detail-page {
     padding-top: var(--page-padding-top);
     padding-bottom: 50px;
     background-image: url("../../assets/backgrounds/bg-main-dark-1440w.jpg");
@@ -145,7 +145,7 @@
 
 @media only screen and (max-width: 800px) {
 
-    .detail-page {
+    #detail-page {
         .sec-1 {
             flex-direction: column;
 
@@ -207,7 +207,7 @@
 
 @media only screen and (max-width: 600px) {
 
-    .detail-page {
+    #detail-page {
 
         .sec-1,
         .sec-2 {

@@ -4,12 +4,10 @@ import './css/button.scss'
 
 const Button = (props) => {
     return (
-        // <div >
-            <Link className="myButton" to={props.to}>
-                {props.title}
-                <FontAwesomeIcon icon={props.icon} />
-            </Link>
-        // </div>
+        <Link className="myButton" to={props.to} onClick={window.scroll(0, 0)}>
+            {props.title}
+            <FontAwesomeIcon icon={props.icon} />
+        </Link>
     )
 }
 

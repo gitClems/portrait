@@ -24,7 +24,7 @@ const Contact = () => {
     return (
         <>
             <PreloadImages imageUrls={imgUrl}>
-            <div className="contact-container">
+            <div id="contact-page">
                 <div class="form-style-6">
                     <h1>Envoyez-moi un méssage</h1>
                     <form ref={form} onSubmit={sendEmail}>

@@ -1,4 +1,4 @@
-.contact-container {
+#contact-page {
     padding-top: var(--page-padding-top);
     padding-bottom: 50px;
     background-image: url("../../assets/backgrounds/bg-main-dark-1440w.jpg");
@@ -6,117 +6,118 @@
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
-}
-
-.form-style-6 {
-    font-family: var(--font-family);
-    margin: auto;
-    padding: 10px;
-    // background-color: red;
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-
-
-    form {
-        transition: 0.2s;
-        max-width: 60vw;
-        min-width: 300px;
-
-        label {
-            color: white;
-        }
-
-        div {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-
-            .myButton {
-                font-family: var(--font-family);
-                background: var(--linear-background);
-                text-decoration: none;
-                font-size: 25px;
-                width: 70%;
-                height: 40px;
-                border-radius: 20px;
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                transition: 0.2;
-                color: white;
-                align-self: center;
-
-                &:hover {
-                    transition: 0.2;
-                    box-shadow: 0px 0px 10px white;
-                }
-            }
-        }
-
-        textarea {
-            // background-color: red;
-            min-height: 100px;
-            max-height: 150px;
-            text-overflow: clip;
-        }
-    }
-}
-
-.form-style-6 h1 {
-    width: 50%;
-    padding: 10px 0;
-    text-align: center;
-    color: #fff;
-}
-
-.form-style-6 input[type="text"],
-.form-style-6 input[type="date"],
-.form-style-6 input[type="datetime"],
-.form-style-6 input[type="email"],
-.form-style-6 input[type="number"],
-.form-style-6 input[type="search"],
-.form-style-6 input[type="time"],
-.form-style-6 input[type="url"],
-.form-style-6 textarea,
-.form-style-6 select {
-    border-radius: 5px;
-    outline: none;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    width: 100%;
-    background: #110f0f7c;
-    margin-bottom: 12px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    color: white;
-    font: 95% Arial, Helvetica, sans-serif;
-}
-
-.form-style-6 input[type="text"]:focus,
-.form-style-6 input[type="date"]:focus,
-.form-style-6 input[type="datetime"]:focus,
-.form-style-6 input[type="email"]:focus,
-.form-style-6 input[type="number"]:focus,
-.form-style-6 input[type="search"]:focus,
-.form-style-6 input[type="time"]:focus,
-.form-style-6 input[type="url"]:focus,
-.form-style-6 textarea:focus,
-.form-style-6 select:focus {
-    box-shadow: 0 0 5px white;
-    border: 1px solid white;
-}
-
-
-@media only screen and (max-width: 800px) {
 
     .form-style-6 {
+        font-family: var(--font-family);
+        margin: auto;
+        padding: 10px;
+        // background-color: red;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
 
 
         form {
             transition: 0.2s;
-            max-width: 90%
+            max-width: 60vw;
+            min-width: 300px;
+
+            label {
+                color: white;
+            }
+
+            div {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                .myButton {
+                    font-family: var(--font-family);
+                    background: var(--linear-background);
+                    text-decoration: none;
+                    font-size: 25px;
+                    width: 70%;
+                    height: 40px;
+                    border-radius: 20px;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    transition: 0.2;
+                    color: white;
+                    align-self: center;
+
+                    &:hover {
+                        transition: 0.2;
+                        box-shadow: 0px 0px 10px white;
+                    }
+                }
+            }
+
+            textarea {
+                // background-color: red;
+                min-height: 100px;
+                max-height: 150px;
+                text-overflow: clip;
+            }
+        }
+    }
+
+    .form-style-6 h1 {
+        width: 50%;
+        padding: 10px 0;
+        text-align: center;
+        color: #fff;
+    }
+
+    .form-style-6 input[type="text"],
+    .form-style-6 input[type="date"],
+    .form-style-6 input[type="datetime"],
+    .form-style-6 input[type="email"],
+    .form-style-6 input[type="number"],
+    .form-style-6 input[type="search"],
+    .form-style-6 input[type="time"],
+    .form-style-6 input[type="url"],
+    .form-style-6 textarea,
+    .form-style-6 select {
+        border-radius: 5px;
+        outline: none;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        width: 100%;
+        background: #110f0f7c;
+        margin-bottom: 12px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        color: white;
+        font: 95% Arial, Helvetica, sans-serif;
+    }
+
+    .form-style-6 input[type="text"]:focus,
+    .form-style-6 input[type="date"]:focus,
+    .form-style-6 input[type="datetime"]:focus,
+    .form-style-6 input[type="email"]:focus,
+    .form-style-6 input[type="number"]:focus,
+    .form-style-6 input[type="search"]:focus,
+    .form-style-6 input[type="time"]:focus,
+    .form-style-6 input[type="url"]:focus,
+    .form-style-6 textarea:focus,
+    .form-style-6 select:focus {
+        box-shadow: 0 0 5px white;
+        border: 1px solid white;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    #contact-page {
+        .form-style-6 {
+
+
+            form {
+                transition: 0.2s;
+                max-width: 90%
+            }
         }
     }
 }
