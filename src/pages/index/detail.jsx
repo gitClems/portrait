@@ -35,10 +35,10 @@ function Detail(props) {
                         </div>
                     </div>
                     <div className="description-tools cl">
-                        <p style={{ fontSize: 20 }}>Description</p>
+                        <p style={{ fontSize: 20, color: "white" }}>Description</p>
                         <p>{params ? projects[params.id - 1].description : "-"}</p>
                         {/* <div> */}
-                        <p style={{ fontSize: 20 }}>Outils ou processus :</p>
+                        <p style={{ fontSize: 20, color: "white" }}>Outils / Méthodes / Mots clés :</p>
                         <div className="tools-list">
 
                             {

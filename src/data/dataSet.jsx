@@ -53,19 +53,19 @@ export const projects = [
             },
             {
                 id: 2,
+                keyword: "Business analysis"
+            },
+            {
+                id: 3,
+                keyword: "Data Warehouse"
+            },
+            {
+                id: 4,
                 keyword: "Chart JS"
             },
             {
-                id: 3,
+                id: 5,
                 keyword: "Laravel"
-            },
-            {
-                id: 3,
-                keyword: "Laravel"
-            },
-            {
-                id: 3,
-                keyword: "Laravel Laravel Laravel Laravel"
             },
         ]
     },
@@ -96,13 +96,31 @@ export const projects = [
                 description: "Après la mise en place de l’architecture et de la feuille de routes, place a été donné à l’implémentation des interfaces utilisateurs et exposition du resultat final."
             },
 
+        ],
+        tools: [
+            {
+                id: 1,
+                keyword: "Data modeling"
+            },
+            {
+                id: 2,
+                keyword: "SLQ and PL/SQL"
+            },
+            {
+                id: 3,
+                keyword: "Oracle Database"
+            },
+            {
+                id: 4,
+                keyword: "Oracle Apex"
+            },
         ]
     },
     {
         id: 3,
         title: "Application mobile pour activités commerciales",
         image: require("../assets/works/App1.jpg"),
-        description: "Au cours de mon premier stage, j'ai réaliser cette application mobile pour une entreprise qui oeuvre dans le consulting. Elle permettrait à l'entreprise de proposer ses servives à des sociétés via l'applications mobile ci contre.",
+        description: "Au cours de mon premier stage, j'ai réalisé cette application mobile pour une entreprise qui oeuvre dans le consulting. Elle permettrait à l'entreprise de proposer ses servives à des sociétés via l'applications mobile ci contre.",
         etapes: [
             {
                 id: 1,
@@ -117,7 +135,7 @@ export const projects = [
             {
                 id: 3,
                 etape: "Acquisition et modélisation des processus de notre application",
-                description: "Déinition de l’architecture à suivre à traver des diagrammes de décision et de cas d’utilisation."
+                description: "Définition de l’architecture à suivre à traver des diagrammes de décision et de cas d’utilisation."
             },
             {
                 id: 4,
@@ -125,6 +143,24 @@ export const projects = [
                 description: "Après la mise en place de l’architecture et de la feuille de routes, place a été donné à l’implémentation des intefaces utilisateurs."
             },
         ],
+        tools: [
+            {
+                id: 1,
+                keyword: "Data modeling"
+            },
+            {
+                id: 2,
+                keyword: "No Sql database"
+            },
+            {
+                id: 3,
+                keyword: "Firebase Database"
+            },
+            {
+                id: 4,
+                keyword: "Flutter"
+            },
+        ]
     },
 ]
 
