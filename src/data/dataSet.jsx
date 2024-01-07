@@ -18,6 +18,25 @@ export const skills = [
     }
 ]
 
+
+export const formation = {
+    description : "Durant tout mon parcours universitaire, j'ai pu dévélopper un bon nombre de connaissance aussi bien dans les sciences exactes que celles qui relèvent de l'esprit critique.",
+    formationns : [
+        {
+            id : 1,
+            periode : "2021-2024",
+            label : " Ecole Nationale d'Informatique et d'Analyse des Systhème de Rabat",
+            description :"Avec mon orientation en Smart Supply Chain an Logistics, j'ai eu cette connaissance de l'informatique décisionnelle, du Business Intelligence et de la gestion des projets ainsi que leur suivi. L'utilisation des outils informatiques pour l'optimisation des processus au seins de l'entreprise est l'une de mes casquettes. En outre, une partie de mon orientation est la recherche opérationnelle à travers laquelles un accent est mis sur la résolution des problèmes liés à la logistiques: l'ulisation des mathématiques et des nouvelles technologies pour l'optimisation de la chaine logistique ."
+        },
+        {
+            id : 2,
+            periode : "2019-2021",
+            label : "  Facuilté des Sciences et Techniques de Monhammedia",
+            description :"J'ai su dévélopper des connaissance en analyse numérique et statistiques. Ceci combiné à l'algorithmique m'a donné des solides acquis sur la transformation d'un problème réel en solution mathématique et ensuite son intégration grace à des algorithmes."
+        },
+    ]
+}
+
 export const projects = [
     {
         id: 1,

@@ -1,6 +1,6 @@
 import { PreloadImages } from "../../components/loading"
 import ScrollToTop from "../../components/scrollTop"
-import { imgUrl } from "../../data/dataSet"
+import { formation, imgUrl } from "../../data/dataSet"
 import "../css/about.scss"
 
 function About(propos) {
@@ -15,20 +15,22 @@ function About(propos) {
                 <section className="profile">
                     <img src={propos.profile} alt="Profile" />
                 </section>
-                <section className="background">
+                <section className="formation">
                     <div>
-                        <span className="title">Background</span>
-                        <p >Durant tout mon parcours universitaire, j'ai pu dévélopper un bon nombre de connaissance aussi bien dans les sciences exactes que celles qui relèvent de l'esprit critique.</p>
+                        <span className="title">Formation</span>
+                        <p >{formation.description}</p>
                     </div>
                     <ul>
-                        <li className="background-item">
-                            2019-2021 : Facuilté des Sciences et Techniques de Monhammedia <br />
-                            <p>J'ai su dévélopper des connaissance en analyse numérique et statistiques. Ceci combiné à l'algorithmique m'a donné des solides acquis sur la transformation d'un problème réel en solution mathématique et ensuite son intégration grace à des algorithmes.</p>
-                        </li>
-                        <li className="background-item">
-                            2021-2024 : Ecole Nationale d'Informatique et d'Analyse des Systhème de Rabat <br />
-                            <p>Avec mon orientation en Smart Supply Chain an Logistics, j'ai eu cette connaissance de l'informatique décisionnelle, du Business Intelligence et de la gestion des projets ainsi que leur suivi. L'utilisation des outils informatiques pour l'optimisation des processus au seins de l'entreprise est l'une de mes casquettes. En outre, une partie de mon orientation est la recherche opérationnelle à travers laquelles un accent est mis sur la résolution des problèmes liés à la logistiques: l'ulisation des mathématiques et des nouvelles technologies pour l'optimisation de la chaine logistique .</p>
-                        </li>
+                        {
+                            formation.formationns.map((formation) => {
+                                return (
+                                    <li className="formation-item">
+                                        {formation.periode} {formation.label}
+                                        <p>{formation.description}</p>
+                                    </li>
+                                )
+                            })
+                        }
                     </ul>
                 </section>
                 <section className="skills">
