@@ -132,7 +132,6 @@
             flex-direction: column;
 
             .title-image-tools {
-                min-width: none;
                 .title {
                     font-size: 25px;
                 }
@@ -201,5 +200,16 @@
             padding-left: 10px;
             padding-right: 10px;
         }
+
+        .sec-1 {
+            .title-image-tools {
+                min-width: none;
+
+                .title {
+                    font-size: 25px;
+                }
+            }
+        }
     }
+
 }
