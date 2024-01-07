@@ -43,8 +43,9 @@ function Detail(props) {
 
                         projects[params.id - 1].etapes ?
                             <div>
-                                <div className="title"><FontAwesomeIcon icon={faListCheck}></FontAwesomeIcon><span>Les differentes étapes </span></div>
+                                <span className="title">Les differentes étapes <FontAwesomeIcon icon={faListCheck}></FontAwesomeIcon></span>
                                 <div>
+
                                     <ol className="liste-etape">
                                         {
 

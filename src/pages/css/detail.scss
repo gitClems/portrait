@@ -27,8 +27,8 @@
         }
 
         .title-image-tools {
-            flex: 1;
-            min-width: 500px;
+            // flex: 1;
+            // min-width: 500px;
 
             .title {
                 font-size: calc(var(--font-size-vmax) + .5vmax);
@@ -39,7 +39,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin-top: 50px;
+                margin-top: 30px;
 
                 .img-targeted {
                     width: 100%;
@@ -53,7 +53,7 @@
         .description {
             text-align: justify;
             // height: fit-content;
-            flex: 1;
+            // flex: 1;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -107,7 +107,6 @@
                     transition: 0.2s;
                     padding-right: 15px;
                     padding-top: 15px;
-                    // background-color: red;
 
                     .title {
                         color: white;
@@ -132,6 +131,8 @@
             flex-direction: column;
 
             .title-image-tools {
+                // flex: none;
+                min-width: none;
                 .title {
                     font-size: 25px;
                 }
@@ -148,11 +149,6 @@
 
         .sec-2 {
             width: 100%;
-            display: flex;
-            justify-content: center;
-            padding-left: 50px;
-            padding-right: 50px;
-            margin-top: 50px;
 
             div {
                 display: flex;
@@ -161,11 +157,8 @@
                 width: 100%;
 
                 .title {
-                    // width: 100%;
                     font-size: 23px;
-                    // margin-bottom: 20px;
                     transition: 0.2s;
-                    // margin-top: 20px;
                     justify-content: space-between;
                 }
 
@@ -204,7 +197,7 @@
         .sec-1 {
             .title-image-tools {
                 min-width: none;
-
+                // max-width: 300px;
                 .title {
                     font-size: 25px;
                 }
