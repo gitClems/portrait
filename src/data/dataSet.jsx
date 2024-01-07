@@ -45,6 +45,28 @@ export const projects = [
                 etape: "Implémentation d’interfaces interactives",
                 description: "Après la mise en place de l’architecture et de la feuille de routes, place a été donné à l’implémentation des graphes et des paramètres régulateurs comme la période des activités, les types de services, les localités…"
             },
+        ],
+        tools: [
+            {
+                id: 1,
+                keyword: "ETL"
+            },
+            {
+                id: 2,
+                keyword: "Chart JS"
+            },
+            {
+                id: 3,
+                keyword: "Laravel"
+            },
+            {
+                id: 3,
+                keyword: "Laravel"
+            },
+            {
+                id: 3,
+                keyword: "Laravel Laravel Laravel Laravel"
+            },
         ]
     },
     {
@@ -102,7 +124,7 @@ export const projects = [
                 etape: "Implémentation d’interfaces",
                 description: "Après la mise en place de l’architecture et de la feuille de routes, place a été donné à l’implémentation des intefaces utilisateurs."
             },
-        ]
+        ],
     },
 ]
 

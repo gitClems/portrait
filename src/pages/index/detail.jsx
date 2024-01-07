@@ -26,7 +26,7 @@ function Detail(props) {
         <PreloadImages imageUrls={imgUrl}>
             <div className="detail-page">
                 <section className="sec-1">
-                    <div className="title-image-tools cl">
+                    <div className="title-image cl">
                         <p className="title">{params ? projects[params.id - 1].title : "-"}</p>
                         <div className="image">
                             <img className="img-targeted" src={projects[params.id - 1].image} alt={`${projects[params.id - 1].title}`}
@@ -34,8 +34,21 @@ function Detail(props) {
                             />
                         </div>
                     </div>
-                    <div className="description cl">
+                    <div className="description-tools cl">
                         <p>{params ? projects[params.id - 1].description : "-"}</p>
+                        {/* <div> */}
+                        <p>Outils ou processus :</p>
+                        <div className="tools-list">
+
+                            {
+                                projects[params.id - 1].tools?.map((tool) => {
+                                    return (
+                                        <span className="tool" >{tool.keyword}</span>
+                                    )
+                                })
+                            }
+                        </div>
+                        {/* </div> */}
                     </div>
                 </section>
                 <section className="sec-2">
@@ -45,14 +58,13 @@ function Detail(props) {
                             <div>
                                 <span className="title">Les differentes étapes <FontAwesomeIcon icon={faListCheck}></FontAwesomeIcon></span>
                                 <div>
-
                                     <ol className="liste-etape">
                                         {
 
                                             projects[params.id - 1].etapes?.map((etape) => {
                                                 return (
                                                     <>
-                                                        <li className="etape">{etape.etape}</li>
+                                                        <li className="etape"><span>Phase {etape.id} : </span>{etape.etape}</li>
                                                         <p className="description">{etape.description}</p>
                                                     </>
                                                 )
