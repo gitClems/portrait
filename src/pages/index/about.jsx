@@ -38,7 +38,7 @@ function About() {
                         {
                             skills.map((skill) => {
                                 return (
-                                    <li className="skills-item">{skill.id}-{skill.title}</li>
+                                    <li className="skills-item">{skill.title}</li>
                                 )
                             })
                         }
