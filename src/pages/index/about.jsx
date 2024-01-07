@@ -1,8 +1,8 @@
 import { PreloadImages } from "../../components/loading"
-import { formation, imgUrl } from "../../data/dataSet"
+import { formation, imgUrl, person, skills } from "../../data/dataSet"
 import "../css/about.scss"
 
-function About(propos) {
+function About() {
 
     return (
         <PreloadImages imageUrls={imgUrl}>
@@ -12,7 +12,7 @@ function About(propos) {
                     <p className="message">Merci pour votre interêt. Lisez ci-dessous pour en savoir plus sur moi-même et mon parcours.</p>
                 </section>
                 <section className="profile">
-                    <img src={propos.profile} alt="Profile" />
+                    <img src={person.profile[1]} alt="Profile" />
                 </section>
                 <section className="formation">
                     <div>
@@ -35,17 +35,18 @@ function About(propos) {
                 <section className="skills">
                     <div><span className="title">Skills</span></div>
                     <ul>
-                        <li className="skills-item">Supply Chain Management</li>
-                        <li className="skills-item">Business analysis</li>
-                        <li className="skills-item">Operation research</li>
-                        <li className="skills-item">Web and Mobile App dev</li>
-                        <li className="skills-item">Dessign thinking</li>
+                        {
+                            skills.map((skill) => {
+                                return (
+                                    <li className="skills-item">{skill.id}-{skill.title}</li>
+                                )
+                            })
+                        }
                     </ul>
                 </section>
             </div>
         </PreloadImages>
     )
-
 }
 
 export default About

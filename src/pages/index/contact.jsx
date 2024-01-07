@@ -41,7 +41,7 @@ const Contact = () => {
                         <textarea name="message" placeholder="Insérez votre méssage"></textarea>
 
                         <div>
-                            <button type='button' className='myButton'>Envoyez <FontAwesomeIcon icon={faPaperPlane}></FontAwesomeIcon></button>
+                            <button type='button' className='myButton'>Envoyez <FontAwesomeIcon className='icon' icon={faPaperPlane}></FontAwesomeIcon></button>
                         </div>
                     </form>
                 </div>

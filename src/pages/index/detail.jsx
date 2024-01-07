@@ -7,20 +7,12 @@ import "../css/detail.scss"
 
 function Detail(props) {
     let params = useParams()
-
-    var height = 0
-    var width = 0
-
-
     function ImageSize() {
         const img = document.querySelector('.img-targeted')
-        height = img.clientHeight
-        width = img.clientWidth
-        if (height > width) {
+        if (img.clientHeight > img.clientWidth) {
             img.style.width = "300px"
         }
     }
-
 
     return (
         <PreloadImages imageUrls={imgUrl}>
@@ -52,7 +44,6 @@ function Detail(props) {
                 </section>
                 <section className="sec-2">
                     {
-
                         projects[params.id - 1].etapes ?
                             <div>
                                 <span className="title">Les differentes étapes <FontAwesomeIcon icon={faListCheck}></FontAwesomeIcon></span>
@@ -77,7 +68,6 @@ function Detail(props) {
             </div>
         </PreloadImages>
     )
-
 }
 
 export default Detail

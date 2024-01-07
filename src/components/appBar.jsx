@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, NavLink } from "react-router-dom";
 import "./css/appBar.scss"
+import { person } from '../data/dataSet';
 
 function AppBar() {
 
@@ -14,7 +15,7 @@ function AppBar() {
 
     return (
         <div className='app-bar'>
-            <Link className='app-name' to={"/"} >BAMOGO Clément</Link>
+            <Link className='app-name' to={"/"} >{person.name}</Link>
             <nav className='nav-bar' id='navBar'>
                 <NavLink className="btn" id='nav-btn-home' to="/" exact="true" activeClass="active" onClick={toogleMenu}>
                     Accueil

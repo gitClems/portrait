@@ -6,7 +6,7 @@ const Button = (props) => {
     return (
         <Link className="myButton" to={props.to} onClick={window.scroll(0, 0)}>
             {props.title}
-            <FontAwesomeIcon icon={props.icon} />
+            <FontAwesomeIcon className="icon" icon={props.icon} />
         </Link>
     )
 }

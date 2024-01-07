@@ -1,21 +1,49 @@
 
-export const skills = [
+export const domains = [
     {
         id: 1,
-        title: "Supply Chain Manager",
+        title: "Supply Chain Management",
         description: "L'informatique décisionnelle au coeur de la Chaîne d'approvisonnement, rien de mieux pour se mettre dans la course des grands enjeux de ce monde concurrentiel."
     },
     {
         id: 2,
-        title: "Business Analyst",
-        description: "L'esprit d'analyse au seins des processus métiers de votre entreprise. Permettre une prise de décision adéquate face aux risques et maîtriser les activités principales de votre structure."
+        title: "Recherche opérationnelle",
+        description: "Toujours en quête d'optimisation, la recherche (dans le domain logisque) offre un cardre de réflexion pour l'utilisation des nouvelle méthodes et outils dans les processus"
+    },
+    {
+        id: 3,
+        title: "Business analysis",
+        description: "L'esprit d'analyse au seins des processus métiers de votre entreprise. Permettre une prise de décision adéquate et suivre les activités principales de votre structure."
     },
 
     {
-        id: 3,
+        id: 4,
         title: "Design Thinking",
         description: "Construire vos idées avec une architecture performante et manager votre équipe dans une logique de création de valeur."
-    }
+    },
+]
+
+export const skills = [
+    {
+        id: 1,
+        title : "Dessign thinking"
+    },
+    {
+        id: 2,
+        title : "Web and Mobile App dev"
+    },
+    {
+        id: 3,
+        title : "Operation research"
+    },
+    {
+        id: 4,
+        title : "Business analysis"
+    },
+    {
+        id: 5,
+        title : "Supply Chain Management"
+    },
 ]
 
 
@@ -25,13 +53,13 @@ export const formation = {
         {
             id : 1,
             periode : "2021-2024",
-            label : " Ecole Nationale d'Informatique et d'Analyse des Systhème de Rabat",
+            label : "Ecole Nationale d'Informatique et d'Analyse des Systhème de Rabat",
             description :"Avec mon orientation en Smart Supply Chain an Logistics, j'ai eu cette connaissance de l'informatique décisionnelle, du Business Intelligence et de la gestion des projets ainsi que leur suivi. L'utilisation des outils informatiques pour l'optimisation des processus au seins de l'entreprise est l'une de mes casquettes. En outre, une partie de mon orientation est la recherche opérationnelle à travers laquelles un accent est mis sur la résolution des problèmes liés à la logistiques: l'ulisation des mathématiques et des nouvelles technologies pour l'optimisation de la chaine logistique ."
         },
         {
             id : 2,
-            periode : "2019-2021",
-            label : "  Facuilté des Sciences et Techniques de Monhammedia",
+            periode :"2019-2021",
+            label : "Facuilté des Sciences et Techniques de Monhammedia",
             description :"J'ai su dévélopper des connaissance en analyse numérique et statistiques. Ceci combiné à l'algorithmique m'a donné des solides acquis sur la transformation d'un problème réel en solution mathématique et ensuite son intégration grace à des algorithmes."
         },
     ]
@@ -186,7 +214,7 @@ export const projects = [
 export const person = {
     year: "2023",
     name: "BAMOGO Clément",
-    describe: "Elève ingénieur en Supply Chain Management basé au Maroc, à Rabat",
+    describe: "Elève ingénieur en Supply Chain Management basé à Rabat, au Maroc",
     profile: [require("../assets/profiles/profile-1.png"), require("../assets/profiles/profile-2.jpg")],
     tel: "+212 6 82 41 90 21",
     email: "clement2bamogo@gmail.com",

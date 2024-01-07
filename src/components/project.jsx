@@ -5,6 +5,7 @@ function Project(props) {
     for (let index = 0; index < props.lenght; index++) {
         array.push(props.projects[index]);
     }
+
     return (
         <>
             {
@@ -15,7 +16,7 @@ function Project(props) {
                             onClick={() => { window.scrollTo(0, 0) }}
                         >
                             <span>{project.title}</span>
-                            <img src={project.image} alt="Project 1" />
+                            <img src={project.image} alt={`${project.title}`}                            />
                         </Link>
                     )
                 })
