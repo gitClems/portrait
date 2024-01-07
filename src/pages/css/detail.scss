@@ -28,7 +28,7 @@
 
         .title-image-tools {
             flex: 1;
-            // max-width: 300px;
+            min-width: 500px;
 
             .title {
                 font-size: calc(var(--font-size-vmax) + .5vmax);
@@ -58,7 +58,7 @@
             align-items: center;
             justify-content: center;
             color: var(--subtitle-color);
-            border: 1px solid black;
+            border: 1px solid var(--subtitle-color);
             background-color: rgba(0, 0, 0, 0.3);
             padding: 10px;
             border-radius: 10px;
@@ -83,31 +83,38 @@
             justify-content: center;
 
             .title {
-                // background-color: blue;
                 width: 100%;
                 font-size: calc(var(--font-size-vmax) + .5vmax);
-                text-align: center;
+                margin-bottom: 20px;
+                margin-top: 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                transition: 0.2s;
             }
 
             div {
                 width: 100%;
-                // background-color: red;
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
                 .liste-etape {
-                    border: 1px solid black;
+                    border: 1px solid var(--subtitle-color);
+                    border-radius: 10px;
                     background-color: rgba(0, 0, 0, 0.3);
                     width: 60vw;
                     transition: 0.2s;
+                    padding-right: 15px;
+                    padding-top: 15px;
+                    // background-color: red;
 
-                    // background-color: blue;
                     .title {
                         color: white;
                     }
 
                     .description {
+                        text-align: justify;
                         color: var(--subtitle-color);
                         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                     }
@@ -122,7 +129,13 @@
 
     .detail-page {
         .sec-1 {
-            flex-direction: column
+            flex-direction: column;
+
+            .title-image-tools {
+                .title {
+                    font-size: 25px;
+                }
+            }
         }
 
         .sec-1,
@@ -140,37 +153,27 @@
             padding-left: 50px;
             padding-right: 50px;
             margin-top: 50px;
-            border-top: 1px solid red;
 
             div {
-                // max-width: 60vw;
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
                 width: 100%;
 
                 .title {
-                    // background-color: red;
-                    width: 100%;
-                    font-size: calc(var(--font-size-vmax) + .5vmax);
-                    // text-align :end;
-                    icon {
-                        color: blue;
-                    }
-                    margin-bottom: 20px;
-                    margin-top: 20px;
+                    // width: 100%;
+                    font-size: 23px;
+                    // margin-bottom: 20px;
+                    transition: 0.2s;
+                    // margin-top: 20px;
+                    justify-content: space-between;
                 }
 
                 div {
 
                     .liste-etape {
-                        border: 1px solid black;
-                        background-color: rgba(0, 0, 0, 0.3);
-                        transition: 0.2s;
                         width: 100%;
-                        // width: 100%;
 
-                        // background-color: blue;
                         .title {
                             color: white;
                         }

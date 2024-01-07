@@ -1,18 +1,15 @@
 import { useParams } from "react-router-dom";
 import { PreloadImages } from "../../components/loading"
 import { imgUrl, projects } from "../../data/dataSet"
-import "../css/detail.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faListCheck } from "@fortawesome/free-solid-svg-icons";
+import "../css/detail.scss"
 
 function Detail(props) {
     let params = useParams()
-    // console.log(params);
-
 
     var height = 0
     var width = 0
-    var size = 0
 
 
     function ImageSize() {
@@ -20,17 +17,8 @@ function Detail(props) {
         height = img.clientHeight
         width = img.clientWidth
         if (height > width) {
-            // document.querySelector(".title").style.color = 'red'
-            // img.style.height = width
             img.style.width = "300px"
-            size = width
         }
-        // size = height
-        console.log('====================================');
-        console.log([width, height]);
-        console.log('====================================');
-        console.log("Size: " + size);
-        // return [width, height];
     }
 
 
@@ -55,9 +43,8 @@ function Detail(props) {
 
                         projects[params.id - 1].etapes ?
                             <div>
-                                <span className="title">Les differentes étapes <FontAwesomeIcon icon={faListCheck}></FontAwesomeIcon></span>
+                                <div className="title"><FontAwesomeIcon icon={faListCheck}></FontAwesomeIcon><span>Les differentes étapes </span></div>
                                 <div>
-
                                     <ol className="liste-etape">
                                         {
 
