@@ -12,6 +12,7 @@ function Project(props) {
                     return (
                         <Link key={project.id} className="project-container"
                             to={`/work/${project.id}`}
+                            onClick={() => { window.scrollTo(0, 0) }}
                         >
                             <span>{project.title}</span>
                             <img src={project.image} alt="Project 1" />

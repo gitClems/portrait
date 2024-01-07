@@ -1,4 +1,5 @@
 import { PreloadImages } from "../../components/loading"
+import ScrollToTop from "../../components/scrollTop"
 import { imgUrl } from "../../data/dataSet"
 import "../css/about.scss"
 
@@ -40,6 +41,7 @@ function About(propos) {
                         <li className="skills-item">Dessign thinking</li>
                     </ul>
                 </section>
+                <ScrollToTop></ScrollToTop>
             </div>
         </PreloadImages>
     )

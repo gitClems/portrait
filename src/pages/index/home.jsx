@@ -6,6 +6,7 @@ import Skill from "../../components/skill"
 import Project from "../../components/project"
 import Button from "../../components/button"
 import {faArrowRight, faPaperPlane } from "@fortawesome/free-solid-svg-icons"
+import ScrollToTop from "../../components/scrollTop"
 
 function Home() {
     return (
@@ -27,6 +28,7 @@ function Home() {
                 <section className="l4">
                     <Button title = {"Envoyez-moi un message"} icon = {faPaperPlane} to = {"./contact"}></Button>
                 </section>
+                <ScrollToTop></ScrollToTop>
             </div>
         </PreloadImages>
     )

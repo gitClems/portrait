@@ -4,6 +4,7 @@ import { imgUrl, projects } from "../../data/dataSet"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faListCheck } from "@fortawesome/free-solid-svg-icons";
 import "../css/detail.scss"
+import ScrollToTop from "../../components/scrollTop";
 
 function Detail(props) {
     let params = useParams()
@@ -76,6 +77,7 @@ function Detail(props) {
                             </div> : ""
                     }
                 </section>
+                <ScrollToTop></ScrollToTop>
             </div>
         </PreloadImages>
     )

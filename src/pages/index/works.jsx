@@ -2,6 +2,7 @@ import { PreloadImages } from "../../components/loading"
 import { imgUrl, projects } from "../../data/dataSet"
 import "../css/works.scss"
 import Project from "../../components/project"
+import ScrollToTop from "../../components/scrollTop"
 
 
 function Works(props) {
@@ -15,6 +16,7 @@ function Works(props) {
                 <section className="works">
                     <Project projects = {projects} lenght = {projects.length}></Project>
                 </section>
+                <ScrollToTop></ScrollToTop>
             </div>
         </PreloadImages>
     )
