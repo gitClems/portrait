@@ -83,14 +83,15 @@
 
                 .tools-list {
                     max-width: 100%;
+                    border-radius: 10px;
+                    background-color: red;
                     display: flex;
                     flex-wrap: wrap;
                     text-align: start;
-                    border-radius: 10px;
-                    list-style: none;
 
                     .tool {
                         color: white;
+                        width: max-content;
                         border: 1px solid var(--subtitle-color);
                         padding: 5px;
                         font-size: 13px;
