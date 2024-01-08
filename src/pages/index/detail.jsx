@@ -13,6 +13,7 @@ function Detail(props) {
             img.style.width = "300px"
         }
     }
+    
 
     return (
         <PreloadImages imageUrls={imgUrl}>
@@ -31,7 +32,6 @@ function Detail(props) {
                         <p>{params ? projects[params.id - 1].description : "-"}</p>
                         <p style={{ fontSize: 20, color: "white" }}>Outils / Méthodes / Mots clés</p>
                         <div className="tools-list">
-
                             {
                                 projects[params.id - 1].tools?.map((tool) => {
                                     return (

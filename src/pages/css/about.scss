@@ -78,6 +78,27 @@
 
             li {
                 margin-bottom: 10px;
+                
+                .tools-list {
+                    max-width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    text-align: start;
+                    border-radius: 10px;
+                    list-style: none;
+
+                    .tool {
+                        color: white;
+                        border: 1px solid var(--subtitle-color);
+                        padding: 10px;
+                        font-size: 13px;
+                        border-radius: 10px;
+                        margin: 2px;
+                        height: max-content;
+                        font-family: var(--font-family);
+                    }
+                }
+
             }
 
             p {
@@ -96,15 +117,17 @@
         margin-top: 50px;
         padding-left: 50px;
         padding-right: 50px;
-        
+
         div {
             max-width: 350px;
             flex: 3;
+
             .title {
                 color: var(--white-color-1);
                 font-size: var(--title-font-size-large);
             }
         }
+
         ul {
             font-size: 20px;
             width: 100%;
@@ -134,7 +157,8 @@
             }
         }
 
-        .formation, .skills {
+        .formation,
+        .skills {
             transition: 0.2s;
             padding-left: 10px;
             padding-right: 10px;
@@ -153,14 +177,14 @@
             }
         }
 
-        .formation, .skills {
+        .formation,
+        .skills {
             transition: 0.2s;
             padding-left: 10px;
             padding-right: 10px;
             flex-direction: column;
 
             div {
-                justify-content: space-evenly;
                 max-width: none;
                 margin-bottom: 20px;
 
@@ -182,6 +206,7 @@
         }
     }
 }
+
 @media only screen and (max-width: 500px) {
     #about-page {
         .accroche {
@@ -192,14 +217,14 @@
             }
         }
 
-        .formation, .skills {
+        .formation,
+        .skills {
             transition: 0.2s;
             padding-left: 10px;
             padding-right: 10px;
             flex-direction: column;
 
             div {
-                justify-content: space-evenly;
                 max-width: none;
                 margin-bottom: 20px;
 
@@ -219,8 +244,9 @@
 
             ul {
                 max-width: 100%;
+
                 p {
-                    
+
                     font-size: 13px;
                     transition: 0.2s;
                 }

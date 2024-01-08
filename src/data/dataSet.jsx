@@ -15,52 +15,98 @@ export const domains = [
         title: "Business analysis",
         description: "L'esprit d'analyse au seins des processus métiers de votre entreprise. Permettre une prise de décision adéquate et suivre les activités principales de votre structure."
     },
-
-    {
-        id: 4,
-        title: "Design Thinking",
-        description: "Construire vos idées avec une architecture performante et manager votre équipe dans une logique de création de valeur."
-    },
 ]
 
 export const skills = [
     {
         id: 1,
-        title : "Supply Chain Management"
+        title: "Supply Chain Management"
     },
     {
         id: 2,
-        title : "Business analysis"
+        title: "Business analysis"
     },
     {
         id: 3,
-        title : "Operation research"
+        title: "Récherche opérationelle"
     },
     {
         id: 4,
-        title : "Web and Mobile App dev"
+        title: "Web and Mobile App dev"
     },
     {
         id: 5,
-        title : "Dessign thinking"
+        title: "Dessign thinking"
+    },
+    {
+        id: 6,
+        title: "Amélioration continue"
     },
 ]
 
 
 export const formation = {
-    description : "Durant tout mon parcours universitaire et ingénieur, j'ai pu dévélopper un bon nombre de connaissance aussi bien dans les sciences exactes que celles qui relèvent de l'esprit qui définissent l'état d'un ingénieur.",
-    formationns : [
+    description: "Durant tout mon parcours universitaire et ingénieur, j'ai pu dévélopper un bon nombre de connaissance aussi bien dans les sciences exactes que celles qui relèvent de l'esprit qui définissent l'état d'un ingénieur.",
+    formations: [
         {
-            id : 1,
-            periode : "2021-2024",
-            label : "Ecole Nationale d'Informatique et d'Analyse des Systhème de Rabat (ENSIAS)",
-            description :"Avec mon orientation en Smart Supply Chain an Logistics, j'ai eu cette connaissance de l'informatique décisionnelle, du Business Intelligence et de la gestion des projets ainsi que leur suivi. L'utilisation des outils informatiques pour l'optimisation des processus au seins de l'entreprise est l'une de mes casquettes. En outre, une partie de mon orientation est la recherche opérationnelle à travers laquelles un accent est mis sur la résolution des problèmes liés à la logistiques: l'ulisation des mathématiques et des nouvelles technologies pour l'optimisation de la chaine logistique ."
+            id: 1,
+            periode: "2021-2024",
+            label: "Ecole Nationale d'Informatique et d'Analyse des Systhème de Rabat (ENSIAS)",
+            description: "Avec mon orientation en Smart Supply Chain an Logistics, j'ai eu cette connaissance de l'informatique décisionnelle, du Business Intelligence et de la gestion des projets ainsi que leur suivi. En outre, une partie de mon orientation est la recherche opérationnelle à travers laquelles un accent est mis sur la résolution des problèmes liés à l'optimisation logistiques: ulisation des méthodes mathématiques et approchées, les technologies de l'IA.",
+            tools: [
+                {
+                    id: 1,
+                    keyword: "ERP/CRM/MRP"
+                },
+                {
+                    id: 2,
+                    keyword: "IA/Deep Learning"
+                },
+                {
+                    id: 3,
+                    keyword: "Gestion d'entrepôt"
+                },
+                {
+                    id: 4,
+                    keyword: "Algorithme génétique"
+                },
+                {
+                    id: 5,
+                    keyword: "Power BI"
+                },
+            ]
         },
         {
-            id : 2,
-            periode :"2019-2021",
-            label : "Facuilté des Sciences et Techniques de Monhammedia(FSTM)",
-            description :"J'ai su dévélopper des connaissance en analyse numérique et statistiques. Ceci combiné à l'algorithmique m'a donné des solides acquis sur la transformation d'un problème réel en solution mathématique et ensuite son intégration grace à des algorithmes."
+            id: 2,
+            periode: "2019-2021",
+            label: "Facuilté des Sciences et Techniques de Monhammedia(FSTM)",
+            description: "J'ai su dévélopper des connaissance en analyse numérique et statistiques. Ceci combiné à l'algorithmique m'a donné des solides acquis sur la transformation d'un problème réel en solution mathématique et ensuite son intégration grace à des algorithmes.",
+            tools: [
+                {
+                    id: 1,
+                    keyword: "Algorithmique",
+                },
+                {
+                    id: 2,
+                    keyword: "Programmation C"
+                },
+                {
+                    id: 3,
+                    keyword: "Base de données"
+                },
+                {
+                    id: 4,
+                    keyword: "Structure de données"
+                },
+                {
+                    id: 5,
+                    keyword: "Algèbre"
+                },
+                {
+                    id: 5,
+                    keyword: "Analyse numérique"
+                },
+            ],
         },
     ]
 }

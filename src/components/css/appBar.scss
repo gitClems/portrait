@@ -13,7 +13,6 @@ $navBarBackground : var(--background-dark);
     width: 100%;
     top: 30px;
     display: flex;
-    // justify-content: center;
     height: var(--appbar-height);
 
     a {
@@ -114,14 +113,11 @@ $navBarBackground : var(--background-dark);
             display: none;
             height:max-content ;
             min-width: max-content;
-            // background-color: red;
             position: absolute;
             right: 20px;
             top: 50px;
-            // background-color: $navBarBackground;
             border-radius: 0;
             border: 0;
-            // box-shadow: 5px 5px 7px rgb(20, 20, 20);
 
             .btn {
                 width: 100%;
@@ -160,18 +156,12 @@ $navBarBackground : var(--background-dark);
         .nav-bar.active {
             display: flex;
             flex-direction: column;
-            // min-height: 100px;
+            min-width: 200px;
             margin-top: 10px;
-            // background-color: red;
-            // background-color: $navBarBackground;
 
             .btn {
                 margin-left: 0px;
                 margin-right: 0px;
-                // font-size: 16px;
-                // display: flex;
-                // justify-content: center;
-                // align-items: center;
             }
         }
     }

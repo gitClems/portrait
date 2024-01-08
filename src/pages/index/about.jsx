@@ -19,16 +19,29 @@ function About() {
                         <span className="title">Formation</span>
                         <p >{formation.description}</p>
                     </div>
-                    <ul>
+                    <ul className="formation-list">
                         {
-                            formation.formationns.map((formation) => {
+                            formation.formations.map((formation) => {
                                 return (
                                     <li className="formation-item">
                                         {formation.periode} {formation.label}
                                         <p>{formation.description}</p>
+                                        {
+                                            formation.tools ?
+                                                <>
+                                                    <span style={{ fontSize: 20, color: "white" }}>Outils / Méthodes / Mots clés</span><div className="tools-list">
+                                                        {formation.tools?.map((tool) => {
+                                                            return (
+                                                                tool.keyword ? <span className="tool">{tool.keyword}</span> : null
+                                                            )
+                                                        })}
+                                                    </div>
+                                                </> : null
+                                        }
                                     </li>
                                 )
                             })
+
                         }
                     </ul>
                 </section>
