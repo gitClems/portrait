@@ -1,12 +1,12 @@
 import { removeMenu } from "../../components/appBar"
 import { PreloadImages } from "../../components/loading"
-import { formation, imgUrl, person, skills } from "../../data/dataSet"
+import { formation, person, skills } from "../../data/dataSet"
 import "../css/about.scss"
 
 function About() {
 
     return (
-        <PreloadImages imageUrls={imgUrl}>
+        <PreloadImages >
             <div id="about-page" onClick={removeMenu} onLoad={removeMenu}>
                 <section className="accroche">
                     <p className="title">A propos de moi</p>

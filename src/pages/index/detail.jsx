@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { PreloadImages } from "../../components/loading"
-import { imgUrl, projects } from "../../data/dataSet"
+import { projects } from "../../data/dataSet"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faListCheck } from "@fortawesome/free-solid-svg-icons";
 import "../css/detail.scss"
@@ -17,7 +17,7 @@ function Detail(props) {
     
 
     return (
-        <PreloadImages imageUrls={imgUrl}>
+        <PreloadImages>
             <div id="detail-page" onClick={removeMenu} onLoad={removeMenu}>
                 <section className="sec-1">
                     <div className="title-image cl">

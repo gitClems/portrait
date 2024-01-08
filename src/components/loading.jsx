@@ -2,12 +2,13 @@ import "./css/loading.scss"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { useEffect, useState } from "react";
+import { imgUrl } from "../data/dataSet";
 
-export const PreloadImages = ({ imageUrls, children }) => {
+export const PreloadImages = ({ children }) => {
     const [imagesLoaded, setImagesLoaded] = useState(false);
 
     useEffect(() => {
-        const imagePromises = imageUrls.map((url) => {
+        const imagePromises = imgUrl.map((url) => {
             return new Promise((resolve) => {
                 const img = new Image();
                 img.src = url;
@@ -21,9 +22,9 @@ export const PreloadImages = ({ imageUrls, children }) => {
             })
             .catch((error) => {
                 console.error('Error preloading images:', error);
-                setImagesLoaded(true); // Set to true to avoid infinite loading if an error occurs
+                setImagesLoaded(true);
             });
-    }, [imageUrls]);
+    }, []);
     return <div>{imagesLoaded ? children : <Loading></Loading>}</div>;
 }
 

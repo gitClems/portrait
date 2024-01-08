@@ -9,7 +9,6 @@ export const removeMenu = () => {
     const navBar = document.querySelector('#navBar')
     menuToggle.classList.remove('active')
     navBar.classList.remove('active')
-
 }
 
 function AppBar() {
@@ -38,11 +37,10 @@ function AppBar() {
         <div className='app-bar'>
             <Link className='app-name' to={"/"} onClick={removeMenu}>{person.name}</Link>
             <nav className='nav-bar' id='navBar'>
-                <NavLink className="btn" id='nav-btn-home-small' to="/" exact="true" activeClass="active" onClick={toogleMenu}>Accueil</NavLink>
-                <NavLink className="btn" id='nav-btn-work-small' to="/work" onClick={toogleMenu}>Réalisations</NavLink>
-                <NavLink className="btn" id='nav-btn-about-small' to="/about" onClick={toogleMenu}>A propos de moi</NavLink>
-                <NavLink className="btn" id='nav-btn-contact-small' to="/contact" onClick={toogleMenu}>Contact</NavLink>
-
+                <NavLink className="btn" id='nav-btn-home' to="/" exact="true" activeClass="active" onClick={toogleMenu}>Accueil</NavLink>
+                <NavLink className="btn" id='nav-btn-work' to="/work" onClick={toogleMenu}>Réalisations</NavLink>
+                <NavLink className="btn" id='nav-btn-about' to="/about" onClick={toogleMenu}>A propos de moi</NavLink>
+                <NavLink className="btn" id='nav-btn-contact' to="/contact" onClick={toogleMenu}>Contact</NavLink>
             </nav>
             <div className='contact' onClick={removeMenu}>
                 <Link to={"https://www.linkedin.com/in/cl%C3%A9ment-bamogo-11ab71228/"} target="_blank">

@@ -1,7 +1,7 @@
 import Hero from "../../components/hero"
 import { PreloadImages } from "../../components/loading"
 import "../css/home.scss"
-import { person, projects, imgUrl, domains } from "../../data/dataSet"
+import { person, projects, domains } from "../../data/dataSet"
 import Project from "../../components/project"
 import Button from "../../components/button"
 import { faArrowRight, faPaperPlane } from "@fortawesome/free-solid-svg-icons"
@@ -10,7 +10,7 @@ import { removeMenu } from "../../components/appBar"
 
 function Home() {
     return (
-        <PreloadImages imageUrls={imgUrl}>
+        <PreloadImages>
             <div id="home-page" onClick={removeMenu} onLoad={removeMenu}>
                 <section className="l1">
                     <Hero name={person.name} description={person.describe} profile={person.profile[0]}></Hero>

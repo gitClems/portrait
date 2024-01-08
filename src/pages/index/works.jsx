@@ -1,5 +1,5 @@
 import { PreloadImages } from "../../components/loading"
-import { imgUrl, projects } from "../../data/dataSet"
+import { projects } from "../../data/dataSet"
 import "../css/works.scss"
 import Project from "../../components/project"
 import { removeMenu } from "../../components/appBar"
@@ -7,7 +7,7 @@ import { removeMenu } from "../../components/appBar"
 
 function Works(props) {
     return (
-        <PreloadImages imageUrls={imgUrl}>
+        <PreloadImages >
             <div id="works-page" onClick={removeMenu} onLoad={removeMenu}>
                 <section className="accroche">
                     <p className="title">Mes réalisations</p>
