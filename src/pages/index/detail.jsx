@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { PreloadImages } from "../../components/loading"
 import { projects } from "../../data/dataSet"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faListCheck } from "@fortawesome/free-solid-svg-icons";
+import { faListCheck, faLocationDot, faCalendarPlus } from "@fortawesome/free-solid-svg-icons";
 import "../css/detail.scss"
 import { removeMenu } from "../../components/appBar";
 
@@ -14,7 +14,7 @@ function Detail(props) {
             img.style.width = "300px"
         }
     }
-    
+
 
     return (
         <PreloadImages>
@@ -29,9 +29,20 @@ function Detail(props) {
                         </div>
                     </div>
                     <div className="description-tools cl">
-                        <p style={{ fontSize: 20, color: "white" }}>Description</p>
+                        <span style={{ fontSize: 20, color: "white" }}>Description</span>
                         <p>{params ? projects[params.id - 1].description : "-"}</p>
-                        <p style={{ fontSize: 20, color: "white" }}>Outils / Méthodes / Mots clés</p>
+                        {
+                            projects[params.id - 1].location || projects[params.id - 1].periode ?
+                                <>
+                                    <p style={{ fontSize: 13, color: "white" }}>
+                                        <FontAwesomeIcon icon={faLocationDot} style = {{marginRight : 5}} /> {projects[params.id - 1].location}
+                                        <br />
+                                        <FontAwesomeIcon icon={faCalendarPlus} style = {{marginRight : 5}} />{projects[params.id - 1].periode}
+                                    </p>
+                                </>
+                                : null
+                        }
+                        <span style={{ fontSize: 20, color: "white" }}>Outils / Méthodes / Mots clés</span>
                         <div className="tools-list">
                             {
                                 projects[params.id - 1].tools?.map((tool) => {
@@ -43,29 +54,26 @@ function Detail(props) {
                         </div>
                     </div>
                 </section>
-                <section className="sec-2">
-                    {
-                        projects[params.id - 1].etapes ?
-                            <div>
-                                <span className="title">Les differentes étapes <FontAwesomeIcon icon={faListCheck}></FontAwesomeIcon></span>
-                                <div>
-                                    <ol className="liste-etape">
-                                        {
+                {
+                    projects[params.id - 1].etapes ?
+                        <section className="sec-2">
+                            <span className="title">Les differentes étapes <FontAwesomeIcon icon={faListCheck}></FontAwesomeIcon></span>
+                            <div style={{ display: "flex", justifyContent: "center" }}>
+                                <div className="liste-etape">
+                                    {
 
-                                            projects[params.id - 1].etapes?.map((etape) => {
-                                                return (
-                                                    <>
-                                                        <li className="etape"><span>Phase {etape.id} : </span>{etape.etape}</li>
-                                                        <p className="description">{etape.description}</p>
-                                                    </>
-                                                )
-                                            })
-                                        }
-                                    </ol>
+                                        projects[params.id - 1].etapes?.map((etape) => {
+                                            return (
+                                                <>
+                                                    <span className="etape">Phase {etape.id} :{etape.etape}</span>
+                                                    <p className="description">{etape.description}</p>
+                                                </>
+                                            )
+                                        })
+                                    }
                                 </div>
-                            </div> : ""
-                    }
-                </section>
+                            </div>
+                        </section> : ""}
             </div>
         </PreloadImages>
     )

@@ -4,7 +4,7 @@ import './css/button.scss'
 
 const Button = (props) => {
     return (
-        <Link className="myButton" to={props.to} onClick={window.scroll(0, 0)}>
+        <Link className="myButton" to={props.to} onClick={() => { window.scrollTo(0,0)}}>
             {props.title}
             <FontAwesomeIcon className="icon" icon={props.icon} />
         </Link>

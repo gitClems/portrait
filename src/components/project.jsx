@@ -16,7 +16,7 @@ function Project(props) {
                             onClick={() => { window.scrollTo(0, 0) }}
                         >
                             <span>{project.title}</span>
-                            <img src={project.image} alt={`${project.title}`}                            />
+                            <img src={project.image} alt={`${project.title}`} />
                         </Link>
                     )
                 })

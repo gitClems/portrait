@@ -8,7 +8,7 @@ export const domains = [
     {
         id: 2,
         title: "Recherche opérationnelle",
-        description: "Toujours en quête d'optimisation, la recherche (dans le domain logisque) offre un cardre de réflexion pour l'utilisation des nouvelle méthodes et outils dans les processus"
+        description: "Toujours en quête d'optimisation, la recherche (dans le domain logisque) offre un cardre de réflexion pour l'utilisation des nouvelle méthodes et outils dans les processus métiers."
     },
     {
         id: 3,
@@ -114,29 +114,31 @@ export const formation = {
 export const projects = [
     {
         id: 1,
-        title: "Tableau de bord de suivi d'activité logistique",
+        title: "Conception de tableau de bord pour la suivi d'activités de livraisons par consigne",
+        periode : "Juil. 2023 - Août 2023",
+        location : "CEOS Technology, Casablanca",
         image: require("../assets/works/ExpGlobale.png"),
-        description: "De la conception à la réalisation, nous avons fait avancé ce travail au cours d'un stage de deux mois au sein d'une entreprise à Casablanca.",
+        description: "Pour la bonne suivie des performances d'une activité, les tableaux de bords dynamiques paraissent très optimal dans le sens où ils offrent une vue aussi bien macroscopique que détaillée.",
         etapes: [
             {
                 id: 1,
-                etape: "Définition du problème",
-                description: "Comprendre et prendre en main les processus logistiques qui interviennent dans les activités de l’entreprise."
+                etape: "Définition du problème et définition du cahier de charge",
+                description: "Comprendre les processus logistiques qui sont en jeu et définir les frontières du projet."
             },
             {
                 id: 2,
                 etape: "Définition des indicateurs de performance (KPIs)",
-                description: "Définir les métriques à mesurer et à mesuer car c’est sur base de ces informations que nous allons annalyser la performance des processus."
+                description: "Définir les métriques à mesurer et à suivre par des processus de Benchmarking et d'analytiques."
             },
             {
                 id: 3,
-                etape: "Acquisition et modélisation des processus de notre application",
-                description: "Définir l’architecture de développment de l’applications (ici notre application de tableau de bord), définir la modélisation multidimensionelle pour les Faits et Dimensions, prendre en compte la gestion des rôles et des intervenant(e)s."
+                etape: "Préparation des données et modélisation des processus de notre application",
+                description: "Par le processus de l'ETL, extraire les données, les transformer et les charger dans le datawarehouse suivi d'une modélisation multidimensionnelle pour les rélation entre les mésures(les Faits) et les dimensions."
             },
             {
                 id: 4,
                 etape: "Implémentation d’interfaces interactives",
-                description: "Après la mise en place de l’architecture et de la feuille de routes, place a été donné à l’implémentation des graphes et des paramètres régulateurs comme la période des activités, les types de services, les localités…"
+                description: "Après la feuille de routes et la mise en place de l’architecture, place a été donné à l’implémentation des graphes et des paramètres régulateurs qui permettent de visualiser les graphes de manière dynamique."
             },
         ],
         tools: [
@@ -164,9 +166,11 @@ export const projects = [
     },
     {
         id: 2,
-        title: "Système d'information pour cliniques vétérinaires",
+        title: "Conception de système d'information centralisé",
+        location : "ENSIAS",
+        periode : "Oct. 2022 - Nov. 2022",
         image: require("../assets/works/VueAdmin.PNG"),
-        description: "Les systèmes d'information font aujourd'hui parti des support indispensables pour les entreprises. Un bon système d'information permet de mieux communiquer, de suivre les les activités et de suivre en temps réel la traçabilité des activités. Ce projet a été l'occasion pour moi et mon équipe lors d'un projet accadémique de développer un SI centralisé pour un réseau de cliniques.",
+        description: "Les systèmes d'information font aujourd'hui parti des support assez importants pour la communication, le partage de fichiers, la plannification, le reporting etc. Un bon système d'information permet de mieux communiquer, de suivre les les activités et de suivre en temps réel la traçabilité des activités. Ce projet a été l'occasion pour moi et mon équipe lors d'un projet accadémique de développer un SI centralisé pour un réseau de cliniques.",
         etapes: [
             {
                 id: 1,
@@ -212,6 +216,8 @@ export const projects = [
     {
         id: 3,
         title: "Application mobile pour activités commerciales",
+        periode : "Août 2022",
+        location : "OBAAS Consulting",
         image: require("../assets/works/App1.jpg"),
         description: "Au cours de mon premier stage, j'ai réalisé cette application mobile pour une entreprise qui oeuvre dans le consulting. Elle permettrait à l'entreprise de proposer ses servives à des sociétés via l'applications mobile ci contre.",
         etapes: [
@@ -261,7 +267,7 @@ export const person = {
     year: "2023",
     name: "BAMOGO Clément",
     describe: "Elève ingénieur en Supply Chain Management basé à Rabat, au Maroc",
-    profile: [require("../assets/profiles/profile-1.png"), require("../assets/profiles/profile-2.jpg")],
+    profile: [require("../assets/profiles/profile-1.png"), require("../assets/profiles/profile-3-mini.jpg")],
     tel: "+212 6 82 41 90 21",
     email: "clement2bamogo@gmail.com",
     adress: "Rabat, Maroc",
@@ -276,6 +282,8 @@ export const imgUrl = [
     require("../assets/works/ExpGlobale.png"),
     require("../assets/profiles/profile-1.png"),
     require("../assets/profiles/profile-2.jpg"),
+    require("../assets/profiles/profile-3.jpg"),
+    require("../assets/profiles/profile-3-mini.jpg"),
     require("../assets/backgrounds/bg-footer-dark-800w.jpg"),
     require("../assets/backgrounds/bg-footer-dark-1440w.jpg"),
     require("../assets/backgrounds/bg-main-dark-800w.jpg"),

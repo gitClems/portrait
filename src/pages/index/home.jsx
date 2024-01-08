@@ -16,7 +16,7 @@ function Home() {
                     <Hero name={person.name} description={person.describe} profile={person.profile[0]}></Hero>
                 </section>
                 <section className="l2">
-                    {domains.map((domain) => { return (<Domain id = {domain.id} title={domain.title} description={domain.description} ></Domain>) })}
+                    {domains.map((domain) => { return (<Domain id={domain.id} title={domain.title} description={domain.description} ></Domain>) })}
                 </section>
                 <section className="l3">
                     <span className="title">Mes réalisation<div className="see-more-top"><Button title={"Voir plus"} icon={faArrowRight} to={"./work"}></Button></div></span>

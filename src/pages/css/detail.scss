@@ -35,6 +35,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
             .title {
                 font-size: calc(var(--font-size-vmax) + .5vmax);
                 text-align: center;
@@ -91,54 +92,40 @@
         padding-left: 50px;
         padding-right: 50px;
         margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+
+        .title {
+            width: 100%;
+            font-size: calc(var(--font-size-vmax) + .5vmax);
+            margin-bottom: 20px;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            transition: 0.2s;
+        }
 
         div {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            justify-content: center;
-
-            .title {
-                width: 100%;
-                font-size: calc(var(--font-size-vmax) + .5vmax);
-                margin-bottom: 20px;
-                margin-top: 20px;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
+            .liste-etape {
+                list-style: none;
+                border: 1px solid var(--subtitle-color);
+                border-radius: 10px;
+                background-color: rgba(0, 0, 0, 0.3);
+                width: 60vw;
                 transition: 0.2s;
-            }
+                padding: 15px;
 
-            div {
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                .liste-etape {
-                    list-style: none;
-                    border: 1px solid var(--subtitle-color);
-                    border-radius: 10px;
-                    background-color: rgba(0, 0, 0, 0.3);
-                    width: 60vw;
-                    transition: 0.2s;
-                    padding-right: 15px;
-                    padding-top: 15px;
-
-                    .title {
-                        color: white;
-                    }
-
-                    .description {
-                        text-align: justify;
-                        color: var(--subtitle-color);
-                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                    }
+                .description {
+                    text-align: justify;
+                    color: var(--subtitle-color);
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 }
             }
         }
     }
-
 }
 
 @media only screen and (max-width: 800px) {
@@ -168,37 +155,34 @@
 
         .sec-2 {
             width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+
+            .title {
+                font-size: 23px;
+                transition: 0.2s;
+                justify-content: space-between;
+            }
 
             div {
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                width: 100%;
 
-                .title {
-                    font-size: 23px;
-                    transition: 0.2s;
-                    justify-content: space-between;
-                }
+                .liste-etape {
+                    width: 100%;
 
-                div {
+                    .title {
+                        color: white;
+                    }
 
-                    .liste-etape {
-                        width: 100%;
-
-                        .title {
-                            color: white;
-                        }
-
-                        .description {
-                            font-size: 13px;
-                            color: var(--subtitle-color);
-                            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                        }
+                    .description {
+                        font-size: 13px;
+                        color: var(--subtitle-color);
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                     }
                 }
-
             }
+
         }
     }
 }
