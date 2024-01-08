@@ -4,6 +4,7 @@ import { imgUrl, projects } from "../../data/dataSet"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faListCheck } from "@fortawesome/free-solid-svg-icons";
 import "../css/detail.scss"
+import { removeMenu } from "../../components/appBar";
 
 function Detail(props) {
     let params = useParams()
@@ -17,7 +18,7 @@ function Detail(props) {
 
     return (
         <PreloadImages imageUrls={imgUrl}>
-            <div id="detail-page">
+            <div id="detail-page" onClick={removeMenu} onLoad={removeMenu}>
                 <section className="sec-1">
                     <div className="title-image cl">
                         <p className="title">{params ? projects[params.id - 1].title : "-"}</p>

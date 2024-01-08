@@ -5,6 +5,7 @@ import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { PreloadImages } from '../../components/loading';
 import { imgUrl } from '../../data/dataSet';
+import { removeMenu } from '../../components/appBar';
 
 const Contact = () => {
     const form = useRef();
@@ -24,7 +25,7 @@ const Contact = () => {
     return (
         <>
             <PreloadImages imageUrls={imgUrl}>
-            <div id="contact-page">
+            <div id="contact-page" onClick={removeMenu} onLoad={removeMenu}>
                 <div class="form-style-6">
                     <h1>Envoyez-moi un méssage</h1>
                     <form ref={form} onSubmit={sendEmail}>

@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import AppBar, { removeMenu } from "./components/appBar";
+import AppBar from "./components/appBar";
 import "./App.scss"
 import Home from "./pages/index/home";
 import Works from "./pages/index/works";
