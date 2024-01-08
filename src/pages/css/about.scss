@@ -80,7 +80,7 @@
 
             li {
                 margin-bottom: 10px;
-                
+
                 .tools-list {
                     max-width: 100%;
                     display: flex;
@@ -92,11 +92,11 @@
                     .tool {
                         color: white;
                         border: 1px solid var(--subtitle-color);
-                        padding: 10px;
+                        padding: 5px;
                         font-size: 13px;
-                        border-radius: 10px;
+                        border-radius: 5px;
                         margin: 2px;
-                        height: max-content;
+                        // height: max-content;
                         font-family: var(--font-family);
                     }
                 }
@@ -216,6 +216,12 @@
             .message {
                 padding-left: 10px;
                 padding-right: 10px;
+            }
+        }
+
+        .profile {
+            img {
+                width: 80vw;
             }
         }
 
