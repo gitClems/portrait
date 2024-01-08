@@ -74,6 +74,14 @@ export const formation = {
                     id: 5,
                     keyword: "Power BI"
                 },
+                {
+                    id: 6,
+                    keyword: "BPMN"
+                },
+                {
+                    id: 7,
+                    keyword: "salesforce lightning"
+                },
             ]
         },
         {
@@ -88,7 +96,7 @@ export const formation = {
                 },
                 {
                     id: 2,
-                    keyword: "Programmation C"
+                    keyword: "Programmation C/C++"
                 },
                 {
                     id: 3,
@@ -103,7 +111,7 @@ export const formation = {
                     keyword: "Algèbre"
                 },
                 {
-                    id: 5,
+                    id: 4,
                     keyword: "Analyse numérique"
                 },
             ],
@@ -215,26 +223,26 @@ export const projects = [
     },
     {
         id: 3,
-        title: "Application mobile pour activités commerciales",
+        title: "Développement d'application mobile pour comme vitrine de publications de service",
         periode : "Août 2022",
         location : "OBAAS Consulting",
         image: require("../assets/works/App1.jpg"),
-        description: "Au cours de mon premier stage, j'ai réalisé cette application mobile pour une entreprise qui oeuvre dans le consulting. Elle permettrait à l'entreprise de proposer ses servives à des sociétés via l'applications mobile ci contre.",
+        description: "Au cours de mon premier stage, j'ai réalisé cette application mobile pour une entreprise qui œuvre dans le consulting. Elle permettrait à l'entreprise de proposer ses servives à des sociétés via l'applications tout en ayant un suivi de la progressions de réalisation.",
         etapes: [
             {
                 id: 1,
                 etape: "Définition du problème",
-                description: "Lecture du cahier de charge et définition des frontières du projet."
+                description: "Définir du cahier de charge et les frontières du projet."
             },
             {
                 id: 2,
                 etape: "Proposition de maquettes",
-                description: "Proposer des maquettes d’applications mobiles et analysés avec le Product Owner les éventuelles modification à faire."
+                description: "Proposer des maquettes d’applications mobiles et analyser avec le Product Owner les éventuelles modifications à faire."
             },
             {
                 id: 3,
-                etape: "Acquisition et modélisation des processus de notre application",
-                description: "Définition de l’architecture à suivre à traver des diagrammes de décision et de cas d’utilisation."
+                etape: "Modélisation des processus fonctionnels",
+                description: "Définition de l’architecture à suivre à traver des diagrammes de décision et UML."
             },
             {
                 id: 4,

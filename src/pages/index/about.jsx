@@ -9,7 +9,7 @@ function About() {
         <PreloadImages >
             <div id="about-page" onClick={removeMenu} onLoad={removeMenu}>
                 <section className="accroche">
-                    <p className="title">A propos de moi</p>
+                    <span className="title">A propos de moi</span>
                     <p className="message">Merci pour votre interêt. Lisez ci-dessous pour en savoir plus sur moi-même et mon parcours.</p>
                 </section>
                 <section className="profile">

@@ -10,7 +10,7 @@ function Works(props) {
         <PreloadImages >
             <div id="works-page" onClick={removeMenu} onLoad={removeMenu}>
                 <section className="accroche">
-                    <p className="title">Mes réalisations</p>
+                    <span className="title">Mes réalisations</span>
                     <p className="message">Consultez mes projets les plus récents ci-dessous pour avoir une idée de mon expérience.</p>
                 </section>
                 <section className="works">
