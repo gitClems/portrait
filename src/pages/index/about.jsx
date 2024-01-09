@@ -44,7 +44,7 @@ function About() {
                     </div>
 
                 </section>
-                {/* <section className="sec-3 skills">
+                <section className="sec-3 skills">
                     {
                         skills ?
                             <>
@@ -62,7 +62,7 @@ function About() {
                             : null
 
                     }
-                </section> */}
+                </section>
             </div>
         </PreloadImages>
     )
