@@ -12,12 +12,10 @@
     color: var(--white-color-1);
 
     .accroche {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
 
         .title {
             transition: 0.2s;
+            text-align: center;
             font-size: var(--title-font-size-large);
         }
 
@@ -36,9 +34,9 @@
         justify-content: center;
         flex-wrap: wrap;
 
-            .project-container {
-                margin: 20px;
-            }
+        .project-container {
+            margin: 20px;
+        }
     }
 
 }
@@ -88,6 +86,7 @@
                 padding-right: 10px;
             }
         }
+
         .works {
             transition: 0.2s;
             flex-direction: column;

@@ -87,7 +87,7 @@ export const formation = {
         {
             id: 2,
             periode: "2019-2021",
-            label: "Facuilté des Sciences et Techniques de Monhammedia(FSTM)",
+            label: "Faculté des Sciences et Techniques de Monhammedia(FSTM)",
             description: "J'ai su dévélopper des connaissance en analyse numérique et statistiques. Ceci combiné à l'algorithmique m'a donné des solides acquis sur la transformation d'un problème réel en solution mathématique et ensuite son intégration grace à des algorithmes.",
             tools: [
                 {
@@ -275,6 +275,7 @@ export const person = {
     year: "2023",
     name: "BAMOGO Clément",
     describe: "Elève ingénieur en Supply Chain Management basé à Rabat, au Maroc",
+    about :"Durant tout mon parcours universitaire et ingénieur, j'ai pu dévélopper un bon nombre de connaissance aussi bien dans les sciences exactes que celles qui relèvent de l'esprit qui définissent l'état d'un ingénieur.",
     profile: [require("../assets/profiles/profile-1.png"), require("../assets/profiles/profile-3-mini.jpg")],
     tel: "+212 6 82 41 90 21",
     email: "clement2bamogo@gmail.com",

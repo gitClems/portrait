@@ -8,55 +8,60 @@ function About() {
     return (
         <PreloadImages >
             <div id="about-page" onClick={removeMenu} onLoad={removeMenu}>
-                <section className="accroche">
-                    <span className="title">A propos de moi</span>
-                    <p className="message">Merci pour votre interêt. Lisez ci-dessous pour en savoir plus sur moi-même et mon parcours.</p>
-                </section>
-                <section className="profile">
+                <section className="sec-1 accroche">
+                    <div className="message">
+                        <p className="title">A propos de moi</p>
+                        <p className="description">{person.about}</p>
+                    </div>
                     <img src={person.profile[1]} alt="Profile" />
                 </section>
-                <section className="formation">
+                <section className="sec-2 formation">
                     <div>
-                        <span className="title">Formation</span>
-                        <p >{formation.description}</p>
-                    </div>
-                    <ul className="formation-list">
-                        {
-                            formation.formations.map((formation) => {
-                                return (
-                                    <li className="formation-item">
-                                        {formation.periode} {formation.label}
-                                        <p>{formation.description}</p>
-                                        {
-                                            formation.tools ?
-                                                <>
-                                                    <span style={{ fontSize: 20, color: "white" }}>Outils / Méthodes / Mots clés</span><div className="tools-list">
-                                                        {formation.tools?.map((tool) => {
-                                                            return (
-                                                                tool.keyword ? <span className="tool">{tool.keyword}</span> : null
-                                                            )
-                                                        })}
-                                                    </div>
-                                                </> : null
-                                        }
-                                    </li>
-                                )
-                            })
+                        <p className="title">Mes formations</p>
+                        <div className="liste-formations">
+                            {
+                                formation.formations.map((formation) => {
+                                    return (
+                                        <>
+                                            <span className="formation-item"> {formation.periode} : {formation.label}</span>
+                                            <p className="description">{formation.description}</p>
 
-                        }
-                    </ul>
+                                            <span style={{ fontSize: 20, color: "white" }}>Outils / Méthodes / Mots clés</span>
+                                            <div className="list-tools">
+                                                {
+                                                    formation.tools?.map((tool) => {
+                                                        return (
+                                                            <span className="tool" >{tool.keyword}</span>
+                                                        )
+                                                    })
+                                                }
+                                            </div>
+                                        </>
+                                    )
+                                })
+                            }
+                        </div>
+                    </div>
+
                 </section>
-                <section className="skills">
-                    <div><span className="title">Skills</span></div>
-                    <ul>
-                        {
-                            skills.map((skill) => {
-                                return (
-                                    <li className="skills-item">{skill.title}</li>
-                                )
-                            })
-                        }
-                    </ul>
+                <section className="sec-3 skills">
+                    {
+                        skills ?
+                            <>
+                                <span className="title">Skills</span>
+                                <ul className="list-skills">
+                                    {
+                                        skills.map(skill => {
+                                            return (
+                                                <li className="skill">{skill.title}</li>
+                                            )
+                                        })
+                                    }
+                                </ul>
+                            </>
+                            : null
+
+                    }
                 </section>
             </div>
         </PreloadImages>
