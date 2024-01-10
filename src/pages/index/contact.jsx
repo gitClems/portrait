@@ -1,15 +1,28 @@
 import React, { useRef } from 'react';
 import "../css/contact.scss"
+import "../css/message-sent.scss"
 import emailjs from '@emailjs/browser';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { PreloadImages } from '../../components/loading';
 import { imgUrl } from '../../data/dataSet';
 import { removeMenu } from '../../components/appBar';
+import { useNavigate } from 'react-router-dom';
+
+export const Merci = () => {
+    return (
+        <PreloadImages >
+            <div id="message-sent" onClick={removeMenu} onLoad={removeMenu}>
+                <h1>Votre message a été bien énvoyé. Je m'assurerai de vous repondre le plus tôt possible. Merci</h1>
+            </div>
+        </PreloadImages>
+    )
+}
 
 const Contact = () => {
     const form = useRef()
-
+    const navigate = useNavigate()
+    var messageStatus = null
     const HandleContact = (e) => {
         e.preventDefault()
         const name = document.getElementById('name').value
@@ -32,6 +45,9 @@ const Contact = () => {
                 YOUR_PUBLIC_KEY
             ).then((result) => {
                 console.log(result.text);
+                messageStatus = "message-sent"
+                navigate(`./${messageStatus}`)
+                return result.text
             })
 
         } catch (error) {
@@ -45,7 +61,7 @@ const Contact = () => {
                 <div id="contact-page" onClick={removeMenu} onLoad={removeMenu}>
                     <div class="form-style-6">
                         <h1>Envoyez-moi un méssage</h1>
-                        <form action="./home" ref={form} onSubmit={HandleContact}>
+                        <form key={messageStatus} ref={form} onSubmit={HandleContact}>
                             <label htmlFor="name">Nom et prénom</label>
                             <input type="text" name="name" id="name" placeholder='Nom et prénom' required />
 
