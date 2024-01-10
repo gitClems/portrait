@@ -119,11 +119,11 @@ export const formations = [
 export const projects = [
     {
         id: 1,
-        title: "Conception de tableau de bord pour la suivi d'activités de livraisons par consigne",
+        title: "Conception de tableau de bord pour la suivie d'activités de livraisons en consigne",
         periode: "Juil. 2023 - Août 2023",
         location: "CEOS Technology, Casablanca",
         image: require("../assets/works/ExpGlobale.png"),
-        description: "Pour la bonne suivie des performances d'une activité, les tableaux de bords dynamiques paraissent très optimal dans le sens où ils offrent une vue aussi bien macroscopique que détaillée.",
+        description: "Pour la bonne suivie des performances d'une activité, les tableaux de bords dynamiques paraissent très optimals dans le sens où ils offrent une vue aussi bien macroscopique que détaillée.",
         etapes: [
             {
                 id: 1,

@@ -41,15 +41,14 @@
         }
     }
 
-
     .sec-2 {
 
         .div-container {
             display: flex;
-            padding: 25px;
+            margin-top: 25px;
 
             .title {
-                max-width: 400px;
+                min-width: max-content;
                 margin: 25px;
                 transition: 0.2s;
                 font-size: calc(var(--title-font-size-large) - 10px);
@@ -61,6 +60,7 @@
                 border-radius: 15px;
                 margin: 10px;
                 width: 60vw;
+                max-width: 800px;
                 transition: 0.1s;
 
                 .formation-item {
@@ -74,9 +74,7 @@
                     font-family: var(--subtitle-font-family);
                     font-size: 17px;
                     text-align: justify;
-                    // margin-left: 10px;
                     margin: 0px 10px 10px 0px;
-
                 }
 
                 .list-tools {
@@ -94,7 +92,6 @@
                 }
             }
         }
-
     }
 
     .sec-3 {
@@ -110,7 +107,6 @@
         }
 
         .list-skills {
-            // color: red;
             flex: 6;
             margin: 25px;
             max-width: 700px;
@@ -134,7 +130,6 @@
         .sec-1 {
             flex-direction: column;
             align-items: center;
-
 
             .message {
                 max-width: 100%;
@@ -161,13 +156,28 @@
     }
 }
 
+@media only screen and (max-width: 700px) {
+    #about-page {
+        .sec-2 {
+            .div-container {
+                .list-formation {
+                    .description, .tool{
+                        transition: 0.2s;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 500px) {
     #about-page {
 
         .sec-1 {
             .message {
                 .description {
-                    font-size: 15px;
+                    font-size: 14px;
                 }
             }
         }
@@ -185,20 +195,24 @@
 
         .sec-2 {
             .div-container {
+                .title {
+                    margin: 15px 0px 0px 15px;
+                }
+
                 .list-formation {
 
                     .formation-item {
                         font-size: 17px;
                     }
 
-                    .description {
-                        font-size: 13px;
+                    // .description {
+                    //     font-size: 13px;
 
-                    }
+                    // }
 
-                    .tool {
-                        font-size: 13px;
-                    }
+                    // .tool {
+                    //     font-size: 13px;
+                    // }
                 }
             }
         }

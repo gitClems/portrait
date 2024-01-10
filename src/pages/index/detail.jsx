@@ -32,7 +32,7 @@ function Detail(props) {
                         projects[params.id - 1].description ?
                             <div className="description-tools cl">
                                 <span style={{ fontSize: 20, color: "white" }}>Description</span>
-                                <p>{projects[params.id - 1]?.description}</p>
+                                <p className="description">{projects[params.id - 1]?.description}</p>
                                 {
                                     projects[params.id - 1].location || projects[params.id - 1].periode ?
                                         <p style={{ fontSize: 13, color: "white" }}>
@@ -63,15 +63,14 @@ function Detail(props) {
                 {
                     projects[params.id - 1].etapes ?
                         <section className="sec-2">
-                            <span className="title">Les differentes étapes <FontAwesomeIcon icon={faListCheck}></FontAwesomeIcon></span>
+                            <span className="title"><FontAwesomeIcon style={{marginRight : 10}} icon={faListCheck}></FontAwesomeIcon>Les differentes étapes</span>
                             <div style={{ display: "flex", justifyContent: "center" }}>
                                 <div className="liste-etape">
                                     {
-
                                         projects[params.id - 1].etapes?.map((etape) => {
                                             return (
                                                 <>
-                                                    <span className="etape">Phase {etape.id} :{etape.etape}</span>
+                                                    <span className="etape">Phase {etape.id}: {etape.etape}</span>
                                                     <p className="description">{etape.description}</p>
                                                 </>
                                             )
