@@ -8,7 +8,6 @@
     min-height: 100vh;
 
     .form-style-6 {
-        font-family: var(--font-family);
         margin: auto;
         padding: 10px;
         flex-direction: column;
@@ -22,7 +21,15 @@
             min-width: 300px;
 
             label {
+                font-family: var(--font-family);
+                font-size: 18px;
                 color: white;
+            }
+
+            #subject {
+                option {
+                    background-color: var(--background-dark);
+                }
             }
 
             div {
@@ -40,10 +47,10 @@
     }
 
     .form-style-6 h1 {
-        width: 50%;
         padding: 10px 0;
         text-align: center;
         color: #fff;
+        font-family: var(--font-family);
     }
 
     .form-style-6 input[type="text"],
@@ -56,6 +63,8 @@
     .form-style-6 input[type="url"],
     .form-style-6 textarea,
     .form-style-6 select {
+        font-family: var(--subtitle-font-family);
+        font-size: 17px;
         border-radius: 5px;
         outline: none;
         box-sizing: border-box;
@@ -67,7 +76,7 @@
         border: 1px solid #ccc;
         padding: 10px;
         color: white;
-        font: 95% Arial, Helvetica, sans-serif;
+        // font: 95% Arial, Helvetica, sans-serif;
     }
 
     .form-style-6 input[type="text"]:focus,
@@ -96,6 +105,7 @@
         }
     }
 }
+
 @media only screen and (max-width: 500px) {
     #contact-page {
         .form-style-6 {

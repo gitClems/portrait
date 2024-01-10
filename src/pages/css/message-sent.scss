@@ -9,4 +9,30 @@
     justify-content: center;
     align-items: center;
     color: white;
+
+    .l1 {
+        text-align: center;
+        transition: 0.2s;
+        color: white;
+        font-family: var(--font-family);
+        font-size: calc(var(--font-size-vmax) + 0.5vmax);
+    }
+
+}
+
+@media screen and (max-width: 1500px) {
+    #message-sent {
+        .l1 {
+            transition: 0.2s;
+            font-size: calc(var(--title-font-size-small) + 0.5vmax);
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    #message-sent {
+        .l1 {
+            transition: 0.2s;
+            font-size: calc(var(--title-font-size-small));
+        }
+    }
 }

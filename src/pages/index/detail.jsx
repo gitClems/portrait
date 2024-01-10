@@ -5,17 +5,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faListCheck, faLocationDot, faCalendarPlus } from "@fortawesome/free-solid-svg-icons";
 import "../css/detail.scss"
 import { removeMenu } from "../../components/appBar";
+import Page404 from "./error404";
 
 function Detail(props) {
     let params = useParams()
 
-    // eslint-disable-next-line eqeqeq, array-callback-return
+    // eslint-disable-next-line eqeqeq
     const projectExist = projects.find((p) => p.id == params.id)
-
-    console.log('====================================');
-    console.log(projectExist);
-    console.log('====================================');
-
     function ImageSize() {
         const img = document.querySelector('.img-targeted')
         if (img.clientHeight > img.clientWidth) {
@@ -90,9 +86,7 @@ function Detail(props) {
                                 </section> : ""
                         }
                     </div>
-                    : <div id="detail-page" style={{display : "flex", justifyContent : 'center', alignItems : "center"}} onClick={removeMenu} onLoad={removeMenu}>
-                        <h1>Projet introuvable</h1>
-                    </div>
+                    : <Page404 title = {"Projet introuvable"}></Page404>
             }
         </PreloadImages>
     )

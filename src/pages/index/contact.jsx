@@ -13,7 +13,8 @@ export const Merci = () => {
     return (
         <PreloadImages >
             <div id="message-sent" onClick={removeMenu} onLoad={removeMenu}>
-                <h1>Votre message a été bien énvoyé. Je m'assurerai de vous repondre le plus tôt possible. Merci</h1>
+                <p className='l1'>Message envoyé avec succès</p>
+                <p className='l2'>Votre message a été bien énvoyé. Je m'assurerai de vous repondre le plus tôt possible. Merci</p>
             </div>
         </PreloadImages>
     )
@@ -61,6 +62,7 @@ const Contact = () => {
                 <div id="contact-page" onClick={removeMenu} onLoad={removeMenu}>
                     <div class="form-style-6">
                         <h1>Envoyez-moi un méssage</h1>
+                        <br />
                         <form key={messageStatus} ref={form} onSubmit={HandleContact}>
                             <label htmlFor="name">Nom et prénom</label>
                             <input type="text" name="name" id="name" placeholder='Nom et prénom' required />
@@ -70,7 +72,7 @@ const Contact = () => {
 
                             <label htmlFor="subject">Objet</label>
                             <select name="subject" id="subject" required>
-                                <option value="">Choisir un sujet</option>
+                                <option  style={{fontFamily : "var(--font-family)"}} value="">Choisir un sujet</option>
                                 <option value="Récruter">Récruter</option>
                                 <option value="Devenir collaborateur">Devenir collaborateur</option>
                                 <option value="Autre">Autre</option>
