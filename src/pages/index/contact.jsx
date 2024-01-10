@@ -30,16 +30,11 @@ const Contact = () => {
     var messageStatus = null
     const HandleContact = (e) => {
         e.preventDefault()
-        const name = document.getElementById('name').value
-        const email = document.getElementById('email').value
-        const subject = document.getElementById('subject').value
-        const message = document.getElementById('message').value
-        const data = { name, email, subject, message }
-        console.log(data);
 
         const SERVICE_ID = 'service_zlckg8l'
         const YOUR_TEMPLATE_ID = 'template_57h4o1s'
         const YOUR_PUBLIC_KEY = 'HuElWtPHbw3WlvufV'
+        const AUTO_REPLAY_ID = 'template_kd0c6en'
 
         try {
             emailjs.sendForm(
@@ -48,10 +43,11 @@ const Contact = () => {
                 form.current,
                 YOUR_PUBLIC_KEY
             ).then((result) => {
-                console.log(result.text);
-                messageStatus = "message-sent"
                 navigate(`./${messageStatus}`)
-                return result.text
+                emailjs.send(
+                    SERVICE_ID,
+                    AUTO_REPLAY_ID
+                )
             })
 
         } catch (error) {
