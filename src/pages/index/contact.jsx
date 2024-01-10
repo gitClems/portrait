@@ -8,45 +8,67 @@ import { imgUrl } from '../../data/dataSet';
 import { removeMenu } from '../../components/appBar';
 
 const Contact = () => {
-    const form = useRef();
-    const sendEmail = (e) => {
-        e.preventDefault();
+    const form = useRef()
+
+    const HandleContact = (e) => {
+        e.preventDefault()
+        const name = document.getElementById('name').value
+        const email = document.getElementById('email').value
+        const subject = document.getElementById('subject').value
+        const message = document.getElementById('message').value
+        const data = { name, email, subject, message }
+        console.log(data);
+
+        const SERVICE_ID = 'service_zlckg8l'
+        const YOUR_TEMPLATE_ID = 'template_57h4o1s'
+        const YOUR_PUBLIC_KEY = 'HuElWtPHbw3WlvufV'
 
 
-        emailjs.sendForm('gmail', 'template_slwm0kh', form.current, 'wePEUiMFs1J-VZac-oh1C')
-            .then((result) => {
+        try {
+            emailjs.sendForm(
+                SERVICE_ID,
+                YOUR_TEMPLATE_ID,
+                form.current,
+                YOUR_PUBLIC_KEY
+            ).then((result) => {
                 console.log(result.text);
-                alert(result.text)
-            }, (error) => {
-                console.log(error.text);
-                alert(error.text)
-            });
-    };
+            })
+
+        } catch (error) {
+            console.log(error.message);
+        }
+    }
+
     return (
         <>
             <PreloadImages imageUrls={imgUrl}>
-            <div id="contact-page" onClick={removeMenu} onLoad={removeMenu}>
-                <div class="form-style-6">
-                    <h1>Envoyez-moi un méssage</h1>
-                    <form ref={form} onSubmit={sendEmail}>
-                        <label for="user_name">Nom et prénom</label>
-                        <input type="text" name="user_name" placeholder="Nom et prénom" />
+                <div id="contact-page" onClick={removeMenu} onLoad={removeMenu}>
+                    <div class="form-style-6">
+                        <h1>Envoyez-moi un méssage</h1>
+                        <form action="./home" ref={form} onSubmit={HandleContact}>
+                            <label htmlFor="name">Nom et prénom</label>
+                            <input type="text" name="name" id="name" placeholder='Nom et prénom' required />
 
-                        <label for="user_email">Adress e-mail</label>
-                        <input type="email" name="user_email" placeholder="exemple@gmail.com" />
+                            <label htmlFor="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder='exemple@gmail.com' required />
 
-                        <label for="topic">Objet</label>
-                        <input type="text" name="topic" placeholder="Le sujet de votre méssage" />
+                            <label htmlFor="subject">Objet</label>
+                            <select name="subject" id="subject" required>
+                                <option value="">Choisir un sujet</option>
+                                <option value="Récruter">Récruter</option>
+                                <option value="Devenir collaborateur">Devenir collaborateur</option>
+                                <option value="Autre">Autre</option>
+                            </select>
 
-                        <label for="message">Message</label>
-                        <textarea name="message" placeholder="Insérez votre méssage"></textarea>
+                            <label htmlFor="message">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="10" required></textarea>
 
-                        <div>
-                            <button type='button' className='myButton'>Envoyez <FontAwesomeIcon className='icon' icon={faPaperPlane}></FontAwesomeIcon></button>
-                        </div>
-                    </form>
+                            <div>
+                                <button className='myButton' value={"send"} >Envoyez <FontAwesomeIcon style={{ marginLeft: 10 }} icon={faPaperPlane}></FontAwesomeIcon></button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div>
             </PreloadImages>
         </>
     )

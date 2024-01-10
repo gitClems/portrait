@@ -86,14 +86,22 @@
 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
     #contact-page {
         .form-style-6 {
-
-
             form {
                 transition: 0.2s;
-                max-width: 90%
+                max-width: 80%
+            }
+        }
+    }
+}
+@media only screen and (max-width: 500px) {
+    #contact-page {
+        .form-style-6 {
+            form {
+                transition: 0.2s;
+                max-width: 95%
             }
         }
     }
