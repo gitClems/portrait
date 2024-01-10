@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/portrait/static/css/main.b1277cd2.css",
-    "main.js": "/portrait/static/js/main.8270bbf9.js",
+    "main.css": "/portrait/static/css/main.98f5de5f.css",
+    "main.js": "/portrait/static/js/main.175abe58.js",
     "static/js/787.590429e8.chunk.js": "/portrait/static/js/787.590429e8.chunk.js",
     "static/media/ExpGlobale.png": "/portrait/static/media/ExpGlobale.ca13977f40800ee86f37.png",
     "static/media/profile-2.jpg": "/portrait/static/media/profile-2.537facec5af3eddf1b62.jpg",
     "static/media/profile-1.png": "/portrait/static/media/profile-1.4358644ff2f75af86fb9.png",
+    "static/media/not-found.png": "/portrait/static/media/not-found.5f7c853cdda5cf6336a9.png",
     "static/media/profile-3.jpg": "/portrait/static/media/profile-3.b2fafa24efe642276d90.jpg",
     "static/media/App1.jpg": "/portrait/static/media/App1.9ae3a153ddbe1f73dc1b.jpg",
     "static/media/VueAdmin.PNG": "/portrait/static/media/VueAdmin.900d19220a60abadb7ea.PNG",
@@ -16,12 +17,12 @@
     "static/media/bg-footer-dark-1440w.jpg": "/portrait/static/media/bg-footer-dark-1440w.33b264046e5e5e0b2b9e.jpg",
     "static/media/bg-main-dark-800w.jpg": "/portrait/static/media/bg-main-dark-800w.d09dcc3cbf1efb6ef3d1.jpg",
     "index.html": "/portrait/index.html",
-    "main.b1277cd2.css.map": "/portrait/static/css/main.b1277cd2.css.map",
-    "main.8270bbf9.js.map": "/portrait/static/js/main.8270bbf9.js.map",
+    "main.98f5de5f.css.map": "/portrait/static/css/main.98f5de5f.css.map",
+    "main.175abe58.js.map": "/portrait/static/js/main.175abe58.js.map",
     "787.590429e8.chunk.js.map": "/portrait/static/js/787.590429e8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1277cd2.css",
-    "static/js/main.8270bbf9.js"
+    "static/css/main.98f5de5f.css",
+    "static/js/main.175abe58.js"
   ]
 }
