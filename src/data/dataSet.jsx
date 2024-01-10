@@ -269,10 +269,10 @@ export const projects = [
 ]
 
 export const person = {
-    year: "2023",
+    year: "2024",
     name: "BAMOGO Clément",
     describe: "Elève ingénieur en Supply Chain Management basé à Rabat, au Maroc",
-    about: "Durant tout mon parcours universitaire et ingénieur, j'ai pu dévélopper un bon nombre de connaissance aussi bien dans les sciences exactes que celles qui relèvent de l'esprit qui définissent l'état d'un ingénieur.",
+    about: "Durant tout mon parcours universitaire et ingénieur, j'ai pu dévélopper un bon nombre de connaissances aussi bien dans les sciences exactes que celles qui relèvent de l'esprit qui définissent l'état d'un ingénieur.",
     profile: [require("../assets/profiles/profile-1.png"), require("../assets/profiles/profile-3-mini.jpg")],
     tel: "+212 6 82 41 90 21",
     email: "clement2bamogo@gmail.com",

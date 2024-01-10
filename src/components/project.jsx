@@ -12,7 +12,7 @@ function Project(props) {
                 array.map((project) => {
                     return (
                         <Link key={project.id} className="project-container"
-                            to={`/work/${project.id}`}
+                            to={`work/${project.id}`}
                             onClick={() => { window.scrollTo(0, 0) }}
                         >
                             <span>{project.title}</span>

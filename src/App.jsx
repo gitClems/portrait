@@ -15,12 +15,12 @@ function App() {
       <AppBar />
       <Routes>
         <Route path='/' index element={<Home />} />
-        <Route path='/work' element={<Works />} />
-        <Route path='/about' element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path='/work/:id' element={<Detail />} />
-        <Route path='/*' element={<Page404/>}></Route>
-        <Route path='/contact/message-sent' element={<Merci/>}></Route>
+        <Route path='work' element={<Works />} />
+        <Route path='about' element={<About />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path='work/:id' element={<Detail />} />
+        <Route path='*' element={<Page404/>}></Route>
+        <Route path='contact/message-sent' element={<Merci/>}></Route>
       </Routes>
       <Footer />
     </>

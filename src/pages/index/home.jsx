@@ -26,7 +26,7 @@ function Home() {
                     <div className="see-more-bottom"><Button title={"Voir plus"} icon={faArrowRight} to={"./work"}></Button></div>
                 </section>
                 <section className="l4">
-                    <Button title={"Envoyez-moi un message"} icon={faPaperPlane} to={"./contact"}></Button>
+                    <Button title={"Envoyez-moi un message"} icon={faPaperPlane} to={"contact"}></Button>
                 </section>
             </div>
         </PreloadImages>
