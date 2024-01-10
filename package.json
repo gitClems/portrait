@@ -2,7 +2,7 @@
   "name": "portrait",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://cbamogo-portfolio.onrender.com/",
+  "homepage": "https://gitclems.github.io/portrait/",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@fortawesome/fontawesome-svg-core": "^6.5.1",

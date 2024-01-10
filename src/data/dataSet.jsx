@@ -45,86 +45,83 @@ export const skills = [
 ]
 
 
-export const formation = {
-    description: "Durant tout mon parcours universitaire et ingénieur, j'ai pu dévélopper un bon nombre de connaissance aussi bien dans les sciences exactes que celles qui relèvent de l'esprit qui définissent l'état d'un ingénieur.",
-    formations: [
-        {
-            id: 1,
-            periode: "2021-2024",
-            label: "Ecole Nationale d'Informatique et d'Analyse des Systhème de Rabat (ENSIAS)",
-            description: "Avec mon orientation en Smart Supply Chain an Logistics, j'ai eu cette connaissance de l'informatique décisionnelle, du Business Intelligence et de la gestion des projets ainsi que leur suivi. En outre, une partie de mon orientation est la recherche opérationnelle à travers laquelles un accent est mis sur la résolution des problèmes liés à l'optimisation logistiques: ulisation des méthodes mathématiques et approchées, les technologies de l'IA.",
-            tools: [
-                {
-                    id: 1,
-                    keyword: "ERP/CRM/MRP"
-                },
-                {
-                    id: 2,
-                    keyword: "IA/Deep Learning"
-                },
-                {
-                    id: 3,
-                    keyword: "Gestion d'entrepôt"
-                },
-                {
-                    id: 4,
-                    keyword: "Algorithme génétique"
-                },
-                {
-                    id: 5,
-                    keyword: "Power BI"
-                },
-                {
-                    id: 6,
-                    keyword: "BPMN"
-                },
-                {
-                    id: 7,
-                    keyword: "salesforce lightning"
-                },
-            ]
-        },
-        {
-            id: 2,
-            periode: "2019-2021",
-            label: "Faculté des Sciences et Techniques de Monhammedia(FSTM)",
-            description: "J'ai su dévélopper des connaissance en analyse numérique et statistiques. Ceci combiné à l'algorithmique m'a donné des solides acquis sur la transformation d'un problème réel en solution mathématique et ensuite son intégration grace à des algorithmes.",
-            tools: [
-                {
-                    id: 1,
-                    keyword: "Algorithmique",
-                },
-                {
-                    id: 2,
-                    keyword: "Programmation C/C++"
-                },
-                {
-                    id: 3,
-                    keyword: "Base de données"
-                },
-                {
-                    id: 4,
-                    keyword: "Structure de données"
-                },
-                {
-                    id: 5,
-                    keyword: "Algèbre"
-                },
-                {
-                    id: 4,
-                    keyword: "Analyse numérique"
-                },
-            ],
-        },
-    ]
-}
+export const formations = [
+    {
+        id: 1,
+        periode: "2021-2024",
+        label: "Ecole Nationale d'Informatique et d'Analyse des Systhème de Rabat (ENSIAS)",
+        description: "Avec mon orientation en Smart Supply Chain an Logistics, j'ai eu cette connaissance de l'informatique décisionnelle, du Business Intelligence et de la gestion des projets ainsi que leur suivi. En outre, une partie de mon orientation est la recherche opérationnelle à travers laquelles un accent est mis sur la résolution des problèmes liés à l'optimisation logistiques: ulisation des méthodes mathématiques et approchées, les technologies de l'IA.",
+        tools: [
+            {
+                id: 1,
+                keyword: "ERP/CRM/MRP"
+            },
+            {
+                id: 2,
+                keyword: "IA/Deep Learning"
+            },
+            {
+                id: 3,
+                keyword: "Gestion d'entrepôt"
+            },
+            {
+                id: 4,
+                keyword: "Algorithme génétique"
+            },
+            {
+                id: 5,
+                keyword: "Power BI"
+            },
+            {
+                id: 6,
+                keyword: "BPMN"
+            },
+            {
+                id: 7,
+                keyword: "salesforce lightning"
+            },
+        ]
+    },
+    {
+        id: 2,
+        periode: "2019-2021",
+        label: "Faculté des Sciences et Techniques de Monhammedia(FSTM)",
+        description: "J'ai su dévélopper des connaissance en analyse numérique et statistiques. Ceci combiné à l'algorithmique m'a donné des solides acquis sur la transformation d'un problème réel en solution mathématique et ensuite son intégration grace à des algorithmes.",
+        tools: [
+            {
+                id: 1,
+                keyword: "Algorithmique",
+            },
+            {
+                id: 2,
+                keyword: "Programmation C/C++"
+            },
+            {
+                id: 3,
+                keyword: "Base de données"
+            },
+            {
+                id: 4,
+                keyword: "Structure de données"
+            },
+            {
+                id: 5,
+                keyword: "Algèbre"
+            },
+            {
+                id: 4,
+                keyword: "Analyse numérique"
+            },
+        ],
+    },
+]
 
 export const projects = [
     {
         id: 1,
         title: "Conception de tableau de bord pour la suivi d'activités de livraisons par consigne",
-        periode : "Juil. 2023 - Août 2023",
-        location : "CEOS Technology, Casablanca",
+        periode: "Juil. 2023 - Août 2023",
+        location: "CEOS Technology, Casablanca",
         image: require("../assets/works/ExpGlobale.png"),
         description: "Pour la bonne suivie des performances d'une activité, les tableaux de bords dynamiques paraissent très optimal dans le sens où ils offrent une vue aussi bien macroscopique que détaillée.",
         etapes: [
@@ -175,8 +172,8 @@ export const projects = [
     {
         id: 2,
         title: "Conception de système d'information centralisé",
-        location : "ENSIAS",
-        periode : "Oct. 2022 - Nov. 2022",
+        location: "ENSIAS",
+        periode: "Oct. 2022 - Nov. 2022",
         image: require("../assets/works/VueAdmin.PNG"),
         description: "Les systèmes d'information font aujourd'hui parti des support assez importants pour la communication, le partage de fichiers, la plannification, le reporting etc. Un bon système d'information permet de mieux communiquer, de suivre les les activités et de suivre en temps réel la traçabilité des activités. Ce projet a été l'occasion pour moi et mon équipe lors d'un projet accadémique de développer un SI centralisé pour un réseau de cliniques.",
         etapes: [
@@ -224,8 +221,8 @@ export const projects = [
     {
         id: 3,
         title: "Développement d'application mobile pour comme vitrine de publications de service",
-        periode : "Août 2022",
-        location : "OBAAS Consulting",
+        periode: "Août 2022",
+        location: "OBAAS Consulting",
         image: require("../assets/works/App1.jpg"),
         description: "Au cours de mon premier stage, j'ai réalisé cette application mobile pour une entreprise qui œuvre dans le consulting. Elle permettrait à l'entreprise de proposer ses servives à des sociétés via l'applications tout en ayant un suivi de la progressions de réalisation.",
         etapes: [
@@ -275,7 +272,7 @@ export const person = {
     year: "2023",
     name: "BAMOGO Clément",
     describe: "Elève ingénieur en Supply Chain Management basé à Rabat, au Maroc",
-    about :"Durant tout mon parcours universitaire et ingénieur, j'ai pu dévélopper un bon nombre de connaissance aussi bien dans les sciences exactes que celles qui relèvent de l'esprit qui définissent l'état d'un ingénieur.",
+    about: "Durant tout mon parcours universitaire et ingénieur, j'ai pu dévélopper un bon nombre de connaissance aussi bien dans les sciences exactes que celles qui relèvent de l'esprit qui définissent l'état d'un ingénieur.",
     profile: [require("../assets/profiles/profile-1.png"), require("../assets/profiles/profile-3-mini.jpg")],
     tel: "+212 6 82 41 90 21",
     email: "clement2bamogo@gmail.com",

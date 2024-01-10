@@ -1,6 +1,6 @@
 import { removeMenu } from "../../components/appBar"
 import { PreloadImages } from "../../components/loading"
-import { formation, person, skills } from "../../data/dataSet"
+import { formations, person, skills } from "../../data/dataSet"
 import "../css/about.scss"
 
 function About() {
@@ -16,16 +16,16 @@ function About() {
                     <img src={person.profile[1]} alt="Profile" />
                 </section>
                 <section className="sec-2 formation">
-                    <div>
+                    <div className="div-container">
                         <p className="title">Mes formations</p>
-                        <div className="liste-formations">
+                        <ul className="list-formation">
                             {
-                                formation.formations.map((formation) => {
+                                formations.map((formation) => {
                                     return (
                                         <>
-                                            <span className="formation-item"> {formation.periode} : {formation.label}</span>
+                                            <li className="formation-item"> {formation.periode} : {formation.label}</li>
+                                            {/* <br /> */}
                                             <p className="description">{formation.description}</p>
-
                                             <span style={{ fontSize: 20, color: "white" }}>Outils / Méthodes / Mots clés</span>
                                             <div className="list-tools">
                                                 {
@@ -36,11 +36,12 @@ function About() {
                                                     })
                                                 }
                                             </div>
+                                            <br />
                                         </>
                                     )
                                 })
                             }
-                        </div>
+                        </ul>
                     </div>
 
                 </section>

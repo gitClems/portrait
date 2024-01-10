@@ -28,33 +28,37 @@ function Detail(props) {
                             />
                         </div>
                     </div>
-                    <div className="description-tools cl">
-                        <span style={{ fontSize: 20, color: "white" }}>Description</span>
-                        <p>{params ? projects[params.id - 1].description : "-"}</p>
-                        {
-                            projects[params.id - 1].location || projects[params.id - 1].periode ?
-                                <p style={{ fontSize: 13, color: "white" }}>
-                                    <FontAwesomeIcon icon={faLocationDot} style={{ marginRight: 5 }} /> {projects[params.id - 1].location}
-                                    <br />
-                                    <FontAwesomeIcon icon={faCalendarPlus} style={{ marginRight: 5 }} />{projects[params.id - 1].periode}
-                                </p>
-                                : null
-                        }
-                        {
-                            projects[params.id - 1].tools ?
-                            <span style={{ fontSize: 20, color: "white" }}>Outils / Méthodes / Mots clés</span>
+                    {
+                        projects[params.id - 1].description ?
+                            <div className="description-tools cl">
+                                <span style={{ fontSize: 20, color: "white" }}>Description</span>
+                                <p>{projects[params.id - 1]?.description}</p>
+                                {
+                                    projects[params.id - 1].location || projects[params.id - 1].periode ?
+                                        <p style={{ fontSize: 13, color: "white" }}>
+                                            <FontAwesomeIcon icon={faLocationDot} style={{ marginRight: 5 }} /> {projects[params.id - 1].location}
+                                            <br />
+                                            <FontAwesomeIcon icon={faCalendarPlus} style={{ marginRight: 5 }} />{projects[params.id - 1].periode}
+                                        </p>
+                                        : null
+                                }
+                                {
+                                    projects[params.id - 1].tools ?
+                                        <span style={{ fontSize: 20, color: "white" }}>Outils / Méthodes / Mots clés</span>
+                                        : null
+                                }
+                                <div className="tools-list">
+                                    {
+                                        projects[params.id - 1].tools?.map((tool) => {
+                                            return (
+                                                <span className="tool" >{tool.keyword}</span>
+                                            )
+                                        })
+                                    }
+                                </div>
+                            </div>
                             : null
-                        }
-                        <div className="tools-list">
-                            {
-                                projects[params.id - 1].tools?.map((tool) => {
-                                    return (
-                                        <span className="tool" >{tool.keyword}</span>
-                                    )
-                                })
-                            }
-                        </div>
-                    </div>
+                    }
                 </section>
                 {
                     projects[params.id - 1].etapes ?
@@ -75,7 +79,8 @@ function Detail(props) {
                                     }
                                 </div>
                             </div>
-                        </section> : ""}
+                        </section> : ""
+                }
             </div>
         </PreloadImages>
     )
