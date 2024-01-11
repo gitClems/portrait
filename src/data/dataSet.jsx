@@ -52,7 +52,7 @@ export const educations = [
         id: 1,
         period: "2021-2024",
         location: "Ecole Nationale d'Informatique et d'Analyse des Systèmes, Rabat (ENSIAS)",
-        description: "Avec une orientation en Smart Supply Chain an Logistics, j'ai eu des connaissances sur la gestion logistique et de l’impact de l'informatique décisionnelle et du Business Intelligence dans ce métier. Je souligne aussi la recherche opérationnelle à travers laquelle un accent est mis sur la résolution des problèmes liés à l'optimisation logistique: utilisation des méthodes mathématiques et approchées, les technologies de l'IA.",
+        description: "Avec une orientation en Smart Supply Chain and Logistics, j'ai eu des connaissances sur la gestion logistique et de l’impact de l'informatique décisionnelle et du Business Intelligence dans ce métier. Je souligne aussi la recherche opérationnelle à travers laquelle un accent est mis sur la résolution des problèmes liés à l'optimisation logistique: utilisation des méthodes mathématiques et approchées, les technologies de l'IA.",
         tools: [
             {
                 id: 1,
@@ -278,7 +278,7 @@ export const person = {
     year: "2024",
     name: "BAMOGO Clément",
     description: "Élève ingénieur en Supply Chain Management basé à Rabat, Maroc",
-    about: "Je me nomme BAMOGO Clément, actuellement élève ingénieur en Smart Supply Chain and Logistics à l'Ecole Nationale d'Informatique et d'Analyse des Systèmes, Rabat (ENSIAS) Durant tout mon parcours universitaire et ingénieur, j'ai su développer un bon nombre de connaissances aussi bien dans les sciences fondamentales que dans le domaine de la technologie et l’analytique. Après deux ans à la Faculté des Sciences et Techniques de Mohammedia j’ai eu l’occasion d’accéder à l’Ecole Nationale Supérieure de l’Informatique et d’Analyse des Systèmes de Rabat en 2021 à travers le concours DEUST. Avec cette passion pour la logistique et les nouvelles technologies ce parcours m’a ouvert un espace très enrichissant me donnant une double casquette ce qui m’a permis d’avoir une vue bien plus large sur la Supply Chain et ses enjeux en entreprise en considérant le rôle des systèmes d’informations, des ERP, et le management dans les processus.",
+    about: "Je me nomme BAMOGO Clément, actuellement élève ingénieur en Smart Supply Chain and Logistics à l'Ecole Nationale d'Informatique et d'Analyse des Systèmes(ENSIAS Rabat). Durant tout mon parcours universitaire et ingénieur, j'ai su développer un bon nombre de connaissances aussi bien dans les sciences fondamentales que dans le domaine de la technologie et l’analytique. Après deux ans à la Faculté des Sciences et Techniques de Mohammedia j’ai eu l’occasion d’accéder à l’ENSIAS en 2021 à travers le concours DEUST. Avec cette passion pour la logistique et les nouvelles technologies ce parcours m’a ouvert un espace très enrichissant me donnant une double casquette ce qui m’a permis d’avoir une vue bien plus large sur la Supply Chain et ses enjeux en entreprise en considérant le rôle des systèmes d’informations, des ERP, et le management dans les processus.",
     profile: [require("../assets/profiles/profile-1.png"), require("../assets/profiles/profile-3-mini.jpg")],
     tel: "+212 6 82 41 90 21",
     email: "clement2bamogo@gmail.com",

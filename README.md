@@ -1,7 +1,7 @@
 # My personal web portfolio
 This project leads us to create a web application to manage our skills as a portfolio.
 
-<span style = "color: orange; font-style : italic; font-size : 20px">This application is open to all and should not be used for profit.</span>
+<span style = "color: orange; font-style : italic; font-size : 20px"> ! Notice : This application is open to all and should not be used for profit.</span>
 
 # Settings
 Things you can configure personally are: :

@@ -13,7 +13,7 @@ function About() {
                         <p className="title">A propos de moi</p>
                         <p className="description">
                             <img src={person.profile[1]} alt="Profile" />
-                            {person.about}
+                            <span style={{float : "none"}}></span>{person.about}
                         </p>
                     </div>
                 </section>
