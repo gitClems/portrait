@@ -33,8 +33,7 @@ const Contact = () => {
 
         const SERVICE_ID = 'service_zlckg8l'
         const YOUR_TEMPLATE_ID = 'template_57h4o1s'
-        const YOUR_PUBLIC_KEY = 'HuElWtPHbw3WlvufV'
-        const AUTO_REPLAY_ID = 'template_kd0c6en'
+        const YOUR_PUBLIC_KEY = 'RDSApqc4TJLDBC4Y7'
 
         try {
             emailjs.sendForm(
@@ -43,11 +42,14 @@ const Contact = () => {
                 form.current,
                 YOUR_PUBLIC_KEY
             ).then((result) => {
-                navigate(`./${messageStatus}`)
-                emailjs.send(
-                    SERVICE_ID,
-                    AUTO_REPLAY_ID
-                )
+                messageStatus = 'contact/message-sent'
+                // navigate(`/${messageStatus}`)
+                console.log(result.status);
+                navigate(`/contact/message-sent`)
+                // emailjs.send(
+                //     SERVICE_ID,
+                //     YOUR_TEMPLATE_ID
+                // )
             })
 
         } catch (error) {

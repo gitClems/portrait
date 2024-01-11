@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# My personal web portfolio
+This project leads us to create a web application to manage our skills as a portfolio.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<span style = "color: orange; font-style : italic; font-size : 20px">This application is open to all and should not be used for profit.</span>
 
-## Available Scripts
+# Settings
+Things you can configure personally are: :
 
-In the project directory, you can run:
 
-### `npm start`
+### `Your personal information`
+<ul>
+ <li><span style = "color : white">name :</span> <span style = "color : #a7adcc"> First and second name</span></li>
+ <li><span style = "color : white">description :</span> <span style = "color : #a7adcc">Your current role </span></li>
+ <li><span style = "color : white">year:</span> <span style = "color : #a7adcc">Year of app creation </span></li>
+ <li><span style = "color : white">about :</span> <span style = "color : #a7adcc">Something about your you (better to say something related to you role) </span></li>
+ <li><span style = "color : white">profile :</span> <span style = "color : #a7adcc">At least two images to display </span></li>
+ <li><span style = "color : white">tel :</span> <span style = "color : #a7adcc">Your contact </span></li>
+ <li><span style = "color : white">adress :</span> <span style = "color : #a7adcc">Your adress </span></li>
+ <li><span style = "color : white">linkedIn :</span> <span style = "color : #a7adcc">Your linkedIn link </span></li>
+ <li><span style = "color : white">gitHub :</span> <span style = "color : #a7adcc">Your gitHub link </span></li>
+</ul>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `Your domains`
+<ul>
+ <li><span style = "color : white">title :</span> <span style = "color : #a7adcc">The title of your domain (e.g., Web developer)</span></li>
+ <li><span style = "color : white">description :</span> <span style = "color : #a7adcc">A litle description of this domain</span></li>
+</ul>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### `Your skills`
+<ul>
+ <li><span style = "color : white">title :</span> <span style = "color : #a7adcc">The title of your skill (e.g., Web project management)</span></li>
+</ul>
 
-### `npm test`
+### `Your educations`
+<ul>
+ <li><span style = "color : white">period :</span> <span style = "color : #a7adcc">The period of this education (e.g., 2017-2020)</span></li>
+ <li><span style = "color : white">location :</span> <span style = "color : #a7adcc">The location of this education</span></li>
+ <li><span style = "color : white">description :</span> <span style = "color : #a7adcc">Describe this education with main therms</span></li>
+ <li><span style = "color : white">tools :</span> <span style = "color : #a7adcc">Enumerate the tools, methods and key words related to this training</span></li>
+</ul>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### `Your projects`
+<ul>
+ <li><span style = "color : white">title :</span> <span style = "color : #a7adcc">The title of this project</span></li>
+ <li><span style = "color : white">description :</span> <span style = "color : #a7adcc">Describe this project with main therms</span></li>
+ <li><span style = "color : white">period :</span> <span style = "color : #a7adcc">The persiod of this education</span></li>
+ <li><span style = "color : white">location :</span> <span style = "color : #a7adcc">The location of this education</span></li>
+ <li><span style = "color : white">image :</span> <span style = "color : #a7adcc">Set an image to let readers prevew what you did</span></li>
+ <li><span style = "color : white">tools :</span> <span style = "color : #a7adcc">Describe all tools you use to do to this project </span></li>
+</ul>

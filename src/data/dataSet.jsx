@@ -3,19 +3,21 @@ export const domains = [
     {
         id: 1,
         title: "Supply Chain Management",
-        description: "L'informatique décisionnelle au coeur de la Chaîne d'approvisonnement, rien de mieux pour se mettre dans la course des grands enjeux de ce monde concurrentiel."
+        description: "Planifier et manager les processus d’approvisionnement, de production et de livraisons au cœur des métiers de l’entreprise."
     },
     {
         id: 2,
         title: "Recherche opérationnelle",
-        description: "Toujours en quête d'optimisation, la recherche (dans le domain logisque) offre un cardre de réflexion pour l'utilisation des nouvelle méthodes et outils dans les processus métiers."
+        description: "Toujours en quête d'optimisation, la recherche (particulièrement dans le domaine de la logistique) offre un carde de réflexion pour l'utilisation adéquate des nouvelle méthodes et outils dans les processus métiers."
     },
     {
         id: 3,
         title: "Business analysis",
-        description: "L'esprit d'analyse au seins des processus métiers de votre entreprise. Permettre une prise de décision adéquate et suivre les activités principales de votre structure."
+        description: "L'esprit d'analyse au sein des processus métiers de votre entreprise permet une prise de décision optimale et suivre les activités principales de votre structure."
     },
 ]
+
+
 
 export const skills = [
     {
@@ -45,12 +47,12 @@ export const skills = [
 ]
 
 
-export const formations = [
+export const educations = [
     {
         id: 1,
-        periode: "2021-2024",
-        label: "Ecole Nationale d'Informatique et d'Analyse des Systhème de Rabat (ENSIAS)",
-        description: "Avec mon orientation en Smart Supply Chain an Logistics, j'ai eu cette connaissance de l'informatique décisionnelle, du Business Intelligence et de la gestion des projets ainsi que leur suivi. En outre, une partie de mon orientation est la recherche opérationnelle à travers laquelles un accent est mis sur la résolution des problèmes liés à l'optimisation logistiques: ulisation des méthodes mathématiques et approchées, les technologies de l'IA.",
+        period: "2021-2024",
+        location: "Ecole Nationale d'Informatique et d'Analyse des Systèmes, Rabat (ENSIAS)",
+        description: "Avec une orientation en Smart Supply Chain an Logistics, j'ai eu des connaissances sur la gestion logistique et de l’impact de l'informatique décisionnelle et du Business Intelligence dans ce métier. Je souligne aussi la recherche opérationnelle à travers laquelle un accent est mis sur la résolution des problèmes liés à l'optimisation logistique: utilisation des méthodes mathématiques et approchées, les technologies de l'IA.",
         tools: [
             {
                 id: 1,
@@ -84,13 +86,13 @@ export const formations = [
     },
     {
         id: 2,
-        periode: "2019-2021",
-        label: "Faculté des Sciences et Techniques de Monhammedia(FSTM)",
-        description: "J'ai su dévélopper des connaissance en analyse numérique et statistiques. Ceci combiné à l'algorithmique m'a donné des solides acquis sur la transformation d'un problème réel en solution mathématique et ensuite son intégration grace à des algorithmes.",
+        period: "2019-2021",
+        location: "Faculté des Sciences et Techniques, Mohammedia(FSTM)",
+        description: "J'ai su développer des connaissances en analyse numérique et statistiques. Ceci combiné à l'algorithmique m'a donné des solides acquis sur la transformation d'un problème réel en problème mathématique et ensuite sa résolution grâce à des méthodes définies ou algorithmes.",
         tools: [
             {
                 id: 1,
-                keyword: "Algorithmique",
+                keyword: "Algorithm",
             },
             {
                 id: 2,
@@ -116,33 +118,35 @@ export const formations = [
     },
 ]
 
+
+
 export const projects = [
     {
         id: 1,
-        title: "Conception de tableau de bord pour la suivie d'activités de livraisons en consigne",
-        periode: "Juil. 2023 - Août 2023",
-        location: "CEOS Technology, Casablanca",
+        title: "Conception de tableau de bord pour le suivi d'activités de livraisons en consigne",
+        description: "Pour un bon suivi des performances d'une activité, les tableaux de bords dynamiques paraissent très adéquats dans le sens où ils offrent une vue aussi bien macroscopique que détaillée.",
+        period: "Juil. 2023 - Août 2023",
+        location: "CEOS Technology - Casablanca, Maroc",
         image: require("../assets/works/ExpGlobale.png"),
-        description: "Pour la bonne suivie des performances d'une activité, les tableaux de bords dynamiques paraissent très optimals dans le sens où ils offrent une vue aussi bien macroscopique que détaillée.",
-        etapes: [
+        steps: [
             {
                 id: 1,
-                etape: "Définition du problème et définition du cahier de charge",
+                step: "Définition du problème et définition du cahier de charge",
                 description: "Comprendre les processus logistiques qui sont en jeu et définir les frontières du projet."
             },
             {
                 id: 2,
-                etape: "Définition des indicateurs de performance (KPIs)",
+                step: "Définition des indicateurs de performance (KPIs)",
                 description: "Définir les métriques à mesurer et à suivre par des processus de Benchmarking et d'analytiques."
             },
             {
                 id: 3,
-                etape: "Préparation des données et modélisation des processus de notre application",
-                description: "Par le processus de l'ETL, extraire les données, les transformer et les charger dans le datawarehouse suivi d'une modélisation multidimensionnelle pour les rélation entre les mésures(les Faits) et les dimensions."
+                step: "Préparation des données et modélisation des processus de notre application",
+                description: "Par le processus d'ETL, extraire les données, les transformer et les charger dans le datawarehouse suivi d'une modélisation multidimensionnelle pour la relation entre les mesures(les Faits) et les dimensions."
             },
             {
                 id: 4,
-                etape: "Implémentation d’interfaces interactives",
+                step: "Implémentation d’interfaces interactives",
                 description: "Après la feuille de routes et la mise en place de l’architecture, place a été donné à l’implémentation des graphes et des paramètres régulateurs qui permettent de visualiser les graphes de manière dynamique."
             },
         ],
@@ -172,30 +176,30 @@ export const projects = [
     {
         id: 2,
         title: "Conception de système d'information centralisé",
-        location: "ENSIAS",
-        periode: "Oct. 2022 - Nov. 2022",
+        location: "ENSIAS - Rabat, Maroc",
+        period: "Oct. 2022 - Nov. 2022",
         image: require("../assets/works/VueAdmin.PNG"),
-        description: "Les systèmes d'information font aujourd'hui parti des support assez importants pour la communication, le partage de fichiers, la plannification, le reporting etc. Un bon système d'information permet de mieux communiquer, de suivre les les activités et de suivre en temps réel la traçabilité des activités. Ce projet a été l'occasion pour moi et mon équipe lors d'un projet accadémique de développer un SI centralisé pour un réseau de cliniques.",
-        etapes: [
+        description: "Les systèmes d'information font aujourd'hui parti des supports importants pour la communication, le partage de fichiers, la planification ou le reporting dans les entreprises. Un bon système d'information permet de mieux communiquer et suivre les activités. Ce projet a été l'occasion pour moi et mon équipe lors d'un projet académique de développer un SI centralisé en prenant comme contexte la communication au sein d’un réseaux de cliniques vétérinaires.",
+        steps: [
             {
                 id: 1,
-                etape: "Définition du problème",
-                description: "Définir avec le cahier de charger mise à notre disposition les frontières du problème et analyser au passages ses avantages et limites. Dans les même moments, faire une critique sur les solutions déjà proposées et ainsi dresser le benchmarking de notre solution."
+                step: "Définition du problème",
+                description: "Définir avec le cahier de charger mise à notre disposition les frontières du problème et analyser au passage ses avantages et limites. Dans le même moment, faire une critique sur les solutions déjà proposées et ainsi dresser le benchmarking de notre solution."
             },
             {
                 id: 2,
-                etape: "Définition processus du métier",
-                description: "Dresser avec des représntations graphiques et procedurales (UML) les processus qui interviennent dans les cliniques véntérinaire. Exemple : prendre un rendez-vous, examiner un animal, prescrire des médicaments, facturer un client, faire un rapport…"
+                step: "Définition processus du métier",
+                description: "Dresser des représentations graphiques (UML) pour expliciter les processus qui interviennent dans les cliniques vétérinaires. Exemple : prendre un rendez-vous, examiner un animal, prescrire des médicaments, facturer un client, faire un rapport etc."
             },
             {
                 id: 3,
-                etape: "Acquisition et modélisation des processus de notre application",
-                description: "Définir l’architecture de développment de l’applications (ici notre SI), définir la modélisation de la base de données et attributions de rôles dans les interventions."
+                step: "Modélisation des processus et base de données",
+                description: "Définir l’architecture de développement de l’applications (le SI), définir la modélisation de la base de données et attributions de rôles dans des acteurs."
             },
             {
                 id: 4,
-                etape: "Implémentation de l’applicaion",
-                description: "Après la mise en place de l’architecture et de la feuille de routes, place a été donné à l’implémentation des interfaces utilisateurs et exposition du resultat final."
+                step: "Implémentation de l’application",
+                description: "Après la mise en place de l’architecture et de la feuille de routes, place a été donné à l’implémentation des interfaces utilisateurs et exposition du résultat final."
             },
 
         ],
@@ -220,31 +224,31 @@ export const projects = [
     },
     {
         id: 3,
-        title: "Développement d'application mobile pour comme vitrine de publications de service",
-        periode: "Août 2022",
-        location: "OBAAS Consulting",
+        title: "Développement d'application mobile comme vitrine de publications de service",
+        period: "Août 2022",
+        location: "OBAAS Consulting - Ouagadougou, Burkina Faso",
         image: require("../assets/works/App1.jpg"),
-        description: "Au cours de mon premier stage, j'ai réalisé cette application mobile pour une entreprise qui œuvre dans le consulting. Elle permettrait à l'entreprise de proposer ses servives à des sociétés via l'applications tout en ayant un suivi de la progressions de réalisation.",
-        etapes: [
+        description: "Au cours de mon premier stage, j'ai réalisé cette application mobile pour une entreprise qui œuvre dans le consulting. Elle permettrait à l'entreprise de proposer ses services à des clients via l'applications tout en ayant un suivi de la progression de réalisation.",
+        steps: [
             {
                 id: 1,
-                etape: "Définition du problème",
+                step: "Définition du problème",
                 description: "Définir du cahier de charge et les frontières du projet."
             },
             {
                 id: 2,
-                etape: "Proposition de maquettes",
+                step: "Proposition de maquettes",
                 description: "Proposer des maquettes d’applications mobiles et analyser avec le Product Owner les éventuelles modifications à faire."
             },
             {
                 id: 3,
-                etape: "Modélisation des processus fonctionnels",
-                description: "Définition de l’architecture à suivre à traver des diagrammes de décision et UML."
+                step: "Modélisation des processus fonctionnels",
+                description: "Définition de l’architecture à suivre à travers des diagrammes de décision et UML."
             },
             {
                 id: 4,
-                etape: "Implémentation d’interfaces",
-                description: "Après la mise en place de l’architecture et de la feuille de routes, place a été donné à l’implémentation des intefaces utilisateurs."
+                step: "Implémentation d’interfaces",
+                description: "Après la mise en place de l’architecture et de la feuille de routes, place a été donné à l’implémentation des interfaces utilisateurs."
             },
         ],
         tools: [
@@ -258,7 +262,7 @@ export const projects = [
             },
             {
                 id: 3,
-                keyword: "Firebase Database"
+                keyword: "Firebase Database/Authentication"
             },
             {
                 id: 4,
@@ -268,11 +272,13 @@ export const projects = [
     },
 ]
 
+
+
 export const person = {
     year: "2024",
     name: "BAMOGO Clément",
-    describe: "Elève ingénieur en Supply Chain Management basé à Rabat, au Maroc",
-    about: "Durant tout mon parcours universitaire et ingénieur, j'ai pu dévélopper un bon nombre de connaissances aussi bien dans les sciences exactes que celles qui relèvent de l'esprit qui définissent l'état d'un ingénieur.",
+    description: "Élève ingénieur en Supply Chain Management basé à Rabat, Maroc",
+    about: "Je me nomme BAMOGO Clément, actuellement élève ingénieur en Smart Supply Chain and Logistics à l'Ecole Nationale d'Informatique et d'Analyse des Systèmes, Rabat (ENSIAS) Durant tout mon parcours universitaire et ingénieur, j'ai su développer un bon nombre de connaissances aussi bien dans les sciences fondamentales que dans le domaine de la technologie et l’analytique. Après deux ans à la Faculté des Sciences et Techniques de Mohammedia j’ai eu l’occasion d’accéder à l’Ecole Nationale Supérieure de l’Informatique et d’Analyse des Systèmes de Rabat en 2021 à travers le concours DEUST. Avec cette passion pour la logistique et les nouvelles technologies ce parcours m’a ouvert un espace très enrichissant me donnant une double casquette ce qui m’a permis d’avoir une vue bien plus large sur la Supply Chain et ses enjeux en entreprise en considérant le rôle des systèmes d’informations, des ERP, et le management dans les processus.",
     profile: [require("../assets/profiles/profile-1.png"), require("../assets/profiles/profile-3-mini.jpg")],
     tel: "+212 6 82 41 90 21",
     email: "clement2bamogo@gmail.com",
@@ -280,6 +286,8 @@ export const person = {
     linkedIn: "https://www.linkedin.com/in/cl%C3%A9ment-bamogo-11ab71228/",
     gitHub: "https://github.com/gitClems",
 }
+
+
 
 
 export const imgUrl = [

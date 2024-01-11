@@ -1,30 +1,31 @@
 import { removeMenu } from "../../components/appBar"
 import { PreloadImages } from "../../components/loading"
-import { formations, person, skills } from "../../data/dataSet"
+import { educations, person, skills } from "../../data/dataSet"
 import "../css/about.scss"
 
 function About() {
 
     return (
-        <PreloadImages >
+        <PreloadImages>
             <div id="about-page" onClick={removeMenu} onLoad={removeMenu}>
                 <section className="sec-1 accroche">
                     <div className="message">
                         <p className="title">A propos de moi</p>
-                        <p className="description">{person.about}</p>
+                        <p className="description">
+                            <img src={person.profile[1]} alt="Profile" />
+                            {person.about}
+                        </p>
                     </div>
-                    <img src={person.profile[1]} alt="Profile" />
                 </section>
                 <section className="sec-2 formation">
                     <div className="div-container">
                         <p className="title">Mes formations</p>
                         <ul className="list-formation">
                             {
-                                formations.map((formation) => {
+                                educations.map((formation) => {
                                     return (
                                         <>
-                                            <li className="formation-item"> {formation.periode} : {formation.label}</li>
-                                            {/* <br /> */}
+                                            <li className="formation-item"> {formation.period} : {formation.location}</li>
                                             <p className="description">{formation.description}</p>
                                             <span style={{ fontSize: 20, color: "white" }}>Outils / Méthodes / Mots clés</span>
                                             <div className="list-tools">

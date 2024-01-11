@@ -39,11 +39,11 @@ function Detail(props) {
                                         <span style={{ fontSize: 20, color: "white" }}>Description</span>
                                         <p className="description">{projects[params.id - 1]?.description}</p>
                                         {
-                                            projects[params.id - 1].location || projects[params.id - 1].periode ?
+                                            projects[params.id - 1].location || projects[params.id - 1].period ?
                                                 <p style={{ fontSize: 13, color: "white" }}>
                                                     <FontAwesomeIcon icon={faLocationDot} style={{ marginRight: 5 }} /> {projects[params.id - 1].location}
                                                     <br />
-                                                    <FontAwesomeIcon icon={faCalendarPlus} style={{ marginRight: 5 }} />{projects[params.id - 1].periode}
+                                                    <FontAwesomeIcon icon={faCalendarPlus} style={{ marginRight: 5 }} />{projects[params.id - 1].period}
                                                 </p>
                                                 : null
                                         }
@@ -66,17 +66,17 @@ function Detail(props) {
                             }
                         </section>
                         {
-                            projects[params.id - 1].etapes ?
+                            projects[params.id - 1].steps ?
                                 <section className="sec-2">
                                     <span className="title"><FontAwesomeIcon style={{ marginRight: 10 }} icon={faListCheck}></FontAwesomeIcon>Les differentes étapes</span>
                                     <div style={{ display: "flex", justifyContent: "center" }}>
-                                        <div className="liste-etape">
+                                        <div className="list-step">
                                             {
-                                                projects[params.id - 1].etapes?.map((etape) => {
+                                                projects[params.id - 1].steps?.map((step) => {
                                                     return (
                                                         <>
-                                                            <span className="etape">Phase {etape.id}: {etape.etape}</span>
-                                                            <p className="description">{etape.description}</p>
+                                                            <span className="step">Phase {step.id}: {step.step}</span>
+                                                            <p className="description">{step.description}</p>
                                                         </>
                                                     )
                                                 })
