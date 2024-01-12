@@ -1,15 +1,19 @@
-.loading {
-    height: 100vh;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--background-dark);
-    .spinner {
-        color: white;
-        height: 100%;
-        .spinner-border {
-            height: 70px;
-            width: 70px;
+#loading-page {
+    .loading {
+        height: 100vh;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--background-dark);
+
+        .spinner {
+            color: white;
+            height: 100%;
+
+            .spinner-border {
+                height: 70px;
+                width: 70px;
+            }
         }
     }
 }

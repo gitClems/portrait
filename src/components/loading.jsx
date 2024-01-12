@@ -31,10 +31,12 @@ export const PreloadImages = ({ children }) => {
 function Loading() {
     return (
         <>
-            <div className="loading">
-                <div class="spinner d-flex align-items-center justify-content-center">
-                    <div class="spinner-border" role="status">
-                        <span class="visually-hidden">Loading...</span>
+            <div id="loading-page">
+                <div className="loading">
+                    <div class="spinner d-flex align-items-center justify-content-center">
+                        <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
                     </div>
                 </div>
             </div>

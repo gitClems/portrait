@@ -224,7 +224,7 @@ export const projects = [
     },
     {
         id: 3,
-        title: "Développement d'application mobile comme vitrine de publications de service",
+        title: "Développement d'application mobile pour des publications de service",
         period: "Août 2022",
         location: "OBAAS Consulting - Ouagadougou, Burkina Faso",
         image: require("../assets/works/App1.jpg"),

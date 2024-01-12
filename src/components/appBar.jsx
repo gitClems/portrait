@@ -30,7 +30,6 @@ function AppBar() {
                 removeMenu()
             }
         });
-
     }, [width])
 
     return (
