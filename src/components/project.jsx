@@ -16,7 +16,7 @@ function Project(props) {
                             to={`/work/${project.id}`}
                             onClick={() => { getToTop() }}
                         >
-                            <span>{project.title}</span>
+                            <span >{project.title}</span>
                             <img src={project.image} alt={`${project.title}`} />
                         </Link>
                     )
