@@ -306,4 +306,5 @@ export const imgUrl = [
     require("../assets/backgrounds/bg-subtle-1-dark-1440w.jpg"),
     require("../assets/backgrounds/bg-subtle-2-dark-800w.jpg"),
     require("../assets/backgrounds/bg-subtle-2-dark-1440w.jpg"),
+    require("../assets/icons/not-found.png")
 ]
