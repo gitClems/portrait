@@ -6,7 +6,7 @@ import Works from "./pages/index/works";
 import About from "./pages/index/about";
 import Footer from "./components/footer";
 import Detail from "./pages/index/detail";
-import Contact, { Merci } from "./pages/index/contact";
+import Contact from "./pages/index/contact";
 import Page404 from "./pages/index/error404";
 
 function App() {
@@ -20,7 +20,6 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path='/work/:id' element={<Detail />} />
         <Route path='/*' element={<Page404/>}></Route>
-        <Route path='/contact/message-sent' element={<Merci/>}></Route>
       </Routes>
       <Footer />
     </>

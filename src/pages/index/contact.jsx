@@ -7,7 +7,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Loading, { PreloadImages } from '../../components/loading';
 import { imgUrl } from '../../data/dataSet';
 import { removeMenu } from '../../components/appBar';
-import { useNavigate } from 'react-router-dom';
 
 export const Merci = () => {
     return (
@@ -24,12 +23,12 @@ export const Merci = () => {
     )
 }
 
+
 const Contact = () => {
     const form = useRef()
-    const navigate = useNavigate()
     const [send, setSend] = useState(false)
     const [check, setCheck] = useState(false)
-
+    const [isEmailSent, setIsEmailSent] = useState(false)
 
     const Ckecked = () => {
         setCheck(!check)
@@ -49,60 +48,73 @@ const Contact = () => {
                 YOUR_TEMPLATE_ID,
                 form.current,
                 YOUR_PUBLIC_KEY
-            ).then(() => {
-                navigate(`/contact/message-sent`)
+            ).then((response) => {
+                if (response.status === 200) {
+                    setIsEmailSent(true);
+                }
             })
 
         } catch (error) {
+            setIsEmailSent(false);
             console.log(error.message);
         }
     }
 
+    function renderContent() {
+        if (!send) {
+            return (
+                <div id="contact-page" onClick={removeMenu} onLoad={removeMenu}>
+                    <div class="form-style-6">
+                        <h1>Envoyez-moi un méssage</h1>
+                        <br />
+                        <form ref={form} onSubmit={HandleContact}>
+                            <label htmlFor="name">Nom et prénom</label>
+                            <input type="text" name="name" placeholder='Nom et prénom' required />
 
+                            <label htmlFor="email">Email</label>
+                            <input type="email" name="email" placeholder='exemple@gmail.com' required />
+
+                            <label htmlFor="subject">Objet</label>
+                            {
+                                !check ?
+                                    <select name="subject" required>
+                                        <option style={{ fontFamily: "var(--font-family)" }} value="">Choisir un sujet</option>
+                                        <option value="Récruter">Récruter</option>
+                                        <option value="Devenir collaborateur">Devenir collaborateur</option>
+                                    </select>
+                                    : <input type="text" name='subject' placeholder='Votre object de message' required />
+                            }
+
+                            <label style={{ fontSize: 14, fontFamily: "var(--subtitile-font-family)", marginRight: 10 }} htmlFor="checkbox">Un autre sujet</label>
+                            <input type="checkbox" onChange={Ckecked} />
+                            <br />
+                            <br />
+
+                            <label htmlFor="message">Message</label>
+                            <textarea name="message" cols="30" rows="10" required></textarea>
+
+                            <div>
+                                <button className='myButton' >Envoyez <FontAwesomeIcon style={{ marginLeft: 10 }} icon={faPaperPlane}></FontAwesomeIcon></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            )
+        }
+        else if(isEmailSent){
+            return <Merci></Merci>
+        }
+        else {
+           return  <Loading></Loading>
+        }
+    }
 
 
     return (
         <>
             <PreloadImages imageUrls={imgUrl}>
                 {
-                    !send ?
-                        <div id="contact-page" onClick={removeMenu} onLoad={removeMenu}>
-                            <div class="form-style-6">
-                                <h1>Envoyez-moi un méssage</h1>
-                                <br />
-                                <form ref={form} onSubmit={HandleContact}>
-                                    <label htmlFor="name">Nom et prénom</label>
-                                    <input type="text" name="name" placeholder='Nom et prénom' required />
-
-                                    <label htmlFor="email">Email</label>
-                                    <input type="email" name="email" placeholder='exemple@gmail.com' required />
-
-                                    <label htmlFor="subject">Objet</label>
-                                    {
-                                        !check ?
-                                            <select name="subject" required>
-                                                <option style={{ fontFamily: "var(--font-family)" }} value="">Choisir un sujet</option>
-                                                <option value="Récruter">Récruter</option>
-                                                <option value="Devenir collaborateur">Devenir collaborateur</option>
-                                            </select>
-                                            : <input type="text" name='subject' placeholder='Votre object de message' required />
-                                    }
-
-                                    <label style={{ fontSize: 14, fontFamily: "var(--subtitile-font-family)", marginRight: 10 }} htmlFor="checkbox">Un autre sujet</label>
-                                    <input type="checkbox" onChange={Ckecked} />
-                                    <br />
-                                    <br />
-
-                                    <label htmlFor="message">Message</label>
-                                    <textarea name="message" cols="30" rows="10" required></textarea>
-
-                                    <div>
-                                        <button className='myButton' >Envoyez <FontAwesomeIcon style={{ marginLeft: 10 }} icon={faPaperPlane}></FontAwesomeIcon></button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        : <Loading></Loading>
+                    renderContent()
                 }
             </PreloadImages>
         </>
