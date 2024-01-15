@@ -21,14 +21,6 @@ function Detail(props) {
 
     return (
         <PreloadImages>
-            {/* <!DOCTYPE html> */}
-            <html lang="en">
-            <head>
-                <meta charset="UTF-8" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <title>Document</title>
-            </head>
-            <body>
             {
                 projectExist ?
                     <div id="detail-page" onClick={removeMenu} onLoad={removeMenu}>
@@ -44,11 +36,11 @@ function Detail(props) {
                             {
                                 projects[params.id - 1].description ?
                                     <div className="description-tools cl">
-                                        <span style={{ fontSize: 20, color: "white" }}>Description</span>
+                                        <span style={{ fontSize: 20, color: "var(--main-color)" }}>Description</span>
                                         <p className="description">{projects[params.id - 1]?.description}</p>
                                         {
                                             projects[params.id - 1].location || projects[params.id - 1].period ?
-                                                <p style={{ fontSize: 13, color: "white" }}>
+                                                <p style={{ fontSize: 13, color: "var(--subtitle-color)" }}>
                                                     <FontAwesomeIcon icon={faLocationDot} style={{ marginRight: 5 }} /> {projects[params.id - 1].location}
                                                     <br />
                                                     <FontAwesomeIcon icon={faCalendarPlus} style={{ marginRight: 5 }} />{projects[params.id - 1].period}
@@ -57,7 +49,7 @@ function Detail(props) {
                                         }
                                         {
                                             projects[params.id - 1].tools ?
-                                                <span style={{ fontSize: 20, color: "white" }}>Outils / Méthodes / Mots clés</span>
+                                                <span style={{ fontSize: 20, color: "var(--main-color)" }}>Outils / Méthodes / Mots clés</span>
                                                 : null
                                         }
                                         <div className="tools-list">
@@ -96,9 +88,6 @@ function Detail(props) {
                     </div>
                     : <Page404 title={"Projet introuvable"} prev={{ page: "Réalisations", link: '/work' }}></Page404>
             }
-                
-            </body>
-            </html>
         </PreloadImages>
     )
 }

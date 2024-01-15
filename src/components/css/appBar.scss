@@ -3,32 +3,41 @@
     margin: 0;
 }
 
-$navBarBackground : var(--background-dark);
-
 
 .app-bar {
     position: absolute;
     width: 100%;
     top: 30px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: var(--appbar-height);
     z-index: 2;
+    height: max-content;
 
     a {
         text-decoration: none;
         font-family: var(--font-family);
     }
-
-    .app-name {
-        font-size: var(--font-size-vmax);
+    
+    .profile {
+        height: 70px;
+        width: 70px;
+        border: 2px solid white;
+        border-radius: 50%;
+        overflow: hidden;
         margin-left: 20px;
-        color: white;
-        flex: 1;
+        background-color: var(--background-light-50);
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
     }
 
     .nav-bar {
         flex: 3;
-        background-color: $navBarBackground;
+        background-color: var(--background-color);
         box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.70);
         border-radius: 50px;
         display: grid;
@@ -51,7 +60,7 @@ $navBarBackground : var(--background-dark);
             border-radius: 50px;
             margin-left: 5px;
             margin-right: 5px;
-            color: var(--white-color-2);
+            color: var(--subtitle-color);
             background-color: transparent;
             font-size: 16px;
             display: flex;
@@ -108,11 +117,8 @@ $navBarBackground : var(--background-dark);
         height: max-content;
         width: 100%;
         gap: 10px;
-
-        .app-name {
-            transition: 0.2s;
-            font-size: var(--title-font-size-small);
-        }
+        justify-content: space-between;
+        align-items: center;
 
         a {
             font-family: var(--font-family);
@@ -125,7 +131,7 @@ $navBarBackground : var(--background-dark);
             height: max-content;
             min-width: max-content;
             position: absolute;
-            top: 40px;
+            top: var(--appbar-height);
             right: 0px;
             border-radius: 0;
             border: 0;
@@ -143,7 +149,7 @@ $navBarBackground : var(--background-dark);
 
                     &:hover {
                         transition: 0.2s;
-                        color: white;
+                        color: var(--main-color);
                     }
                 }
             }
@@ -185,15 +191,6 @@ $navBarBackground : var(--background-dark);
                 margin-left: 0px;
                 margin-right: 0px;
             }
-        }
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .app-bar  {
-        .app-name {
-            transition: 0.2s;
-            font-size: calc(var(--title-font-size-small) - 5px);
         }
     }
 }

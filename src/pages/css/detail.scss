@@ -1,13 +1,13 @@
 #detail-page {
     padding-top: var(--page-padding-top);
     padding-bottom: 50px;
-    background-image: url("../../assets/backgrounds/bg-main-dark-1440w.jpg");
+    background-image: var(--background-image);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
     font-family: var(--font-family);
-    color: var(--white-color-1);
+    color: var(--main-color);
 
     .sec-1 {
         display: flex;
@@ -44,21 +44,23 @@
                     width: 100%;
                     height: max-content;
                     border-radius: 10px;
-                    box-shadow: 0px 0px 10px white;
+                    box-shadow: 0px 0px 10px var(--main-color);
                 }
             }
         }
 
         .description-tools {
+            backdrop-filter: var(--blur-background);
             text-align: justify;
             width: 100%;
             min-width: 300px;
             color: var(--subtitle-color);
             border: 1px solid var(--subtitle-color);
-            background-color: rgba(0, 0, 0, 0.3);
+            // background-color: rgba(0, 0, 0, 0.3);
             padding: 10px;
             border-radius: 10px;
             font-family: var(--subtitle-font-family);
+            // color: var(--main-color);
 
 
             .tools-list {
@@ -67,7 +69,7 @@
                 flex-wrap: wrap;
 
                 .tool {
-                    color: white;
+                    color: var(--subtitle-color);
                     border: 1px solid var(--subtitle-color);
                     padding: 5px;
                     border-radius: 10px;
@@ -97,13 +99,14 @@
             margin-top: 20px;
             text-align: center;
             transition: 0.2s;
+            color: var(--main-color);
         }
 
         div {
             .list-step {
                 border: 1px solid var(--subtitle-color);
                 border-radius: 10px;
-                background-color: rgba(0, 0, 0, 0.3);
+                backdrop-filter:  blur(100px);;
                 width: 60vw;
                 transition: 0.2s;
                 padding: 15px;

@@ -10,17 +10,20 @@
     font-family: var(--title-font-family);
 
     &:hover {
-        box-shadow: 0px 0px 10px white;
+        transition: 0.2s;
+        box-shadow: 0px 0px 10px var(--main-color);
     }
 
     span:first-child {
-        background: var(--background-dark);
+        background: var(--background-color);
         transition: 0.2s;
         grid-area: 1 / 1 / 2 / 2;
         z-index: 1;
         margin: 0.5rem;
         padding: 0.5rem 1rem;
-        color: var(--white-color-1);
+        // color: var(--main-color);
+        // border: 1px solid var(--main-color);
+        color: var(--main-color);
         border-radius: 15px;
     }
 

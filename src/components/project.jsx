@@ -14,7 +14,7 @@ function Project(props) {
                     return (
                         <Link key={project.id} className="project-container"
                             to={`/work/${project.id}`}
-                            // onClick={() => { getToTop() }}
+                            onClick={() => { getToTop() }}
                         >
                             <span >{project.title}</span>
                             <img src={project.image} alt={`${project.title}`} />

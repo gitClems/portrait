@@ -10,8 +10,7 @@ const Hero = (props) => {
                 <div className="hero" >
                     <div className="accroche">
                         <div className="me">
-                            <p className="cl-hi" >Bonjour,</p>
-                            <p className="cl-name" >Je m'appelle {props.name}</p>
+                            <p className="cl-hi" >Bonjour, Je m'appelle {props.name}</p>
                             <p className="cl-what" >{props.description}</p>
                         </div>
                         <div className="tools">

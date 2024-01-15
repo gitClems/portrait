@@ -1,7 +1,11 @@
+::placeholder {
+    color: var(--subtitle-color);
+}
+
 #contact-page {
     padding-top: var(--page-padding-top);
     padding-bottom: 50px;
-    background-image: url("../../assets/backgrounds/bg-main-dark-1440w.jpg");
+    background-image: var(--background-image);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,12 +27,12 @@
             label {
                 font-family: var(--font-family);
                 font-size: 18px;
-                color: white;
+                color: var(--main-color);
             }
 
             #subject {
                 option {
-                    background-color: var(--background-dark);
+                    background-color: red;
                 }
             }
 
@@ -75,6 +79,7 @@
         margin-bottom: 12px;
         border: 1px solid #ccc;
         padding: 10px;
+        // color: var(--main-color);
         color: white;
     }
 
@@ -88,8 +93,8 @@
     .form-style-6 input[type="url"]:focus,
     .form-style-6 textarea:focus,
     .form-style-6 select:focus {
-        box-shadow: 0 0 5px white;
-        border: 1px solid white;
+        box-shadow: 0 0 5px var(--main-color);
+        border: 1px solid var(--main-color);
     }
 
 }

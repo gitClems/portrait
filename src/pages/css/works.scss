@@ -3,13 +3,13 @@
 #works-page {
     padding-top: var(--page-padding-top);
     padding-bottom: 50px;
-    background-image: url("../../assets/backgrounds/bg-main-dark-1440w.jpg");
+    background-image: var(--background-image);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
     font-family: var(--font-family);
-    color: var(--white-color-1);
+    color: var(--main-color);
 
     .accroche {
 
