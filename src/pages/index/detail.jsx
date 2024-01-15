@@ -21,6 +21,14 @@ function Detail(props) {
 
     return (
         <PreloadImages>
+            {/* <!DOCTYPE html> */}
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <title>Document</title>
+            </head>
+            <body>
             {
                 projectExist ?
                     <div id="detail-page" onClick={removeMenu} onLoad={removeMenu}>
@@ -88,6 +96,9 @@ function Detail(props) {
                     </div>
                     : <Page404 title={"Projet introuvable"} prev={{ page: "Réalisations", link: '/work' }}></Page404>
             }
+                
+            </body>
+            </html>
         </PreloadImages>
     )
 }

@@ -6,7 +6,7 @@ import { getToTop } from "./scrollTop"
 const Button = (props) => {
     return (
         <Link className="myButton" to={props.to}
-            onClick={() => { getToTop() }}
+            // onClick={() => { getToTop() }}
         >
             <span>{props.title}</span>
             <FontAwesomeIcon className="icon" icon={props.icon} />

@@ -9,6 +9,14 @@ function Page404(props) {
     window.scrollTo(0, 0)
     return (
         <PreloadImages >
+            {/* <!DOCTYPE html> */}
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <title>Document</title>
+            </head>
+            <body>
             <div id="error404" onClick={removeMenu} onLoad={removeMenu}>
                 <div className="content">
                     <img src={require('../../assets/icons/not-found.png')} alt="" />
@@ -21,6 +29,9 @@ function Page404(props) {
                     }
                 </div>
             </div>
+                
+            </body>
+            </html>
         </PreloadImages>
     )
 }
