@@ -3,15 +3,15 @@ import { Link } from "react-router-dom"
 import './css/button.scss'
 import { getToTop } from "./scrollTop"
 
-const Button = (props) => {
+const BackButton = (props) => {
     return (
-        <Link className="myButton" to={props.to}
-            onClick={() => { getToTop() }}
+        <Link className="myButton" to={props.to} 
+        onClick={() => { getToTop()}}
         >
-            <span>{props.title}</span>
             <FontAwesomeIcon className="icon" icon={props.icon} />
+            <span>{props.title}</span>
         </Link>
     )
 }
 
-export default Button
+export default BackButton

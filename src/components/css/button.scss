@@ -3,7 +3,7 @@
         background: var(--linear-background);
         text-decoration: none;
         font-size: 25px;
-        width: 200px;
+        width: max-content;
         height: 40px;
         border-radius: 20px;
         display: flex;
@@ -13,7 +13,10 @@
         color: white;
 
         .icon {
-            margin-left: 20px;
+            margin: 20px;
+        }
+        span {
+            margin: 20px;
         }
 
         &:hover {

@@ -94,29 +94,21 @@ const Contact = () => {
                             <textarea name="message" cols="30" rows="10" required></textarea>
 
                             <div>
-                                <button className='myButton' >Envoyez <FontAwesomeIcon style={{ marginLeft: 10 }} icon={faPaperPlane}></FontAwesomeIcon></button>
+                                <button className='myButton' ><span>Envoyez</span> <FontAwesomeIcon className='icon' icon={faPaperPlane}></FontAwesomeIcon></button>
                             </div>
                         </form>
                     </div>
                 </div>
             )
         }
-        else if(isEmailSent){
-            return <Merci></Merci>
-        }
-        else {
-           return  <Loading></Loading>
-        }
+        else if (isEmailSent) { return <Merci></Merci> }
+        else { return <Loading></Loading> }
     }
 
 
     return (
         <>
-            <PreloadImages imageUrls={imgUrl}>
-                {
-                    renderContent()
-                }
-            </PreloadImages>
+            <PreloadImages imageUrls={imgUrl}>{renderContent()}</PreloadImages>
         </>
     )
 }

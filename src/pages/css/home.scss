@@ -49,15 +49,10 @@
 
     .l4 {
         border-top: 1px solid var(--subtitle-color);
-        widows: 100%;
         display: flex;
         justify-content: center;
         padding-top: 40px;
         padding-bottom: 40px;
-
-        .myButton {
-            width: 500px;
-        }
     }
 }
 
@@ -73,14 +68,6 @@
         .l3 {
             .title {
                 font-size: var(--title-font-size-small);
-            }
-        }
-
-        .l4 {
-
-            .myButton {
-                width: 90%;
-                font-size: 20px;
             }
         }
     }

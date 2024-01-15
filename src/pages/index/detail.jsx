@@ -86,7 +86,7 @@ function Detail(props) {
                                 </section> : ""
                         }
                     </div>
-                    : <Page404 title = {"Projet introuvable"}></Page404>
+                    : <Page404 title={"Projet introuvable"} prev={{ page: "Réalisations", link: '/work' }}></Page404>
             }
         </PreloadImages>
     )
