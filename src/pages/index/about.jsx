@@ -27,7 +27,7 @@ function About() {
                                         <>
                                             <li className="formation-item"> {formation.period} : {formation.location}</li>
                                             <p className="description">{formation.description}</p>
-                                            <span style={{ fontSize: 20, color: "white" }}>Outils / Méthodes / Mots clés</span>
+                                            <span style={{ fontSize: 20, color: "var(--main-color)" }}>Outils / Méthodes / Mots clés</span>
                                             <div className="list-tools">
                                                 {
                                                     formation.tools?.map((tool) => {
