@@ -21,6 +21,11 @@
     }
     
     .profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 25px;
         height: 40px;
         width: 40px;
         border: 2px solid white;

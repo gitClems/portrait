@@ -61,7 +61,10 @@ function AppBar() {
         <PreloadImages>
             <div className='app-bar'>
                 <Link className='profile' to={"/"}>
-                    <img src={person.profile[0]} alt="" />
+                    {
+                        person.logo ?<img src={person.logo} alt="" /> : `${person.fName[0]}${person.lName[0].toLowerCase()}`
+                    }
+                    
                 </Link>
                 <nav className='nav-bar' id='navBar'>
                     <NavLink className="btn" id='nav-btn-home' to="/" exact="true" activeClass="active" onClick={toogleMenu}>Accueil</NavLink>

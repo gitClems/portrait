@@ -13,7 +13,7 @@ function Home() {
         <PreloadImages>
             <div id="home-page" onClick={removeMenu} onLoad={removeMenu}>
                 <section className="l1">
-                    <Hero name={person.name} description={person.description} profile={person.profile[0]}></Hero>
+                    <Hero name={`${person.fName} ${person.lName}`} description={person.description} profile={person.profile[0]}></Hero>
                 </section>
                 <section className="l2">
                     {domains.map((domain) => { return (<Domain id={domain.id} title={domain.title} description={domain.description} ></Domain>) })}
