@@ -1,11 +1,11 @@
     .myButton {
-        font-family: var(--font-family);
+        font-family: var(--subtitle-font-family);
         background: var(--linear-background);
         text-decoration: none;
-        font-size: 25px;
+        font-size: 2.5vmax;
         width: max-content;
-        height: 40px;
-        border-radius: 20px;
+        height: max-content;
+        border-radius: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -13,14 +13,22 @@
         color: white;
 
         .icon {
-            margin: 20px;
+            margin-left: 5px;
+            margin-right: 20px;
         }
         span {
-            margin: 20px;
+            margin-left: 20px;
+            margin-right: 5px;
         }
 
         &:hover {
             transition: 0.2;
             box-shadow: 0px 0px 10px var(--main-color);
+        }
+    }
+
+    @media screen and (max-width: 800px){
+        .myButton {
+            font-size: var(--title-font-size-small);
         }
     }

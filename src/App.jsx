@@ -7,7 +7,7 @@ import About from "./pages/index/about";
 import Footer from "./components/footer";
 import Detail from "./pages/index/detail";
 import Contact from "./pages/index/contact";
-import Page404 from "./pages/index/error404";
+import Page404 from "./pages/index/page404";
 
 
 function App() {

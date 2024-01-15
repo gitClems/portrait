@@ -10,7 +10,7 @@ function About() {
             <div id="about-page" onClick={removeMenu} onLoad={removeMenu}>
                 <section className="sec-1 accroche">
                     <div className="message">
-                        <p className="title">A propos de moi</p>
+                        <p className="title"><h1>A propos de moi</h1></p>
                         <p className="description">
                             <img src={person.profile[1]} alt="Profile" />
                             <span style={{float : "none"}}></span>{person.about}

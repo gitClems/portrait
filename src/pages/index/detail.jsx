@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faListCheck, faLocationDot, faCalendarPlus } from "@fortawesome/free-solid-svg-icons";
 import "../css/detail.scss"
 import { removeMenu } from "../../components/appBar";
-import Page404 from "./error404";
+import Page404 from "./page404";
 
 function Detail(props) {
     let params = useParams()
