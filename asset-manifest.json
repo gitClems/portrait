@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portrait/static/css/main.81434270.css",
-    "main.js": "/portrait/static/js/main.5477f622.js",
+    "main.css": "/portrait/static/css/main.3caab75e.css",
+    "main.js": "/portrait/static/js/main.c68ee400.js",
     "static/js/787.590429e8.chunk.js": "/portrait/static/js/787.590429e8.chunk.js",
     "static/media/ExpGlobale.png": "/portrait/static/media/ExpGlobale.ca13977f40800ee86f37.png",
     "static/media/profile-2.jpg": "/portrait/static/media/profile-2.537facec5af3eddf1b62.jpg",
@@ -12,17 +12,18 @@
     "static/media/VueAdmin.PNG": "/portrait/static/media/VueAdmin.900d19220a60abadb7ea.PNG",
     "static/media/profile-3-mini.jpg": "/portrait/static/media/profile-3-mini.64720f93cf9f74be0644.jpg",
     "static/media/bg-main-dark-1440w.jpg": "/portrait/static/media/bg-main-dark-1440w.e29b911841329c5eb171.jpg",
+    "static/media/bg-main-light-1440w.jpg": "/portrait/static/media/bg-main-light-1440w.36df1391b5fefc239a19.jpg",
     "static/media/bg-subtle-1-dark-1440w.jpg": "/portrait/static/media/bg-subtle-1-dark-1440w.2ab37781ceb19b6a9f78.jpg",
     "static/media/bg-subtle-2-dark-1440w.jpg": "/portrait/static/media/bg-subtle-2-dark-1440w.4a1754376419a23b70fb.jpg",
     "static/media/bg-footer-dark-1440w.jpg": "/portrait/static/media/bg-footer-dark-1440w.33b264046e5e5e0b2b9e.jpg",
     "static/media/bg-main-dark-800w.jpg": "/portrait/static/media/bg-main-dark-800w.d09dcc3cbf1efb6ef3d1.jpg",
     "index.html": "/portrait/index.html",
-    "main.81434270.css.map": "/portrait/static/css/main.81434270.css.map",
-    "main.5477f622.js.map": "/portrait/static/js/main.5477f622.js.map",
+    "main.3caab75e.css.map": "/portrait/static/css/main.3caab75e.css.map",
+    "main.c68ee400.js.map": "/portrait/static/js/main.c68ee400.js.map",
     "787.590429e8.chunk.js.map": "/portrait/static/js/787.590429e8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81434270.css",
-    "static/js/main.5477f622.js"
+    "static/css/main.3caab75e.css",
+    "static/js/main.c68ee400.js"
   ]
 }
