@@ -68,13 +68,13 @@ const Contact = () => {
                         <h1>Envoyez-moi un méssage</h1>
                         <br />
                         <form ref={form} onSubmit={HandleContact}>
-                            <label htmlFor="name">Nom et prénom</label>
+                            <label htmlFor="name">Nom et prénom</label> <span style={{color : 'red'}}>*</span>
                             <input type="text" name="name" placeholder='Nom et prénom' required />
 
-                            <label htmlFor="email">Email</label>
+                            <label htmlFor="email">Email</label> <span style={{color : 'red'}}>*</span>
                             <input type="email" name="email" placeholder='exemple@gmail.com' required />
 
-                            <label htmlFor="subject">Objet</label>
+                            <label htmlFor="subject">Objet</label> <span style={{color : 'red'}}>*</span>
                             {
                                 !check ?
                                     <select name="subject" required>
@@ -82,7 +82,7 @@ const Contact = () => {
                                         <option value="Récruter">Récruter</option>
                                         <option value="Devenir collaborateur">Devenir collaborateur</option>
                                     </select>
-                                    : <input type="text" name='subject' placeholder='Votre object de message' required />
+                                    : <input type="text" name='subject' placeholder='Votre objet de message' required />
                             }
 
                             <label style={{ fontSize: 14, fontFamily: "var(--subtitile-font-family)", marginRight: 10 }} htmlFor="checkbox">Un autre sujet</label>
@@ -90,8 +90,8 @@ const Contact = () => {
                             <br />
                             <br />
 
-                            <label htmlFor="message">Message</label>
-                            <textarea name="message" cols="30" rows="10" required></textarea>
+                            <label htmlFor="message">Message</label> <span style={{color : 'red'}}>*</span>
+                            <textarea name="message" placeholder='Saisir votre message' required></textarea>
 
                             <div>
                                 <button className='myButton' ><span>Envoyez</span> <FontAwesomeIcon className='icon' icon={faPaperPlane}></FontAwesomeIcon></button>

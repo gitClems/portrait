@@ -15,7 +15,6 @@
         align-items: center;
         padding-left: 50px;
         padding-right: 50px;
-        margin-top: 50px;
         width: 100%;
         height: max-content;
         transition: 0.2s;
@@ -38,8 +37,6 @@
             }
 
             .image {
-                margin-top: 30px;
-
                 .img-targeted {
                     width: 100%;
                     height: max-content;
@@ -129,6 +126,7 @@
             .title-image {
                 min-width: 100%;
                 width: 80%;
+                margin-bottom: 25px;
 
                 .title {
                     font-size: 25px;
@@ -145,7 +143,6 @@
 
 
         .sec-2 {
-
             .title {
                 font-size: 23px;
                 transition: 0.2s;

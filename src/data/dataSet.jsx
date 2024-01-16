@@ -8,7 +8,7 @@ export const domains = [
     {
         id: 2,
         title: "Recherche opérationnelle",
-        description: "Toujours en quête d'optimisation, la recherche (particulièrement dans le domaine de la logistique) offre un carde de réflexion pour l'utilisation adéquate des nouvelle méthodes et outils dans les processus métiers."
+        description: "Toujours en quête d'optimisation, la recherche (particulièrement dans le domaine de la logistique) offre un carde de réflexion pour l'utilisation adéquate des nouvelles méthodes et outils dans les processus métiers."
     },
     {
         id: 3,
@@ -137,17 +137,17 @@ export const projects = [
             {
                 id: 2,
                 step: "Définition des indicateurs de performance (KPIs)",
-                description: "Définir les métriques à mesurer et à suivre par des processus de Benchmarking et d'analytiques."
+                description: "Définir les métriques à mesurer et à suivre par des processus de Benchmarking et d'analyse."
             },
             {
                 id: 3,
-                step: "Préparation des données et modélisation des processus de notre application",
+                step: "Préparation des données et modélisation des processus du dashboard",
                 description: "Par le processus d'ETL, extraire les données, les transformer et les charger dans le datawarehouse suivi d'une modélisation multidimensionnelle pour la relation entre les mesures(les Faits) et les dimensions."
             },
             {
                 id: 4,
                 step: "Implémentation d’interfaces interactives",
-                description: "Après la feuille de routes et la mise en place de l’architecture, place a été donné à l’implémentation des graphes et des paramètres régulateurs qui permettent de visualiser les graphes de manière dynamique."
+                description: "Après la feuille de route et la mise en place de l’architecture, place a été donné à l’implémentation des graphes et des paramètres régulateurs qui permettent de visualiser les graphes de manière dynamique."
             },
         ],
         tools: [
@@ -175,7 +175,7 @@ export const projects = [
     },
     {
         id: 2,
-        title: "Conception de système d'information centralisé",
+        title: "Conception de système d'information centralisé: cas des centres vétérinaires",
         location: "ENSIAS - Rabat, Maroc",
         period: "Oct. 2022 - Nov. 2022",
         image: require("../assets/works/VueAdmin.PNG"),
@@ -184,22 +184,22 @@ export const projects = [
             {
                 id: 1,
                 step: "Définition du problème",
-                description: "Définir avec le cahier de charger mise à notre disposition les frontières du problème et analyser au passage ses avantages et limites. Dans le même moment, faire une critique sur les solutions déjà proposées et ainsi dresser le benchmarking de notre solution."
+                description: "Définir sur base du cahier de charge mise à notre disposition les frontières du problème et analyser la faisabilité d'une telle solution. Dans le même moment, faire une critique sur les solutions déjà existantes."
             },
             {
                 id: 2,
-                step: "Définition processus du métier",
+                step: "Définition des processus fonctionnels",
                 description: "Dresser des représentations graphiques (UML) pour expliciter les processus qui interviennent dans les cliniques vétérinaires. Exemple : prendre un rendez-vous, examiner un animal, prescrire des médicaments, facturer un client, faire un rapport etc."
             },
             {
                 id: 3,
                 step: "Modélisation des processus et base de données",
-                description: "Définir l’architecture de développement de l’applications (le SI), définir la modélisation de la base de données et attributions de rôles dans des acteurs."
+                description: "Définir l’architecture de développement de l’application (le SI), définir la modélisation de la base de données et attribution de rôles des acteurs."
             },
             {
                 id: 4,
                 step: "Implémentation de l’application",
-                description: "Après la mise en place de l’architecture et de la feuille de routes, place a été donné à l’implémentation des interfaces utilisateurs et exposition du résultat final."
+                description: "Après la mise en place de l’architecture et de la feuille de route, place a été donné à l’implémentation des interfaces utilisateurs et exposition du résultat final."
             },
 
         ],
@@ -228,12 +228,12 @@ export const projects = [
         period: "Août 2022",
         location: "OBAAS Consulting - Ouagadougou, Burkina Faso",
         image: require("../assets/works/App1.jpg"),
-        description: "Au cours de mon premier stage, j'ai réalisé cette application mobile pour une entreprise qui œuvre dans le consulting. Elle permettrait à l'entreprise de proposer ses services à des clients via l'applications tout en ayant un suivi de la progression de réalisation.",
+        description: "Au cours de mon premier stage, j'ai réalisé cette application mobile pour une entreprise qui œuvre dans le consulting. Elle permettrait à l'entreprise de proposer ses services à des clients via l'application tout en ayant un suivi de la progression de réalisation.",
         steps: [
             {
                 id: 1,
                 step: "Définition du problème",
-                description: "Définir du cahier de charge et les frontières du projet."
+                description: "Définir le cahier de charge et les frontières du projet."
             },
             {
                 id: 2,

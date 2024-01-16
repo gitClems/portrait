@@ -8,6 +8,7 @@
     overflow: hidden;
     text-decoration: none;
     font-family: var(--title-font-family);
+    border: 1px solid var(--subtitle-color);
 
     &:hover {
         transition: 0.2s;
