@@ -12,7 +12,7 @@ import Page404 from "./pages/index/page404";
 
 function App() {
   return (
-    <html lang="en" translate="no">
+    <html lang="fr" translate="no">
       <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

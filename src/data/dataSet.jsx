@@ -8,7 +8,7 @@ export const domains = [
     {
         id: 2,
         title: "Recherche opérationnelle",
-        description: "Toujours en quête d'optimisation, la recherche (particulièrement dans le domaine de la logistique) offre un carde de réflexion pour l'utilisation adéquate des nouvelles méthodes et outils dans les processus métiers."
+        description: "Toujours en quête d'optimisation, la recherche (particulièrement dans le domaine de la logistique) offre un cadre de réflexion pour l'utilisation adéquate des nouvelles méthodes et outils dans les processus métiers."
     },
     {
         id: 3,
@@ -30,7 +30,7 @@ export const skills = [
     },
     {
         id: 3,
-        title: "Récherche opérationelle"
+        title: "Recherche opérationelle"
     },
     {
         id: 4,
@@ -38,7 +38,7 @@ export const skills = [
     },
     {
         id: 5,
-        title: "Dessign thinking"
+        title: "Design thinking"
     },
     {
         id: 6,
