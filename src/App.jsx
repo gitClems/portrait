@@ -12,18 +12,27 @@ import Page404 from "./pages/index/page404";
 
 function App() {
   return (
-    <div id="app" data-theme = 'dark'>
-      <AppBar />
-      <Routes>
-        <Route path='/' index element={<Home />} />
-        <Route path='/work' element={<Works />} />
-        <Route path='/about' element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path='/work/:id' element={<Detail />} />
-        <Route path='/*' element={<Page404 />}></Route>
-      </Routes>
-      <Footer />
-    </div>
+    <html lang="en" translate="no">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
+      <body>
+
+        <div id="app">
+          <AppBar />
+          <Routes>
+            <Route path='/' index element={<Home />} />
+            <Route path='/work' element={<Works />} />
+            <Route path='/about' element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path='/work/:id' element={<Detail />} />
+            <Route path='/*' element={<Page404 />}></Route>
+          </Routes>
+          <Footer />
+        </div>
+      </body>
+    </html>
   );
 }
 
