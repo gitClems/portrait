@@ -58,7 +58,6 @@ function AppBar() {
 
 
     return (
-        <PreloadImages>
             <div className='app-bar'>
                 <Link className='profile' to={"/"}>
                     {
@@ -123,7 +122,6 @@ function AppBar() {
                 </div>
                 <div className="menuToggle" onClick={toogleMenu}></div>
             </div>
-        </PreloadImages>
     )
 }
 
