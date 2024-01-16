@@ -3,7 +3,6 @@ import { Link, NavLink } from "react-router-dom";
 import "./css/appBar.scss"
 import { useEffect } from 'react';
 import { person } from '../data/dataSet';
-import { PreloadImages } from './loading';
 
 export const removeMenu = () => {
     const menuToggle = document.querySelector('.menuToggle')
