@@ -65,7 +65,7 @@ const Contact = () => {
             return (
                 <div id="contact-page" onClick={removeMenu} onLoad={removeMenu}>
                     <div class="form-style-6">
-                        <h1>Envoyez-moi un méssage</h1>
+                        <h1>Envoyez-moi un message</h1>
                         <br />
                         <form ref={form} onSubmit={HandleContact}>
                             <label htmlFor="name">Nom et prénom</label> <span style={{color : 'red'}}>*</span>
