@@ -18,7 +18,7 @@
                 color: var(--subtitle-color);
                 text-align: center;
             }
-            
+
             .cl-hi {
                 font-size: calc(var(--font-size-vmax) + 1vmax);
                 color: var(--main-color);
@@ -53,7 +53,7 @@
             box-shadow: -2px 2px 5px var(--main-color);
             border: 1px solid var(--main-color);
             border-radius: 20px;
-            object-fit : contain;
+            object-fit: contain;
             height: 100%;
             width: 100%;
         }
@@ -65,31 +65,28 @@
     .hero {
         transition: 0.2s;
         font-family: var(--font-family);
-        height: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
 
         .accroche {
+            margin-right: 0px;
 
             .me {
                 display: flex;
                 flex-direction: column;
-                align-items: center;
-
 
                 .cl-what {
                     font-size: 17px;
                 }
 
-                .cl-hi,
-                .cl-name {
+                .cl-hi {
                     font-size: var(--title-font-size-small);
                 }
             }
 
 
             .tools {
-                margin-top: 20px;
 
                 div {
                     border-radius: 10px;
@@ -103,7 +100,7 @@
             align-items: center;
             margin-top: 50px;
         }
-        align-items: center;
+
     }
 }
 
