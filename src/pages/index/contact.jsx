@@ -56,7 +56,6 @@ const Contact = () => {
 
         } catch (error) {
             setIsEmailSent(false);
-            console.log(error.message);
         }
     }
 

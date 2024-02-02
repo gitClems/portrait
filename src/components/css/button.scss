@@ -1,6 +1,6 @@
     .myButton {
         font-family: var(--subtitle-font-family);
-        background: var(--linear-background);
+        background: var(--primary-color);
         text-decoration: none;
         font-size: 25px;
         border-radius: 50px;
@@ -8,7 +8,7 @@
         justify-content: center;
         align-items: center;
         transition: 0.2s;
-        color: white;
+        color: black;
         padding: 0px 20px 0px 20px;
 
         &:hover {

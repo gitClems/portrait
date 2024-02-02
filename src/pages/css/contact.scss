@@ -5,7 +5,7 @@
 #contact-page {
     padding-top: var(--page-padding-top);
     padding-bottom: 50px;
-    background-image: var(--background-image);
+    background: var(--background-image);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -30,10 +30,9 @@
                 color: var(--main-color);
             }
 
-            #subject {
-                option {
-                    background-color: red;
-                }
+            select {
+                background-color: var(--reverse-color);
+                color: var(--main-color);
             }
 
             div {
@@ -74,9 +73,9 @@
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         width: 100%;
-        background: #110f0f7c;
+        background: transparent;
         margin-bottom: 12px;
-        border: 1px solid #ccc;
+        border: 1px solid var(--main-color);
         padding: 10px;
         color: white;
     }

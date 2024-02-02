@@ -19,20 +19,21 @@
         text-decoration: none;
         font-family: var(--font-family);
     }
-    
+
     .profile {
         display: flex;
         justify-content: center;
         align-items: center;
-        color: white;
+        color: black;
         font-size: 25px;
         height: 40px;
         width: 40px;
-        border: 2px solid white;
+        border: 2px solid var(--main-color);
         border-radius: 50%;
         overflow: hidden;
         margin-left: 20px;
-        background-color: var(--background-light-50);
+        background-color: var(--primary-color);
+
         img {
             height: 100%;
             width: 100%;
@@ -65,7 +66,7 @@
             border-radius: 50px;
             margin-left: 5px;
             margin-right: 5px;
-            color: var(--subtitle-color);
+            color: var(--link-color);
             background-color: transparent;
             font-size: 16px;
             display: flex;
@@ -73,15 +74,14 @@
             align-items: center;
 
             &:hover {
-                background-color: var(--background-light);
-                color: white;
+                background-color: var(--primary-color);
+                color: black;
             }
         }
 
         .active {
-            background-color: var(--background-light-50);
-            border: 0;
-            color: white;
+            background-color: var(--primary-color);
+            color: black;
         }
     }
 
@@ -98,7 +98,7 @@
             margin-left: 10px;
 
             &:hover {
-                color: white;
+                color: var(--main-color);
             }
         }
     }
@@ -168,7 +168,15 @@
                     display: none;
                 }
             }
+
+            .active {
+                background-color: var(--primary-color);
+                border-bottom: 1px solid white;
+                border-top: 1px solid white;
+                color: black;
+            }
         }
+
 
         .contact {
             display: none;
@@ -184,10 +192,12 @@
             background-position: center;
             background-size: cover;
             cursor: pointer;
+            filter: var(--logo-color);
         }
 
         .nav-bar.active {
             display: flex;
+            border-top: 2px solid var(--main-color);
             flex-direction: column;
             min-width: 100%;
             padding: 0px 0px 20px 0px;
@@ -195,6 +205,13 @@
             .btn {
                 margin-left: 0px;
                 margin-right: 0px;
+            }
+
+            svg {
+
+                &:hover {
+                    color: white;
+                }
             }
         }
     }

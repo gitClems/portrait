@@ -1,8 +1,8 @@
 #footer {
     font-family: var(--subtitle-font-family);
-    background-color: var(--background-color);
+    background-color: var(--background-image);
     border-top: 1px solid var(--subtitle-color);
-    color: var(--subtitle-color);
+    color: var(--link-color);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     height: max-content;
@@ -12,7 +12,7 @@
     .item {
         display: flex;
         align-items: center;
-        color: var(--subtitle-color);
+        color: var(--main-color);
         text-decoration: none;
         transition: 0.2s;
         svg {

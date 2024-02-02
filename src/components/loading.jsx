@@ -21,7 +21,6 @@ export const PreloadImages = ({ children }) => {
                 setImagesLoaded(true);
             })
             .catch((error) => {
-                console.error('Error preloading images:', error);
                 setImagesLoaded(true);
             });
     }, []);

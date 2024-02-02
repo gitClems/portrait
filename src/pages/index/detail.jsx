@@ -7,11 +7,11 @@ import "../css/detail.scss"
 import { removeMenu } from "../../components/appBar";
 import Page404 from "./page404";
 
-function Detail(props) {
+function Detail() {
     let params = useParams()
 
     // eslint-disable-next-line eqeqeq
-    const projectExist = projects.find((p) => p.id == params.id)
+    const selectedProject = projects.find((p) => p.id == params.id)
     function ImageSize() {
         const img = document.querySelector('.img-targeted')
         if (img.clientHeight > img.clientWidth) {
@@ -22,39 +22,39 @@ function Detail(props) {
     return (
         <PreloadImages>
             {
-                projectExist ?
+                selectedProject ?
                     <div id="detail-page" onClick={removeMenu} onLoad={removeMenu}>
                         <section className="sec-1">
                             <div className="title-image cl">
-                                <p className="title">{params ? projects[params.id - 1].title : "-"}</p>
+                                <p className="title">{params ? selectedProject.title : "-"}</p>
                                 <div className="image">
-                                    <img className="img-targeted" src={projects[params.id - 1].image} alt={`${projects[params.id - 1].title}`}
+                                    <img className="img-targeted" src={selectedProject.image} alt={`${selectedProject.title}`}
                                         onLoad={() => ImageSize()}
                                     />
                                 </div>
                             </div>
                             {
-                                projects[params.id - 1].description ?
+                                selectedProject.description ?
                                     <div className="description-tools cl">
                                         <span style={{ fontSize: 20, color: "var(--main-color)" }}>Description</span>
-                                        <p className="description">{projects[params.id - 1]?.description}</p>
+                                        <p className="description">{selectedProject?.description}</p>
                                         {
-                                            projects[params.id - 1].location || projects[params.id - 1].period ?
+                                            selectedProject.location || selectedProject.period ?
                                                 <p style={{ fontSize: 13, color: "var(--subtitle-color)" }}>
-                                                    <FontAwesomeIcon icon={faLocationDot} style={{ marginRight: 5 }} /> {projects[params.id - 1].location}
+                                                    <FontAwesomeIcon icon={faLocationDot} style={{ marginRight: 5 }} /> {selectedProject.location}
                                                     <br />
-                                                    <FontAwesomeIcon icon={faCalendarPlus} style={{ marginRight: 5 }} />{projects[params.id - 1].period}
+                                                    <FontAwesomeIcon icon={faCalendarPlus} style={{ marginRight: 5 }} />{selectedProject.period}
                                                 </p>
                                                 : null
                                         }
                                         {
-                                            projects[params.id - 1].tools ?
+                                            selectedProject.tools ?
                                                 <span style={{ fontSize: 20, color: "var(--main-color)" }}>Outils / Méthodes / Mots clés</span>
                                                 : null
                                         }
                                         <div className="tools-list">
                                             {
-                                                projects[params.id - 1].tools?.map((tool) => {
+                                                selectedProject.tools?.map((tool) => {
                                                     return (
                                                         <span className="tool" >{tool.keyword}</span>
                                                     )
@@ -66,13 +66,13 @@ function Detail(props) {
                             }
                         </section>
                         {
-                            projects[params.id - 1].steps ?
+                            selectedProject.steps ?
                                 <section className="sec-2">
                                     <span className="title"><FontAwesomeIcon style={{ marginRight: 10 }} icon={faListCheck}></FontAwesomeIcon>Les differentes étapes</span>
                                     <div style={{ display: "flex", justifyContent: "center" }}>
                                         <div className="list-step">
                                             {
-                                                projects[params.id - 1].steps?.map((step) => {
+                                                selectedProject.steps?.map((step) => {
                                                     return (
                                                         <>
                                                             <span className="step">Phase {step.id}: {step.step}</span>
