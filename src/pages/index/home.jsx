@@ -28,7 +28,7 @@ function Home() {
                     <div className="see-more-bottom"><Button title={"Voir plus"} icon={faArrowRight} to={"./work"}></Button></div>
                 </section>
                 <section className="l4">
-                    <h1>Voulez-vous qu'on relève des défis ensemble ? </h1>
+                    <h1 style={{ marginLeft: 10, marginRight: 10 }}>Voulez-vous qu'on relève des défis ensemble ? </h1>
                     <Button title={"Envoyez-moi un message"} icon={faPaperPlane} to={"contact"}></Button>
                 </section>
             </div>
