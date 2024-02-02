@@ -122,7 +122,7 @@ export const educations = [
 
 export const projects = [
     {
-        id: 1,
+        id: "tableau de bord pour le suivi d'activités de livraisons en consigne",
         title: "Conception de tableau de bord pour le suivi d'activités de livraisons en consigne",
         description: "Pour un bon suivi des performances d'une activité, les tableaux de bords dynamiques paraissent très adéquats dans le sens où ils offrent une vue aussi bien macroscopique que détaillée.",
         period: "Juil. 2023 - Août 2023",
@@ -174,7 +174,7 @@ export const projects = [
         ]
     },
     {
-        id: 2,
+        id: "système d'information centralisé: cas des centres vétérinaires",
         title: "Conception de système d'information centralisé: cas des centres vétérinaires",
         location: "ENSIAS - Rabat, Maroc",
         period: "Oct. 2022 - Nov. 2022",
@@ -223,7 +223,7 @@ export const projects = [
         ]
     },
     {
-        id: 3,
+        id: "application mobile pour des publications de service",
         title: "Développement d'application mobile pour des publications de service",
         period: "Août 2022",
         location: "OBAAS Consulting - Ouagadougou, Burkina Faso",
@@ -300,14 +300,5 @@ export const imgUrl = [
     require("../assets/profiles/profile-2.jpg"),
     require("../assets/profiles/profile-3.jpg"),
     require("../assets/profiles/profile-3-mini.jpg"),
-    require("../assets/backgrounds/dark/bg-footer-dark-800w.jpg"),
-    require("../assets/backgrounds/dark/bg-footer-dark-1440w.jpg"),
-    require("../assets/backgrounds/dark/bg-main-dark-800w.jpg"),
-    require("../assets/backgrounds/dark/bg-main-dark-1440w.jpg"),
-    require("../assets/backgrounds/dark/bg-subtle-1-dark-800w.jpg"),
-    require("../assets/backgrounds/dark/bg-subtle-1-dark-1440w.jpg"),
-    require("../assets/backgrounds/dark/bg-subtle-2-dark-800w.jpg"),
-    require("../assets/backgrounds/dark/bg-subtle-2-dark-1440w.jpg"),
-    require("../assets/backgrounds/light/bg-main-light-1440w.jpg"),
     require("../assets/icons/not-found.png")
 ]
