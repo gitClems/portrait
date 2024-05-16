@@ -279,7 +279,7 @@ export const person = {
     fName: "BAMOGO",
     lName: "Clément",
     // logo : require("../assets/profiles/profile-1.png"),
-    description: "Élève ingénieur en Supply Chain Management basé à Rabat, Maroc",
+    description: "Élève ingénieur chercheur en Supply Chain Management basé à Rabat, Maroc",
     about: "Je me nomme BAMOGO Clément, actuellement élève ingénieur en Smart Supply Chain and Logistics à l'Ecole Nationale d'Informatique et d'Analyse des Systèmes(ENSIAS Rabat). Durant tout mon parcours universitaire et ingénieur, j'ai su développer un bon nombre de connaissances aussi bien dans les sciences fondamentales que dans le domaine de la technologie et l’analytique. Après deux ans à la Faculté des Sciences et Techniques de Mohammedia j’ai eu l’occasion d’accéder à l’ENSIAS en 2021 à travers le concours DEUST. Avec cette passion pour la logistique et les nouvelles technologies ce parcours m’a ouvert un espace très enrichissant me donnant une double casquette ce qui m’a permis d’avoir une vue bien plus large sur la Supply Chain et ses enjeux en entreprise en considérant le rôle des systèmes d’informations, des ERP, et le management dans les processus.",
     profile: [require("../assets/profiles/profile-1.png"), require("../assets/profiles/profile-3-mini.jpg")],
     tel: "+212 6 82 41 90 21",
